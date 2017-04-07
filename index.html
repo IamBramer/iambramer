@@ -4,12 +4,30 @@ title: Your New Jekyll Site
 ---
 
 <section>
-  <div class="full-column">
-    <h1>Blog Posts</h1>
-    <ul class="posts">
-      {% for post in site.posts %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
+    <div class="home-featured">
+        <div class="one-thirds-column-full featured" style="background: #eee;">
+          <div class="featured-info">
+            <div class="row">
+              <h3>Featured</h3>
+              <h1>Design</h1>
+            </div>
+          </div>
+        </div>
+        <div class="one-thirds-column-full featured" style="background: #ddd;">
+          <div class="featured-info">
+            <div class="row">
+              <h3>Featured</h3>
+              <h1>Photography</h1>
+            </div>
+          </div>
+        </div>
+        <div class="one-thirds-column-full featured" style="background: #eee;">
+          <div class="featured-info">
+            <div class="row">
+              <h3>Featured</h3>
+              <h1>3D Render</h1>
+            </div>
+          </div>
+        </div>
+    </div>
 </section>

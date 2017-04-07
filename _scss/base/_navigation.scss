@@ -1,16 +1,22 @@
-$nav-height: 8rem;
-$nav-background-color: #fff;
-
 .navigation {
     background: #fff;
     height: $nav-height;
     position: relative;
     background: $nav-background-color;
-    z-index:100;
-    padding: $column-padding-regular;
+    z-index: 100;
 
-    @include grid-media($neat-small) {
-         padding: $column-padding-large;
+    .logo {
+        h1 {
+            height: $nav-height;
+            font-weight: 300;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+
+            a {
+                color: #000;
+            }
+        }
     }
 
     ul {
@@ -20,7 +26,6 @@ $nav-background-color: #fff;
         top: 0;
         display: flex;
         align-items: center;
-
         @include grid-media($neat-small) {
             right: $grid-gutter*3;
         }
@@ -33,7 +38,11 @@ $nav-background-color: #fff;
 
             a {
                 line-height: $nav-height;
-                font-size: .8em;
+                font-size: 0.6em;
+                font-family: "nimbus-sans",sans-serif;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #000;
             }
         }
     }

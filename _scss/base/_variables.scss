@@ -15,9 +15,8 @@ $breakpoints: (
 
 //Layout Formatting
 $grid-gutter: 1rem;
-$column-padding-small: 1rem 1rem;;
-$column-padding-regular: 2rem 2rem;
-$column-padding-large: 2rem 3rem;
+$column-padding-small: 25px;
+$column-padding-regular: 50px;
 
 // Variables for setting responsive font-size and line-height
 // breakpoint: (font-size, line-height)
@@ -119,3 +118,7 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 400ms;
 $base-timing: ease;
+
+// navigation
+$nav-height: 50px;
+$nav-background-color: #fff;
