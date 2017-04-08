@@ -1,9 +1,14 @@
 ---
 layout: project
-title:  "A test of the project"
+title:  "Photography Exploration #1"
 category: Project
-tags: Photography
-cover-image: project-1/project-1-cover.jpg
+cover-image: project-2/project-2-cover.jpg
+project-color: 1e143e
+header-color: ffffff
+body-color: d1ade7
+tags:
+- Photography
+- Featured
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

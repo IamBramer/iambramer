@@ -1,14 +1,8 @@
 ---
-layout: project
-title:  "Render Exploration #1"
-category: Project
-cover-image: project-1/project-1-cover.jpg
-project-color: 1e143e
-header-color: ffffff
-body-color: d1ade7
-tags:
-- 3D
-- Featured
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2014-04-20 09:11:03
+categories: jekyll update
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

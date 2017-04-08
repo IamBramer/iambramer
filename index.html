@@ -5,29 +5,50 @@ title: Your New Jekyll Site
 
 <section>
     <div class="home-featured">
-        <div class="one-thirds-column-full featured" style="background: #eee;">
-          <div class="featured-info">
-            <div class="row">
-              <h3>Featured</h3>
-              <h1>Design</h1>
+      {% for post in site.categories.projects %}
+        {% if post.tags contains 'Design' and post.tags contains 'Featured' %}
+        <a href="{{ post.url }}">
+          <div class="one-thirds-column-full featured">
+            <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
+            <div class="featured-info">
+              <div class="row">
+                <h3>Featured</h3>
+                <h1>Design</h1>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="one-thirds-column-full featured" style="background: #ddd;">
-          <div class="featured-info">
-            <div class="row">
-              <h3>Featured</h3>
-              <h1>Photography</h1>
+        </a>
+        {% endif %}
+      {% endfor %}
+        {% for post in site.categories.projects %}
+          {% if post.tags contains 'Photography' and post.tags contains 'Featured' %}
+          <a href="{{ post.url }}">
+            <div class="one-thirds-column-full featured">
+              <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
+              <div class="featured-info">
+                <div class="row">
+                  <h3>Featured</h3>
+                  <h1>Photography</h1>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="one-thirds-column-full featured" style="background: #eee;">
-          <div class="featured-info">
-            <div class="row">
-              <h3>Featured</h3>
-              <h1>3D Render</h1>
+          </a>
+          {% endif %}
+        {% endfor %}
+        {% for post in site.categories.projects %}
+          {% if post.tags contains '3D' and post.tags contains 'Featured' %}
+          <a href="{{ post.url }}">
+            <div class="one-thirds-column-full featured">
+              <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
+              <div class="featured-info">
+                <div class="row">
+                  <h3>Featured</h3>
+                  <h1>3D Render</h1>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          </a>
+          {% endif %}
+        {% endfor %}
     </div>
 </section>
