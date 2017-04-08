@@ -3,16 +3,15 @@ $.Velocity
     .RegisterEffect("transition.fadeIn", {
         defaultDuration: 700,
         calls: [
-            [ { opacity: 1, translateY: '0px' } ]
+            [ { opacity: 1 } ]
         ]
     });
 $.Velocity
     .RegisterEffect("transition.fadeOut", {
         defaultDuration: 700,
         calls: [
-            [ { opacity: 0, translateY: '10rem' } ]
-        ],
-        reset: { translateY: '10rem' }
+            [ { opacity: 0 } ]
+        ]
     });
 
 $(function() {

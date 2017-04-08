@@ -107,12 +107,12 @@ a {
     transition: color $base-duration $base-timing;
     text-decoration: none;
 
-    color: $insight-red;
+    color: #000;
 
     &:active,
     &:focus,
     &:hover {
-        color: shade($insight-red, 25%);
+        color: #000;
         transition: color $base-duration $base-timing;
     }
 }

@@ -1,0 +1,21 @@
+---
+layout: default
+title: Projects
+---
+
+<section>
+    <div class="full-column-full">
+        {% for post in site.categories.projects %}
+        <a href="{{ post.url }}">
+            <div class="one-thirds-column-full" style="background-image:url('/img/projects/{{ post.cover-image }}'); background-size: cover; background-position: center; padding:0;">
+                <div class="project">
+                  <div class="info-box">
+                    <h2>{{ post.title }}</h2>
+                  </div>
+                </div>
+
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</section>

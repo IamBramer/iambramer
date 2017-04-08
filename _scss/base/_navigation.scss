@@ -6,14 +6,20 @@
     z-index: 100;
 
     .logo {
-        h1 {
+        span {
+            position: absolute;
             height: $nav-height;
-            font-weight: 300;
-            font-size: 1em;
             display: flex;
             align-items: center;
+            left: $grid-gutter/2;
+            @include grid-media($neat-small) {
+                left: $grid-gutter;
+            }
 
             a {
+                font-weight: 300;
+                font-size: .9em;
+                font-family: "nimbus-sans",sans-serif;
                 color: #000;
             }
         }
@@ -22,12 +28,12 @@
     ul {
         height: $nav-height;
         position: absolute;
-        right: $grid-gutter*2;
+        right: $grid-gutter/2;
         top: 0;
         display: flex;
         align-items: center;
         @include grid-media($neat-small) {
-            right: $grid-gutter*3;
+            right: $grid-gutter;
         }
 
         li {
@@ -38,10 +44,10 @@
 
             a {
                 line-height: $nav-height;
-                font-size: 0.6em;
+                font-size: .9em;
                 font-family: "nimbus-sans",sans-serif;
                 font-weight: 600;
-                text-transform: uppercase;
+
                 color: #000;
             }
         }

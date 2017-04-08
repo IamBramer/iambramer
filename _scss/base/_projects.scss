@@ -1,0 +1,36 @@
+.project {
+  position: relative;
+  padding-bottom: 56.25%;
+  width:100%;
+
+  .info-box {
+    @include size(3rem);
+    background: #fff;
+    position: absolute;
+    bottom:1rem;
+    right:1rem;
+    padding:.5rem;
+    transition: width .5s;
+    overflow: hidden;
+
+    h2 {
+      font-size: 1.5em;
+      word-wrap: break-word;
+      opacity: 0;
+      transition: opacity .3s;
+      transition-delay: 0s;
+    }
+  }
+
+  &:hover {
+    .info-box {
+      width: calc(100% - 2rem);
+
+      h2 {
+        opacity: 1;
+        transition: opacity .5s;
+        transition-delay: .3s;
+      }
+    }
+  }
+}
