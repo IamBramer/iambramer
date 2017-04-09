@@ -1,3 +1,19 @@
+.projects {
+  .one-thirds-column-full {
+    @include grid-column(1, $neat-grid-full);
+    padding: 0 $column-padding-small / 2;
+    @include grid-media($neat-small-full) {
+        padding: 0 $column-padding-regular / 2;
+    }
+    @include grid-media($neat-medium-full) {
+         @include grid-column(3);
+    }
+    @include grid-media($neat-large-full) {
+         @include grid-column(4);
+    }
+  }
+}
+
 .project-image {
     height: 100%;
     width: 100%;
@@ -90,12 +106,12 @@ Individual Project Page
       position: relative;
       @include grid-media($neat-larger) {
         text-align: right;
-        top: -.1em;
+        top: -.2em;
       }
     }
 
     img {
-      box-shadow: 0px 0px 2em rgba(0,0,0,.4);
+      box-shadow: 0px 0px 1.5rem rgba(0,0,0,.6);
     }
 
     .project-container-title {
@@ -130,9 +146,9 @@ Individual Project Page
         }
 
         .project-content {
-          padding: $column-padding-small;
+          padding: 0 $column-padding-small;
           @include grid-media($neat-small) {
-               padding: $column-padding-regular;
+               padding: 0 $column-padding-regular;
           }
         }
     }

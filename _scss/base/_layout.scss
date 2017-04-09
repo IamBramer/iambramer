@@ -167,7 +167,7 @@ Full Grids
     @include grid-column(1, $neat-grid-full);
 
     @include grid-media($neat-small-full) {
-         @include grid-column(1);
+         @include grid-column(2);
 
     }
     @include grid-media($neat-medium-full) {

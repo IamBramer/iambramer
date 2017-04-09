@@ -14,6 +14,7 @@ layout: default
         <h1 style="color: #{{ page.header-color }};">{{ page.title }}</h1>
       </div>
         <div class="project-info">
+          <section>
             <div class="project-container-info" style="color: #{{ page.body-color }}">
                 <p>
                     {{ page.description }}
@@ -24,9 +25,13 @@ layout: default
                     {{ page.description-two }}
                 </p>
             </div>
-            <div class="project-content" style="color: #{{ page.body-color }}">
-                {{ content }}
-            </div>
+            </section>
+            <section>
+              <div class="project-content" style="color: #{{ page.body-color }}">
+                  {{ content }}
+              </div>
+            </section>
+
         </div>
     </div>
 </section>

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: IamBramer
 ---
 
 <section>
@@ -8,12 +8,12 @@ title: Your New Jekyll Site
       {% for post in site.categories.projects %}
         {% if post.tags contains 'Design' and post.tags contains 'Featured' %}
         <a href="{{ post.url }}">
-          <div class="one-thirds-column-full featured">
+          <div class="featured">
             <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
             <div class="featured-info">
               <div class="row">
                 <h3>Featured</h3>
-                <h1>Design</h1>
+                <h2>Design</h2>
               </div>
             </div>
           </div>
@@ -23,12 +23,12 @@ title: Your New Jekyll Site
         {% for post in site.categories.projects %}
           {% if post.tags contains 'Photography' and post.tags contains 'Featured' %}
           <a href="{{ post.url }}">
-            <div class="one-thirds-column-full featured">
+            <div class="featured">
               <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
               <div class="featured-info">
                 <div class="row">
                   <h3>Featured</h3>
-                  <h1>Photography</h1>
+                  <h2>Photography</h2>
                 </div>
               </div>
             </div>
@@ -38,12 +38,12 @@ title: Your New Jekyll Site
         {% for post in site.categories.projects %}
           {% if post.tags contains '3D' and post.tags contains 'Featured' %}
           <a href="{{ post.url }}">
-            <div class="one-thirds-column-full featured">
+            <div class="featured">
               <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
               <div class="featured-info">
                 <div class="row">
                   <h3>Featured</h3>
-                  <h1>3D Render</h1>
+                  <h2>3D Render</h2>
                 </div>
               </div>
             </div>
