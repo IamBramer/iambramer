@@ -61,10 +61,8 @@ Standard Columns
 ----------------------------------*/
 .full-column {
     @include grid-column(1);
-    padding: $column-padding-small;
     @include grid-media($neat-small) {
          @include grid-column(2);
-        padding: $column-padding-regular;
     }
 }
 
