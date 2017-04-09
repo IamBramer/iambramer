@@ -55,6 +55,11 @@
     }
   }
 }
+
+/*--------------------
+Individual Project Page
+---------------------*/
+
 .cover-image-wrap {
     height: 80vh;
     overflow: hidden;
@@ -71,4 +76,7 @@
   &:hover {
     transform: scale(1.1);
   }
+}
+.project-info {
+  font-size:.9em;
 }

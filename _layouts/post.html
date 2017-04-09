@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-<section>
-  <div class="full-column">
-    <div class="text">
-      <h2>{{ page.title }}</h2>
-      <p class="meta">{{ page.date | date_to_string }}</p>
+<div class="words">
+    <section>
+        <div class="two-thirds-column two-thirds-column-centered margin-bottom-large">
+            <h2>{{ page.title }}</h2>
+            <p class="meta">{{ page.date | date_to_string }}</p>
 
-      <div class="post">
-        {{ content }}
-      </div>
-    </div>
-  </div>
-</section>
+            <div class="post">
+                {{ content }}
+            </div>
+        </div>
+    </section>
+</div>

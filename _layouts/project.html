@@ -1,19 +1,32 @@
 ---
 layout: default
 ---
-<section>
-  <div class="full-column cover-image-wrap">
-    <div class="cover-image" style="background-image: url('/img/projects/{{ page.cover-image }}');"></div>
-  </div>
-</section>
-<section>
-  <div class="full-column margin-bottom-large" style="background-color: #{{ page.project-color }}">
-    <div class="text">
-      <h2 style="color: #{{ page.header-color }}">{{ page.title }}</h2>
 
-      <div class="post" style="color: #{{ page.body-color }}">
-        {{ content }}
-      </div>
+<section>
+    <div class="full-column cover-image-wrap">
+        <div class="cover-image" style="background-image: url('/img/projects/{{ page.cover-image }}');"></div>
     </div>
-  </div>
+</section>
+
+<section>
+    <div class="full-column margin-bottom-large" style="background-color: #{{ page.project-color }}">
+      <div class="full-column-full">
+        <h2 style="color: #{{ page.header-color }};">{{ page.title }}</h2>
+      </div>
+        <div class="project-info">
+            <div class="half-column" style="color: #{{ page.body-color }}">
+                <p>
+                    {{ page.description }}
+                </p>
+            </div>
+            <div class="half-column" style="color: #{{ page.body-color }}">
+                <p>
+                    {{ page.description-two }}
+                </p>
+            </div>
+            <div class="post" style="color: #{{ page.body-color }}">
+                {{ content }}
+            </div>
+        </div>
+    </div>
 </section>
