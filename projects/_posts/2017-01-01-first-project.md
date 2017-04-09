@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Render Experiment #1"
+title:  "Render Experiment No.1"
 category: Project
 cover-image: project-1/project-1-cover.jpg
 project-color: 1e143e
@@ -17,4 +17,4 @@ tags:
 - Featured
 ---
 
-<div><img src="/img/projects/project-1/project-1-cover.jpg" /></div>
+<div><img src="/img/projects/project-1/project-1-image-1.jpg" /></div>
