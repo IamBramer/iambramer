@@ -2,29 +2,49 @@
 layout: default
 title: Projects
 ---
-
+<div class="projects">
 <section>
-    <div class="full-column-full projects margin-bottom-large">
+    <div class="full-column-full margin-bottom-large">
+        <h1>Projects</h1>
+        <ul class="filter">
+          <li>
+            <img class="icon" src="/img/icons/camera.svg" /> Photography
+          </li>
+          <li>
+            <img class="icon" src="/img/icons/website.svg" /> Website
+          </li>
+          <li>
+            <img class="icon" src="/img/icons/computer.svg" /> Digital Design
+          </li>
+          <li>
+            <img class="icon" src="/img/icons/print.svg" /> Print Design
+          </li>
+          <li>
+            <img class="icon" src="/img/icons/3d.svg" /> 3D
+          </li>
+        </ul>
         {% for post in site.categories.projects %}
         <a href="{{ post.url }}">
             <div class="one-thirds-column-full" style="background-image:url('/img/projects/{{ post.cover-image }}'); background-size: cover; background-position: center; padding:0;">
                 <div class="project">
-                  <div class="info-box">
-                    {% if post.tags contains 'Photography' %}
-                    <img class="icon" src="/img/icons/camera.svg" />
-                    {% elsif post.tags contains 'Website' %}
-                    <img class="icon" src="/img/icons/website.svg" />
-                    {% elsif post.tags contains 'Design' %}
-                    <img class="icon" src="/img/icons/computer.svg" />
-                    {% elsif post.tags contains '3D' %}
-                    <img class="icon" src="/img/icons/3d.svg" />
-                    {% endif %}
-                    <h2>{{ post.title }}</h2>
-                  </div>
+                    <div class="info-box">
+                        {% if post.tags contains 'Photography' %}
+                        <img class="icon" src="/img/icons/camera.svg" />
+                        {% elsif post.tags contains 'Website' %}
+                        <img class="icon" src="/img/icons/website.svg" />
+                        {% elsif post.tags contains 'Digital' %}
+                        <img class="icon" src="/img/icons/computer.svg" />
+                        {% elsif post.tags contains 'Print' %}
+                        <img class="icon" src="/img/icons/print.svg" />
+                        {% elsif post.tags contains '3D' %}
+                        <img class="icon" src="/img/icons/3d.svg" />
+                        {% endif %}
+                        <h2>{{ post.title }}</h2>
+                    </div>
                 </div>
-
             </div>
         </a>
         {% endfor %}
     </div>
 </section>
+</div>

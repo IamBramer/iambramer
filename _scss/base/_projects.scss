@@ -1,4 +1,26 @@
 .projects {
+    margin-top: 2rem;
+
+    ul.filter {
+      li {
+        position: relative;
+        display:block;
+        margin-right: 1em;
+        cursor: pointer;
+
+        @include grid-media($neat-small-full) {
+          display:inline-block;
+        }
+
+        img {
+          position: relative;
+          display: inline-block;
+          height: 1em;
+          width: 1em;
+          top: .2em;
+        }
+      }
+    }
   .one-thirds-column-full {
     @include grid-column(1, $neat-grid-full);
     padding: 0 $column-padding-small / 2;
