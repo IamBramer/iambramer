@@ -1,6 +1,7 @@
 .projects {
     margin-top: 2rem;
 
+
     ul.filter {
       li {
         position: relative;
@@ -95,6 +96,8 @@
 /*--------------------
 Individual Project Page
 ---------------------*/
+
+
 .cover-image-wrap {
     height: 80vh;
     overflow: hidden;
@@ -133,7 +136,13 @@ Individual Project Page
     }
 
     img {
-      box-shadow: 0px 0px 1.5rem rgba(0,0,0,.6);
+      box-shadow: 0px 0px 1.5rem rgba(0,0,0,.1);
+      transition: all 1s;
+
+      &:hover {
+        z-index: 2;
+        box-shadow: 0px 0px 1.5rem rgba(0,0,0,.6);
+      }
     }
 
     .project-container-title {
