@@ -1,22 +1,87 @@
----
-layout: default
-title: Words
----
-<div class="words">
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Words</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- Fonts -->
+  <script src="https://use.typekit.net/zad8oru.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navigation">
+    <div class="logo">
+      <span><a href="/"><strong>I</strong>am<strong>Bramer</strong></a></span>
+    </div>
+      <ul class="menu">
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <li>
+          <a href="/words">Words</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/typography">Contact</a>
+        </li>
+      </ul>
+  </nav>
+
+  <div id="content">
+    <div class="words">
     <section>
         <div class="full-column-full">
 
             <h1>The Writings of a Mad Man</h1>
-            {% for post in site.categories.words %}
+            
               <div class="text">
-                  <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
-                  <p class="meta">{{ post.date | date_to_string }}</p>
-                  {{ post.excerpt }}
+                  <a href="/words/jekyll/update/2014/04/20/welcome-to-jekyll.html"><h4>Welcome to Jekyll!</h4></a>
+                  <p class="meta">20 Apr 2014</p>
+                  <p>You&#39;ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
+To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
+
 
               </div>
 
-            {% endfor %}
+            
+              <div class="text">
+                  <a href="/words/jekyll/update/2014/04/20/welcome-to-jekyll.html"><h4>Welcome to Jekyll!</h4></a>
+                  <p class="meta">20 Apr 2014</p>
+                  <p>You&#39;ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
+To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
+
+
+              </div>
+
+            
         </div>
 
     </section>
 </div>
+
+  </div>
+
+  <!-- jQuery library -->
+  <script src="/js/jquery-3.2.0.min.js"></script>
+
+  <!-- Animation replacement for animate() -->
+  <script src="http://velocityjs.org/build/jquery.velocity.min.js"></script>
+  <script src="http://velocityjs.org/build/velocity.ui.js"></script>
+
+  <!-- Main javascript file -->
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>

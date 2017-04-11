@@ -1,9 +1,45 @@
----
-layout: default
-title: Typography Systems
----
+<!DOCTYPE html>
+<html>
 
-<section>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Typography Systems</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- Fonts -->
+  <script src="https://use.typekit.net/zad8oru.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navigation">
+    <div class="logo">
+      <span><a href="/"><strong>I</strong>am<strong>Bramer</strong></a></span>
+    </div>
+      <ul class="menu">
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <li>
+          <a href="/words">Words</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/typography">Contact</a>
+        </li>
+      </ul>
+  </nav>
+
+  <div id="content">
+    <section>
   <div class="two-thirds-column two-thirds-column-centered">
     <div class="text-centered">
       <h1 style="text-align:center;">A Compiled List of Typography Systems and Form Formatting</h1>
@@ -106,22 +142,21 @@ title: Typography Systems
       <p>
         This is an example code block (scss):
       </p>
-      {% highlight scss %}
-h6 {
-    @include font-size($h6-font-sizes);
-    text-transform: uppercase;
-    font-weight: bold;
-    color: lighten($base-font-color, 30%);
-    margin: 0;
-}
-/* standard */
-pre {
-    border: 1px solid #ddd;
-    background-color: #eee;
-    padding: 0 0.4em;
-    margin-bottom: 2rem;
-}
-      {% endhighlight %}
+      <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nt">h6</span> <span class="p">{</span>
+    <span class="k">@include</span> <span class="nd">font-size</span><span class="p">(</span><span class="nv">$h6-font-sizes</span><span class="p">);</span>
+    <span class="nl">text-transform</span><span class="p">:</span> <span class="nb">uppercase</span><span class="p">;</span>
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nf">lighten</span><span class="p">(</span><span class="nv">$base-font-color</span><span class="o">,</span> <span class="m">30%</span><span class="p">);</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cm">/* standard */</span>
+<span class="nt">pre</span> <span class="p">{</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="mh">#ddd</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="mh">#eee</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span><span class="mi">.4em</span><span class="p">;</span>
+    <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">2rem</span><span class="p">;</span>
+<span class="p">}</span>
+      </code></pre></figure>
 
       <hr>
 
@@ -262,3 +297,19 @@ pre {
     </div>
   </div>
 </section>
+
+  </div>
+
+  <!-- jQuery library -->
+  <script src="/js/jquery-3.2.0.min.js"></script>
+
+  <!-- Animation replacement for animate() -->
+  <script src="http://velocityjs.org/build/jquery.velocity.min.js"></script>
+  <script src="http://velocityjs.org/build/velocity.ui.js"></script>
+
+  <!-- Main javascript file -->
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>

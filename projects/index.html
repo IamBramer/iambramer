@@ -1,8 +1,45 @@
----
-layout: default
-title: Projects
----
-<div class="projects">
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Projects</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- Fonts -->
+  <script src="https://use.typekit.net/zad8oru.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navigation">
+    <div class="logo">
+      <span><a href="/"><strong>I</strong>am<strong>Bramer</strong></a></span>
+    </div>
+      <ul class="menu">
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <li>
+          <a href="/words">Words</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/typography">Contact</a>
+        </li>
+      </ul>
+  </nav>
+
+  <div id="content">
+    <div class="projects">
 <section>
     <div class="full-column-full margin-bottom-large">
         <h1>Projects</h1>
@@ -23,28 +60,62 @@ title: Projects
             <img class="icon" src="/img/icons/3d.svg" /> 3D
           </li>
         </ul>
-        {% for post in site.categories.projects %}
-        <a href="{{ post.url }}">
-            <div class="one-thirds-column-full" style="background-image:url('/img/projects/{{ post.cover-image }}'); background-size: cover; background-position: center; padding:0;">
+        
+        <a href="/projects/project/2017/01/03/third-project.html">
+            <div class="one-thirds-column-full" style="background-image:url('/img/projects/just-north-of-jam/just-north-of-jam-mockup.jpg'); background-size: cover; background-position: center; padding:0;">
                 <div class="project">
                     <div class="info-box">
-                        {% if post.tags contains 'Photography' %}
-                        <img class="icon" src="/img/icons/camera.svg" />
-                        {% elsif post.tags contains 'Website' %}
-                        <img class="icon" src="/img/icons/website.svg" />
-                        {% elsif post.tags contains 'Digital' %}
-                        <img class="icon" src="/img/icons/computer.svg" />
-                        {% elsif post.tags contains 'Print' %}
+                        
                         <img class="icon" src="/img/icons/print.svg" />
-                        {% elsif post.tags contains '3D' %}
-                        <img class="icon" src="/img/icons/3d.svg" />
-                        {% endif %}
-                        <h2>{{ post.title }}</h2>
+                        
+                        <h2>Just North of Jam</h2>
                     </div>
                 </div>
             </div>
         </a>
-        {% endfor %}
+        
+        <a href="/projects/project/2017/01/02/second-project.html">
+            <div class="one-thirds-column-full" style="background-image:url('/img/projects/project-2/project-2-cover.jpg'); background-size: cover; background-position: center; padding:0;">
+                <div class="project">
+                    <div class="info-box">
+                        
+                        <img class="icon" src="/img/icons/camera.svg" />
+                        
+                        <h2>Render Experiment No.1</h2>
+                    </div>
+                </div>
+            </div>
+        </a>
+        
+        <a href="/projects/project/2017/01/01/render-experiment-no-1.html">
+            <div class="one-thirds-column-full" style="background-image:url('/img/projects/render-experiment-no-1/render-experiment-no-1-image-1.jpg'); background-size: cover; background-position: center; padding:0;">
+                <div class="project">
+                    <div class="info-box">
+                        
+                        <img class="icon" src="/img/icons/3d.svg" />
+                        
+                        <h2>Render Experiment No.1</h2>
+                    </div>
+                </div>
+            </div>
+        </a>
+        
     </div>
 </section>
 </div>
+
+  </div>
+
+  <!-- jQuery library -->
+  <script src="/js/jquery-3.2.0.min.js"></script>
+
+  <!-- Animation replacement for animate() -->
+  <script src="http://velocityjs.org/build/jquery.velocity.min.js"></script>
+  <script src="http://velocityjs.org/build/velocity.ui.js"></script>
+
+  <!-- Main javascript file -->
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>
