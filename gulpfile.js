@@ -7,6 +7,7 @@ var cleanCSS    = require('gulp-clean-css');
 var uglify      = require('gulp-uglify');
 var pump        = require('pump');
 var imagemin    = require('gulp-imagemin');
+var deploy = require("gulp-gh-pages");
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -76,6 +77,11 @@ gulp.task('images', function() {
     gulp.src('img/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('_site/img'));
+});
+
+gulp.task("deploy", ["min"], function () {
+    return gulp.src("./_site/**/*")
+        .pipe(deploy());
 });
 
 /**

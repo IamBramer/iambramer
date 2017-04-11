@@ -31,7 +31,7 @@
   }
   .about-info,
   .about-info-2 {
-    height:100%;
+    height: calc(100vh - 100px);
     width:100%;
     display: flex;
     align-items: flex-start;
@@ -54,8 +54,9 @@
       margin-bottom: 0;
       text-transform: uppercase;
       color: $medium-gray;
-      font-size: 1em;
+      font-size: .7em;
       letter-spacing: .05em;
+
 
       @include grid-media($neat-small-full) {
         font-size: 1.1em;

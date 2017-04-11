@@ -83,9 +83,9 @@ $(function() {
       }, title, url);
 
       if (url == '/') {
-          document.title = "Sitename";
+          document.title = "IamBramer";
       } else {
-          document.title = title + " - Sitename";
+          document.title = title + " - IamBramer";
       }
 
       loadPage(url);
@@ -93,4 +93,15 @@ $(function() {
     }
 
   });
+
+  $('.navigation').on('click', '.nav-trigger', function(event) {
+     // open primary navigation on mobile
+     event.preventDefault();
+     $('#menu').toggleClass('open');
+   });
+   $('.navigation a').on('click', function(event) {
+      // open primary navigation on mobile
+      event.preventDefault();
+      $('#menu').removeClass('open');
+    });
 });
