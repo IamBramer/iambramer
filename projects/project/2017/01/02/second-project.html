@@ -111,7 +111,7 @@ ga('require', 'eventTracker');
 ga('require', 'outboundLinkTracker');
 ga('require', 'urlChangeTracker');
 // ...
-
+ga('send', 'timing', [timingCategory], [timingVar], [timingValue], [timingLabel], [fieldsObject]);
 ga('send', 'pageview');
 </script>
 <script async src="https://www.google-analytics.com/analytics.js"></script>
