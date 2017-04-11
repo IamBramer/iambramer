@@ -1,0 +1,4 @@
+# Redirect non-www urls to www
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^www\.iambramer\.com
+RewriteRule (.*) http://www.iambramer.com/$1 [R=301,L]
