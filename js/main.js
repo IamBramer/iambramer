@@ -98,7 +98,9 @@ $(function() {
      // open primary navigation on mobile
      event.preventDefault();
      $('#menu').toggleClass('open');
+     console.log("Menu Clicked");
    });
+
    $('.navigation a').on('click', function(event) {
       // open primary navigation on mobile
       event.preventDefault();

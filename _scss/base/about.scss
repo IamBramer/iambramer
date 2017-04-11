@@ -31,7 +31,7 @@
   }
   .about-info,
   .about-info-2 {
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
     width:100%;
     display: flex;
     align-items: flex-start;
@@ -39,19 +39,23 @@
     z-index: 2;
     overflow: hidden;
     @include grid-media($neat-medium) {
-      height: calc(100vh - 100px);
+      min-height: calc(100vh - 100px);
       align-items: center;
       padding:2rem 0;
     }
 
     .half-column {
+      @include grid-media($neat-medium) {
+           @include grid-column(4);
+      }
       @include grid-media($neat-large) {
+        @include grid-column(6);
            @include grid-push(1);
       }
     }
     h4 {
       font-family: "freight-text-pro", serif;
-      margin-bottom: 0;
+      margin-bottom: 1em;
       text-transform: uppercase;
       color: $medium-gray;
       font-size: .7em;
