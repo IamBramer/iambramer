@@ -1,4 +1,18 @@
 .about {
+  height: 100%;
+  overflow: hidden;
+  .line-grid {
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    .lined {
+      position: relative;
+      border-right: 1px solid rgba(0,0,0,.1);
+      height: calc(100vh - 50px);
+    }
+  }
+
   .about-grid {
     display: flex;
     width:100%;
@@ -10,21 +24,24 @@
     .sixth-column-full {
       border-right: 1px solid rgba(0,0,0,.1);
       opacity: 0;
-      @include grid-media($neat-large) {
+      @include grid-media($neat-medium) {
            opacity: 1;
       }
     }
   }
-  .about-info {
-    height: calc(100vh - 100px);
+  .about-info,
+  .about-info-2 {
+    height:100%;
     width:100%;
     display: flex;
     align-items: flex-start;
-    padding-top:2rem;
-    background-color: #f4f4f4;
+    padding:4rem 0;
     z-index: 2;
-    @include grid-media($neat-large) {
-         align-items: center;
+    overflow: hidden;
+    @include grid-media($neat-medium) {
+      height: calc(100vh - 100px);
+      align-items: center;
+      padding:2rem 0;
     }
 
     .half-column {
@@ -38,6 +55,7 @@
       text-transform: uppercase;
       color: $medium-gray;
       font-size: 1em;
+      letter-spacing: .05em;
 
       @include grid-media($neat-small-full) {
         font-size: 1.1em;
@@ -45,12 +63,30 @@
       @include grid-media($neat-medium-full) {
         font-size: 1.2em;
       }
-      @include grid-media($neat-large-full) {
+      @include grid-media($neat-super-full) {
         font-size: 1.3em;
       }
     }
     h1 {
-      line-height: 1.1em;
+      position: relative;
+      left: -.05em;
+      margin-bottom: .3em;
+    }
+
+    p {
+      color: darken($medium-gray, 20%);
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+  .about-info {
+    background-color: #f4f4f4;
+  }
+  .about-info-2 {
+    background-color: #6544f4;
+    h4 {
+      color: #fff;
     }
   }
 }
@@ -61,4 +97,11 @@ span.purple {
   font-weight: inherit;
   line-height: inherit;
   color: #6544f4;
+}
+span.white {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: #fff;
 }
