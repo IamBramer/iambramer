@@ -10,7 +10,6 @@ description: "I am not ashamed to admit that this render was based off of a tuto
 description-two: "The most fun part of this experiment was probably setting up the materials. It took a while to get the effect I wanted, but they look great, right?"
 tags:
 - 3D
-- Featured
 ---
 <section>
 <div class="full-column-full no-padding margin-bottom-large"><img src="/img/projects/render-experiment-no-2/render-experiment-no-2-image-1.jpg" /></div>
