@@ -69,6 +69,12 @@ $(function() {
     console.log("Popstate happened");
   });
 
+   $('.email').on('click', function (event) {
+    event.preventDefault();
+    var email = 'tyler@iambramer.com';
+    window.location = 'mailto:' + email;
+  });
+
   /* ----- Do things on link click ----- */
   $(document).on('click', 'a', function() {
     var url = $(this).attr("href"),
