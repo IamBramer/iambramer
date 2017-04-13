@@ -38,6 +38,7 @@ section {
     @include grid-container;
     @include grid-media($neat-small) {
          @include grid-container($neat-small);
+
     }
     @include grid-media($neat-medium) {
          @include grid-container($neat-medium);

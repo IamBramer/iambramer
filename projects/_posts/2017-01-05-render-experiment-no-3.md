@@ -7,7 +7,7 @@ project-color: 483b81
 header-color: dfe1e0
 body-color: ceb3e9
 description: "This rendering was a blast to do. It was one of my first experiments with 3d animation so I learned quite a bit while making it."
-description-two: "Icky gooey rock?"
+description-two: ""
 tags:
 - 3D
 ---

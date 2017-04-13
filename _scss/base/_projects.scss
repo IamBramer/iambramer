@@ -177,6 +177,7 @@ Individual Project Page
         }
 
         .project-content {
+          margin-top:2em;
           padding: 0 $column-padding-small;
           @include grid-media($neat-small) {
                padding: 0 $column-padding-regular;
