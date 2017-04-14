@@ -109,7 +109,7 @@ var resizeImageTasks = [];
 
 gulp.task('resize', resizeImageTasks);
 
-gulp.task("deploy", ["min"], function() {
+gulp.task("deploy", function() {
     return gulp.src("./_site/**/*")
         .pipe(deploy());
 });
