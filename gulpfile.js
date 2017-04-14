@@ -89,6 +89,7 @@ gulp.task('compress', function(cb){
          .pipe(imagemin())
          .pipe(gulp.dest('_site/img'));
      gulp.src('img/**/*.{svg,ico}')
+        .pipe(changed('_site/img'))
         .pipe(imagemin())
         .pipe(gulp.dest('_site/img'));
  });
