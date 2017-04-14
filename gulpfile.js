@@ -10,6 +10,7 @@ var imagemin = require('gulp-imagemin');
 var deploy = require("gulp-gh-pages");
 var imageResize = require('gulp-image-resize');
 var rename = require("gulp-rename");
+var changed = require('gulp-changed');
 
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -88,6 +89,7 @@ var resizeImageTasks = [];
     var resizeImageTask = 'resize_' + size;
     gulp.task(resizeImageTask, function() {
         gulp.src('img/**/*.{jpg,png,gif}')
+            .pipe(changed('_site/img'))
             .pipe(imageResize({
                 width: size,
                 upscale: false,
@@ -101,7 +103,19 @@ var resizeImageTasks = [];
             }))
             .pipe(gulp.dest('_site/img'));
         gulp.src('img/**/*.{svg,ico}')
+            .pipe(changed('_site/img'))
             .pipe(imagemin())
+            .pipe(gulp.dest('_site/img'));
+        gulp.src('img/**/*.{jpg,png,gif}')
+            .pipe(changed('_site/img'))
+            .pipe(imageResize({
+              width: 1800,
+              upscale: false,
+              quality: 0.8,
+              samplingFactor: [2, 2],
+              noProfile: true,
+              interlace: true,
+            }))
             .pipe(gulp.dest('_site/img'));
     });
     resizeImageTasks.push(resizeImageTask);

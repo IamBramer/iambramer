@@ -117,7 +117,7 @@ $(function() {
     img.each( function() {
       var src = this.src.slice(0, -4);
       var extension = this.src.substr( (this.src.lastIndexOf('.') +1));
-      this.src = src + '-2400.' + extension;
+
       this.srcset = src + '-600.' + extension + ' 600w, ' + src + '-900.' + extension + ' 900w, ' + src + '-1200.' + extension + ' 1200w, ' + src + '-1800.' + extension + ' 1800w, ' + src + '-2400.' + extension + ' 2400w';
     });
 });
