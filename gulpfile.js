@@ -77,7 +77,7 @@ gulp.task('compress', function(cb){
  */
  gulp.task('images', function() {
      gulp.src('img/**/*.{jpg,png,gif}')
-         .pipe(changed('_site/img'))
+
          .pipe(imageResize({
            width: 1800,
            upscale: false,
@@ -89,7 +89,7 @@ gulp.task('compress', function(cb){
          .pipe(imagemin())
          .pipe(gulp.dest('_site/img'));
      gulp.src('img/**/*.{svg,ico}')
-        .pipe(changed('_site/img'))
+
         .pipe(imagemin())
         .pipe(gulp.dest('_site/img'));
  });
