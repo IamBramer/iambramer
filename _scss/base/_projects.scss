@@ -135,6 +135,11 @@ Individual Project Page
       }
     }
 
+    p a {
+      color:inherit;
+      text-shadow: none;
+    }
+
     img {
       box-shadow: 0px 0px 1.5rem rgba(0,0,0,.1);
       transition: all 1s;

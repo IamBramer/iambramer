@@ -2,30 +2,37 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="View the works and read the words of Tyler Bramer, a passionate creative person who is always seeking to push his limits." />
 
+    <!-- Custom CSS -->
+    <link async rel="stylesheet" href="/css/main.css">
 
-  <!-- Custom CSS -->
-  <link async rel="stylesheet" href="/css/main.css">
-
-  <!-- Fonts -->
-  <script async src="https://use.typekit.net/zad8oru.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  <link async href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <!-- Fonts -->
+    <script async src="https://use.typekit.net/zad8oru.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
+    <link async href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
 </head>
+
 <body>
 
-  {% include navigation.html %}
+    {% include navigation.html %}
 
-  <div id="content">
-    {{ content }}
-  </div>
+    <div id="content">
+        {{ content }}
+    </div>
 
-  {% include scripts.html %}
+    {% include scripts.html %}
 
 </body>
 

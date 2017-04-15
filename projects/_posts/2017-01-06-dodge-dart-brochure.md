@@ -13,22 +13,22 @@ tags:
 - Print
 ---
 <section>
-<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-1.jpg" /></div>
-<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-2.jpg" /></div>
+<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-1.jpg" alt="Dodge Dart Brochure 1" /></div>
+<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-2.jpg" alt="Dodge Dart Brochure 2" /></div>
 </section>
 
 <section>
-<div class="one-thirds-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-3.jpg" /></div>
-<div class="one-thirds-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-4.jpg" /></div>
-<div class="one-thirds-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-7.jpg" /></div>
+<div class="one-thirds-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-3.jpg" alt="Dodge Dart Brochure 3" /></div>
+<div class="one-thirds-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-4.jpg" alt="Dodge Dart Brochure 4" /></div>
+<div class="one-thirds-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-7.jpg" alt="Dodge Dart Brochure 7" /></div>
 </section>
 
 <section>
-<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-5.jpg" /></div>
-<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-6.jpg" /></div>
+<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-5.jpg" alt="Dodge Dart Brochure 6" /></div>
+<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-6.jpg" alt="Dodge Dart Brochure 6" /></div>
 </section>
 
 <section>
-<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-8.jpg" /></div>
-<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-9.jpg" /></div>
+<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-8.jpg" alt="Dodge Dart Brochure 8" /></div>
+<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/dodge-dart-brochure/dodge-dart-brochure-9.jpg" alt="Dodge Dart Brochure 9" /></div>
 </section>

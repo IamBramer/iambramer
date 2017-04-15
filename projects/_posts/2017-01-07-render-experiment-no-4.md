@@ -13,5 +13,5 @@ tags:
 ---
 
 <section>
-<div class="full-column-full no-padding margin-bottom-large"><img src="/img/projects/render-experiment-no-4/render-experiment-no-4-image-1.jpg" /></div>
+<div class="full-column-full no-padding margin-bottom-large"><img src="/img/projects/render-experiment-no-4/render-experiment-no-4-image-1.jpg" alt="Render Experiment #4" /></div>
 </section>

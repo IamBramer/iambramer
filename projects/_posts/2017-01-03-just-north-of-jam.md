@@ -14,15 +14,15 @@ tags:
 - Featured
 ---
 <section>
-<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/just-north-of-jam/just-north-of-jam-logo.jpg" /></div>
-<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/just-north-of-jam/just-north-of-jam-letterhead.jpg" /></div>
+<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/just-north-of-jam/just-north-of-jam-logo.jpg" alt="Just North of Jam Logo" /></div>
+<div class="half-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/just-north-of-jam/just-north-of-jam-letterhead.jpg" alt="Just North of Jam Letterhead" /></div>
 </section>
 
 <section>
-<div class="half-column no-padding margin-bottom-large"><img src="/img/projects/just-north-of-jam/just-north-of-jam-business-card-1.jpg" /></div>
-<div class="half-column no-padding margin-bottom-large"><img src="/img/projects/just-north-of-jam/just-north-of-jam-business-card-2.jpg" /></div>
+<div class="half-column no-padding margin-bottom-large"><img src="/img/projects/just-north-of-jam/just-north-of-jam-business-card-1.jpg" alt="Just North of Jam Business Card 1" /></div>
+<div class="half-column no-padding margin-bottom-large"><img src="/img/projects/just-north-of-jam/just-north-of-jam-business-card-2.jpg" alt="Just North of Jam Business Card 2" /></div>
 </section>
 
 <section>
-<div class="full-column-full no-padding margin-bottom-large"><img src="/img/projects/just-north-of-jam/just-north-of-jam-mockup.jpg" /></div>
+<div class="full-column-full no-padding margin-bottom-large"><img src="/img/projects/just-north-of-jam/just-north-of-jam-mockup.jpg" alt="Just North of Jam Mockup" /></div>
 </section>

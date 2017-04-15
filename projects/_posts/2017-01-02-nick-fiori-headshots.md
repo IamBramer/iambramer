@@ -13,9 +13,9 @@ tags:
 - Featured
 ---
 <section>
-<div class="half-column no-padding margin-bottom-large"><img width="100%"  src="/img/projects/nick-fiori-headshots/nick-fiori-headshot-2.jpg" /></div>
-<div class="half-column no-padding margin-bottom-large"><img width="100%"  src="/img/projects/nick-fiori-headshots/nick-fiori-headshot-4.jpg" /></div>
+<div class="half-column no-padding margin-bottom-large"><img width="100%"  src="/img/projects/nick-fiori-headshots/nick-fiori-headshot-2.jpg" alt="Nick Fiori Headshot 2" /></div>
+<div class="half-column no-padding margin-bottom-large"><img width="100%"  src="/img/projects/nick-fiori-headshots/nick-fiori-headshot-4.jpg" alt="Nick Fiori Headshot 4" /></div>
 </section>
 <section>
-<div class="full-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/nick-fiori-headshots/nick-fiori-headshot-3.jpg" /></div>
+<div class="full-column-full no-padding margin-bottom-large"><img width="100%"  src="/img/projects/nick-fiori-headshots/nick-fiori-headshot-3.jpg" alt="Nick Fiori Headshot 3" /></div>
 </section>
