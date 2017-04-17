@@ -1,40 +1,39 @@
 .projects {
     margin-top: 2rem;
 
-
     ul.filter {
-      li {
-        position: relative;
-        display:block;
-        margin-right: 1em;
-        cursor: pointer;
+        li {
+            position: relative;
+            display: block;
+            margin-right: 1em;
+            cursor: pointer;
+            @include grid-media($neat-small-full) {
+                display: inline-block;
+            }
 
+            img {
+                position: relative;
+                display: inline-block;
+                height: 1em;
+                width: 1em;
+                top: 0.2em;
+            }
+        }
+    }
+
+    .one-thirds-column-full {
+        @include grid-column(1, $neat-grid-full);
+        padding: 0 $column-padding-small / 2;
         @include grid-media($neat-small-full) {
-          display:inline-block;
+            padding: 0 $column-padding-regular / 2;
         }
-
-        img {
-          position: relative;
-          display: inline-block;
-          height: 1em;
-          width: 1em;
-          top: .2em;
+        @include grid-media($neat-medium-full) {
+             @include grid-column(3);
         }
-      }
+        @include grid-media($neat-large-full) {
+             @include grid-column(4);
+        }
     }
-  .one-thirds-column-full {
-    @include grid-column(1, $neat-grid-full);
-    padding: 0 $column-padding-small / 2;
-    @include grid-media($neat-small-full) {
-        padding: 0 $column-padding-regular / 2;
-    }
-    @include grid-media($neat-medium-full) {
-         @include grid-column(3);
-    }
-    @include grid-media($neat-large-full) {
-         @include grid-column(4);
-    }
-  }
 }
 
 .project-image {
@@ -96,7 +95,42 @@
 /*--------------------
 Individual Project Page
 ---------------------*/
+.next,
+.prev {
+    position: fixed;
+    top: calc(50% - 50px);
+    width: 51px;
+    height: 100px;
+    display: table;
+    transition: width 0.5s ease-in-out;
 
+    &:hover {
+        width: 100px;
+
+        a {
+
+        }
+    }
+
+    a {
+        background: #000;
+        display: table-cell;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        vertical-align: middle;
+        color: #fff;
+        box-shadow:0px 0px 5px rgba(0,0,0,.5);
+    }
+}
+
+.next {
+    left: -1px;
+}
+
+.prev {
+    right: -1px;
+}
 
 .cover-image-wrap {
     height: 71vh;
@@ -127,27 +161,27 @@ Individual Project Page
     }
 
     h1 {
-      text-align: left;
-      position: relative;
-      @include grid-media($neat-larger) {
-        text-align: right;
-        top: -.2em;
-      }
+        text-align: left;
+        position: relative;
+        @include grid-media($neat-larger) {
+            text-align: right;
+            top: -.2em;
+        }
     }
 
     p a {
-      color:inherit;
-      text-shadow: none;
+        color: inherit;
+        text-shadow: none;
     }
 
     img {
-      box-shadow: 0px 0px 1.5rem rgba(0,0,0,.1);
-      transition: all 1s;
+        box-shadow: 0 0 1.5rem rgba(0,0,0,.1);
+        transition: all 1s;
 
-      &:hover {
-        z-index: 2;
-        box-shadow: 0px 0px 1.5rem rgba(0,0,0,.6);
-      }
+        &:hover {
+            z-index: 2;
+            box-shadow: 0 0 1.5rem rgba(0,0,0,.6);
+        }
     }
 
     .project-container-title {
@@ -167,26 +201,26 @@ Individual Project Page
         text-align: center;
 
         .project-container-info {
-          text-align: left;
-          font-size: 0.8em;
-          @include grid-column(1);
-          @include grid-media($neat-small) {
-               @include grid-column(2);
-          }
-          @include grid-media($neat-medium) {
-               @include grid-column(3);
-          }
-          @include grid-media($neat-larger) {
-               @include grid-column(4);
-          }
+            text-align: left;
+            font-size: 0.8em;
+            @include grid-column(1);
+            @include grid-media($neat-small) {
+                 @include grid-column(2);
+            }
+            @include grid-media($neat-medium) {
+                 @include grid-column(3);
+            }
+            @include grid-media($neat-larger) {
+                 @include grid-column(4);
+            }
         }
 
         .project-content {
-          margin-top:2em;
-          padding: 0 $column-padding-small;
-          @include grid-media($neat-small) {
-               padding: 0 $column-padding-regular;
-          }
+            margin-top: 2em;
+            padding: 0 $column-padding-small;
+            @include grid-media($neat-small) {
+                padding: 0 $column-padding-regular;
+            }
         }
     }
 }

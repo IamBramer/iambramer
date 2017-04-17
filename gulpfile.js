@@ -77,7 +77,6 @@ gulp.task('compress', function(cb){
  */
  gulp.task('images', function() {
      gulp.src('img/**/*.{jpg,png,gif}')
-
          .pipe(imageResize({
            width: 1800,
            upscale: false,
@@ -89,12 +88,11 @@ gulp.task('compress', function(cb){
          .pipe(imagemin())
          .pipe(gulp.dest('_site/img'));
      gulp.src('img/**/*.{svg,ico}')
-
         .pipe(imagemin())
         .pipe(gulp.dest('_site/img'));
  });
 
-gulp.task("deploy", ["min"], function () {
+gulp.task("deploy", function () {
     return gulp.src("./_site/**/*")
         .pipe(deploy());
 });
