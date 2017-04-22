@@ -92,11 +92,6 @@ gulp.task('compress', function(cb){
         .pipe(gulp.dest('_site/img'));
  });
 
-gulp.task("deploy", function () {
-    return gulp.src("./_site/**/*")
-        .pipe(deploy());
-});
-
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
@@ -116,3 +111,8 @@ gulp.task('default', ['browser-sync', 'watch']);
  * Runs minification and image compression
  */
 gulp.task('min', ['compress', 'images']);
+
+gulp.task("deploy", function () {
+    return gulp.src("./_site/**/*")
+        .pipe(deploy());
+});

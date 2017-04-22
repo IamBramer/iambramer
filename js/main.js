@@ -32,7 +32,7 @@ $(function() {
              * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
              * Please note, newContainer is available just after newContainerLoading is resolved!
              */
-
+             document.body.scrollTop = 0;
             var _this = this;
             var $el = $(this.newContainer);
 
