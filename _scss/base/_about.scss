@@ -30,7 +30,8 @@
     }
   }
   .about-info,
-  .about-info-2 {
+  .about-info-2,
+  .about-info-3 {
     min-height: calc(100vh - 100px);
     width:100%;
     display: flex;
@@ -94,6 +95,12 @@
       color: #fff;
     }
   }
+  .about-info-3 {
+    background-color: #111;
+    h4, {
+      color: #6544f4;
+    }
+  }
 }
 
 .purple {
@@ -112,4 +119,24 @@ a.white:hover, a.white:active, a.white:focus{
   font-weight: inherit;
   line-height: inherit;
   color: #fff;
+}
+
+.proud {
+  li {
+    display:inline-block;
+    width:auto;
+    text-align: center;
+  }
+  img{
+    height:3rem;
+    @include grid-media($neat-small) {
+         height:4rem;
+    }
+    @include grid-media($neat-medium) {
+         height:5rem;
+    }
+    @include grid-media($neat-larger) {
+         height:6rem;
+    }
+  }
 }

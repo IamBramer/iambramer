@@ -1,115 +1,84 @@
-/* ----- Set Velocity.js Animations ----- */
-$.Velocity
-    .RegisterEffect("transition.fadeIn", {
-        defaultDuration: 700,
-        calls: [
-            [ { opacity: 1 } ]
-        ]
-    });
-$.Velocity
-    .RegisterEffect("transition.fadeOut", {
-        defaultDuration: 700,
-        calls: [
-            [ { opacity: 0 } ]
-        ]
-    });
-
 $(function() {
-  var changedPage = false,
+    //Start Barba for PJAX
+    Barba.Pjax.start();
 
-    /* ----- Do this when a page loads ----- */
-    init = function() {
-      /* ----- This is where I would run any page specific functions ----- */
+    var FadeTransition = Barba.BaseTransition.extend({
+        start: function() {
+            /**
+             * This function is automatically called as soon the Transition starts
+             * this.newContainerLoading is a Promise for the loading of the new container
+             * (Barba.js also comes with an handy Promise polyfill!)
+             */
 
-      console.log("Initializing scripts");
-    },
+            // As soon the loading is finished and the old page is faded out, let's fade the new page
+            Promise
+                .all([this.newContainerLoading, this.fadeOut()])
+                .then(this.fadeIn.bind(this));
+        },
 
-    /* ----- Do this for ajax page loads ----- */
-    ajaxLoad = function(html) {
-      init();
+        fadeOut: function() {
+            /**
+             * this.oldContainer is the HTMLElement of the old Container
+             */
 
-      /* ----- Here you could maybe add logic to set the HTML title to the new page title ----- */
+            return $(this.oldContainer).animate({
+                opacity: 0
+            }).promise();
+        },
 
+        fadeIn: function() {
+            /**
+             * this.newContainer is the HTMLElement of the new Container
+             * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
+             * Please note, newContainer is available just after newContainerLoading is resolved!
+             */
 
-      /* ----- Used for popState event (back/forward browser buttons) ----- */
-      changedPage = true;
-    },
+            var _this = this;
+            var $el = $(this.newContainer);
 
-    loadPage = function(url) {
-      /* ----- Animate current content out ----- */
-      $('#content').velocity("transition.fadeOut", {
-            complete: function() {
-              $('html').velocity("scroll", {
-                duration: 0,
-                easing: "ease",
-                mobileHA: false
-              });
-              $("#content").load(url + " #content", function(){
-                $('#content').velocity("transition.fadeIn", {
-                  visibility: 'visible',
-                      complete: function() {
-                        ajaxLoad();
-                        console.log("Ajax Loaded");
-                      }
-                  });
-              });
-            }
-        });
+            $(this.oldContainer).hide();
 
-      /* ----- Animate new content in ----- */
+            $el.css({
+                visibility: 'visible',
+                opacity: 0
+            });
 
+            $el.animate({
+                opacity: 1
+            }, 400, function() {
+                /**
+                 * Do not forget to call .done() as soon your transition is finished!
+                 * .done() will automatically remove from the DOM the old Container
+                 */
 
+                _this.done();
+            });
+        }
+    });
+
+    /**
+     * Next step, you have to tell Barba to use the new Transition
+     */
+
+    Barba.Pjax.getTransition = function() {
+        /**
+         * Here you can use your own logic!
+         * For example you can use different Transition based on the current page or link...
+         */
+
+        return FadeTransition;
     };
 
-  /* ----- This runs on the first page load with no ajax ----- */
-  init();
+    $('.navigation').on('click', '.nav-trigger', function(event) {
+        // open primary navigation on mobile
+        event.preventDefault();
+        $('#menu').toggleClass('open');
+        console.log("Menu Clicked");
+    });
 
-  $(window).on("popstate", function(e) {
-    if (changedPage) loadPage(location.href);
-    console.log("Popstate happened");
-  });
-
-   $('.email').on('click', function (event) {
-    event.preventDefault();
-    var email = 'tyler@iambramer.com';
-    window.location = 'mailto:' + email;
-  });
-
-  /* ----- Do things on link click ----- */
-  $(document).on('click', 'a', function() {
-    var url = $(this).attr("href"),
-      title = $(this).text();
-
-    /* ----- Check if internal site link before doing Ajax ----- */
-    if (url.indexOf(document.domain) > -1 || url.indexOf(':') === -1) {
-
-      history.pushState({
-        url: url,
-        title: title
-      }, title, url);
-
-      if (url == '/') {
-          document.title = "IamBramer";
-      } else {
-          document.title = title + " - IamBramer";
-      }
-
-      loadPage(url);
-      return false;
-    }
-
-  });
-
-  $('.navigation').on('click', '.nav-trigger', function(event) {
-     // open primary navigation on mobile
-     event.preventDefault();
-     $('#menu').toggleClass('open');
-     console.log("Menu Clicked");
-   });
-
-   $('.navigation a').on('click', function(event) {
-      // open primary navigation on mobile
-      event.preventDefault();
-      $('#menu').removeClass('open');
+    $('.navigation a').on('click', function(event) {
+        // open primary navigation on mobile
+        event.preventDefault();
+        $('#menu').removeClass('open');
     });
 });
