@@ -1,7 +1,10 @@
 .navigation {
     background: #fff;
     height: $nav-height;
-    position: relative;
+    position: fixed;
+    width:100%;
+    top:0;
+    left:0;
     background: $nav-background-color;
     z-index: 100;
     letter-spacing: -.07em;

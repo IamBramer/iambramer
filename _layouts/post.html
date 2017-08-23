@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
-<div class="words">
-    <section>
-        <div class="full-column-full margin-bottom-large">
-            <h2>{{ page.title }}</h2>
-            <p class="meta">{{ page.date | date_to_string }}</p>
+<div class="barba-container" data-namespace="post">
+    <div class="words">
+        <section>
+            <div class="full-column-full margin-bottom-large">
+                <h2>{{ page.title }}</h2>
+                <p class="meta">{{ page.date | date_to_string }}</p>
 
-            <div class="post">
-                {{ content }}
+                <div class="post">
+                    {{ content }}
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </div>

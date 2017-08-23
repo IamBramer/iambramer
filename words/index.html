@@ -2,21 +2,22 @@
 layout: default
 title: Words
 ---
-<div class="words">
-    <section>
-        <div class="full-column-full">
+<div class="barba-container" data-namespace="words">
+    <div class="words">
+        <section>
+            <div class="full-column-full">
 
-            <h1>The Writings of a Mad Man</h1>
-            {% for post in site.categories.words %}
-              <div class="text">
-                  <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-                  <p class="meta">{{ post.date | date_to_string }}</p>
-                  {{ post.excerpt }}
+                <h1>The Writings of a Mad Man</h1> {% for post in site.categories.words %}
+                <div class="text">
+                    <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+                    <p class="meta">{{ post.date | date_to_string }}</p>
+                    {{ post.excerpt }}
 
-              </div>
+                </div>
 
-            {% endfor %}
-        </div>
+                {% endfor %}
+            </div>
 
-    </section>
+        </section>
+    </div>
 </div>

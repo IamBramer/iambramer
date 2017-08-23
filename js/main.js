@@ -1,5 +1,34 @@
 $(function() {
-    //Start Barba for PJAX
+
+    var Projects = Barba.BaseView.extend({
+        namespace: 'projects',
+        onEnter: function() {
+            $('#container').mixItUp({
+                animation: {
+                    duration: 1000,
+                    effects: 'fade translateY(10%)',
+                    easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+                    nudge: false,
+                    animateResizeContainer: false
+                }
+            });
+            // The new Container is ready and attached to the DOM.
+        },
+        onEnterCompleted: function() {
+            // The Transition has just finished.
+        },
+        onLeave: function() {
+          $('#container').mixItUp('destroy');
+            // A new Transition toward a new page has just started.
+        },
+        onLeaveCompleted: function() {
+            // The Container has just been removed from the DOM.
+        }
+    });
+
+    // Don't forget to init the view!
+    Projects.init();
+
     Barba.Pjax.start();
 
     var FadeTransition = Barba.BaseTransition.extend({
@@ -32,7 +61,7 @@ $(function() {
              * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
              * Please note, newContainer is available just after newContainerLoading is resolved!
              */
-             document.body.scrollTop = 0;
+            document.body.scrollTop = 0;
             var _this = this;
             var $el = $(this.newContainer);
 
@@ -81,4 +110,7 @@ $(function() {
         event.preventDefault();
         $('#menu').removeClass('open');
     });
+
+
+
 });

@@ -2,53 +2,46 @@
 layout: default
 title: IamBramer
 ---
-
-<section>
-    <div class="home-featured">
-      {% for post in site.categories.projects %}
-        {% if post.tags contains 'Design' and post.tags contains 'Featured' %}
-        <a href="{{ post.url }}">
-          <div class="featured">
-            <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
-            <div class="featured-info">
-              <div class="row">
-                <h3>Featured</h3>
-                <h2>Design</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-        {% endif %}
-      {% endfor %}
-        {% for post in site.categories.projects %}
-          {% if post.tags contains 'Photography' and post.tags contains 'Featured' %}
-          <a href="{{ post.url }}">
-            <div class="featured">
-              <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
-              <div class="featured-info">
-                <div class="row">
-                  <h3>Featured</h3>
-                  <h2>Photography</h2>
+<div class="barba-container" data-namespace="home">
+    <section>
+        <div class="home-featured">
+            {% for post in site.categories.projects %} {% if post.tags contains 'Design' and post.tags contains 'Featured' %}
+            <a href="{{ post.url }}">
+                <div class="featured">
+                    <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
+                    <div class="featured-info">
+                        <div class="row">
+                            <h3>Featured</h3>
+                            <h2>Design</h2>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </a>
-          {% endif %}
-        {% endfor %}
-        {% for post in site.categories.projects %}
-          {% if post.tags contains '3D' and post.tags contains 'Featured' %}
-          <a href="{{ post.url }}">
-            <div class="featured">
-              <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
-              <div class="featured-info">
-                <div class="row">
-                  <h3>Featured</h3>
-                  <h2>3D Render</h2>
+            </a>
+            {% endif %} {% endfor %} {% for post in site.categories.projects %} {% if post.tags contains 'Photography' and post.tags contains 'Featured' %}
+            <a href="{{ post.url }}">
+                <div class="featured">
+                    <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
+                    <div class="featured-info">
+                        <div class="row">
+                            <h3>Featured</h3>
+                            <h2>Photography</h2>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </a>
-          {% endif %}
-        {% endfor %}
-    </div>
-</section>
+            </a>
+            {% endif %} {% endfor %} {% for post in site.categories.projects %} {% if post.tags contains '3D' and post.tags contains 'Featured' %}
+            <a href="{{ post.url }}">
+                <div class="featured">
+                    <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
+                    <div class="featured-info">
+                        <div class="row">
+                            <h3>Featured</h3>
+                            <h2>3D Render</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {% endif %} {% endfor %}
+        </div>
+    </section>
+</div>

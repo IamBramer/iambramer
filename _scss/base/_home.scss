@@ -12,13 +12,11 @@
     }
 
     .featured {
-        height: calc(100vh - 100px);
+        height: calc(100vh - (#{$nav-height}*2));
         position: relative;
         padding: 0;
         overflow: hidden;
-
         @include grid-column(1, $neat-grid-full);
-
         @include grid-media($neat-medium-full) {
              @include grid-column(6);
         }
@@ -67,15 +65,15 @@
                 margin: 0;
                 text-align: center;
                 font-weight: bold;
-                font-size:3em;
+                font-size: 3em;
             }
         }
 
         &:hover {
-          .featured-image {
-            transform: scale(1.2);
-            transition: transform 10s;
-          }
+            .featured-image {
+                transform: scale(1.2);
+                transition: transform 10s;
+            }
         }
     }
 }

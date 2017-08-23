@@ -2,30 +2,35 @@
 layout: default
 title: Projects
 ---
+<div class="barba-container" data-namespace="projects">
 <div class="projects">
 <section>
     <div class="full-column-full margin-bottom-large">
         <h1>Projects</h1>
-        <ul class="filter">
-          <li>
+        <ul class="filter-list">
+          <li class="filter" data-filter=".photography">
             <img class="icon" src="/img/icons/camera.svg" /> Photography
           </li>
-          <li>
+          <li class="filter" data-filter=".website">
             <img class="icon" src="/img/icons/website.svg" /> Website
           </li>
-          <li>
+          <li class="filter" data-filter=".digital">
             <img class="icon" src="/img/icons/computer.svg" /> Digital Design
           </li>
-          <li>
+          <li class="filter" data-filter=".print">
             <img class="icon" src="/img/icons/print.svg" /> Print Design
           </li>
-          <li>
+          <li class="filter" data-filter=".3d">
             <img class="icon" src="/img/icons/3d.svg" /> 3D
           </li>
+          <li class="filter active" data-filter="all">
+             All Projects
+          </li>
         </ul>
+        <div id="container">
         {% for post in site.categories.projects %}
         <a href="{{ post.url }}">
-            <div class="one-thirds-column-full" style="background-image:url('/img/projects/{{ post.cover-image }}'); background-size: cover; background-position: center; padding:0;">
+            <div class="mix one-thirds-column-full {% for tag in post.tags %}{{ tag | downcase | replace: " ", "-" }} {% endfor %}" style="background-image:url('/img/projects/{{ post.cover-image }}'); background-size: cover; background-position: center; padding:0;">
                 <div class="project">
                     <div class="info-box">
                         {% if post.tags contains 'Photography' %}
@@ -45,6 +50,8 @@ title: Projects
             </div>
         </a>
         {% endfor %}
+      </div>
     </div>
 </section>
+</div>
 </div>

@@ -9,6 +9,7 @@ body-color: '7fc146'
 description: "My first job out of college was at a company called Max-R. About 6 months after working there, the idea of updating the website was being thrown around, so I took it upon myself to begin creating wireframes and mockups."
 description-two: "After a month or two of work, I had a number of different layouts and experiences I had explored. I then created working prototypes of what was determined to be the best design."
 tags:
+- Website
 - Design
 - Digital
 ---

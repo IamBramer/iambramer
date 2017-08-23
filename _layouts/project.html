@@ -1,51 +1,52 @@
 ---
 layout: default
 ---
-<div class="">
-<section>
-    <div class="full-column cover-image-wrap">
-        <div class="cover-image" style="background-image: url('/img/projects/{{ page.cover-image }}');"></div>
-    </div>
-</section>
-
-
-{% if page.next_in_category != nil %}
-  <div class="prev">
-  	<a href="{{page.next_in_category.url}}" class="next-link">Next</a>
-  </div>
-{% endif %}
-{% if page.previous_in_category != nil %}
-  <div class="next">
-    <a href="{{page.previous_in_category.url}}" class="previous-link">Prev</a>
-  </div>
-{% endif %}
-
-<section>
-    <div class="margin-bottom-large project-container" style="background-color: #{{ page.project-color }};">
-      <div class="project-container-title">
-        <h1 style="color: #{{ page.header-color }};">{{ page.title }}</h1>
-      </div>
-        <div class="project-info">
-          <section>
-            <div class="project-container-info" style="color: #{{ page.body-color }}">
-                <p>
-                    {{ page.description }}
-                </p>
+<div class="barba-container" data-namespace="project">
+    <div class="">
+        <section>
+            <div class="full-column cover-image-wrap">
+                <div class="cover-image" style="background-image: url('/img/projects/{{ page.cover-image }}');"></div>
             </div>
-            <div class="project-container-info" style="color: #{{ page.body-color }}">
-                <p>
-                    {{ page.description-two }}
-                </p>
-            </div>
-            </section>
-            <section>
-              <div class="project-content" style="color: #{{ page.body-color }}">
-                  {{ content }}
-              </div>
-            </section>
+        </section>
 
+
+        {% if page.next_in_category != nil %}
+        <div class="prev">
+            <a href="{{page.next_in_category.url}}" class="next-link">Next</a>
         </div>
-    </div>
-</section>
+        {% endif %} {% if page.previous_in_category != nil %}
+        <div class="next">
+            <a href="{{page.previous_in_category.url}}" class="previous-link">Prev</a>
+        </div>
+        {% endif %}
 
+        <section>
+            <div class="margin-bottom-large project-container" style="background-color: #{{ page.project-color }};">
+                <div class="project-container-title">
+                    <h1 style="color: #{{ page.header-color }};">{{ page.title }}</h1>
+                </div>
+                <div class="project-info">
+                    <section>
+                        <div class="project-container-info" style="color: #{{ page.body-color }}">
+                            <p>
+                                {{ page.description }}
+                            </p>
+                        </div>
+                        <div class="project-container-info" style="color: #{{ page.body-color }}">
+                            <p>
+                                {{ page.description-two }}
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="project-content" style="color: #{{ page.body-color }}">
+                            {{ content }}
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
 </div>
