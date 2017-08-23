@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -54,28 +54,29 @@
 
 
     <div id="barba-wrapper">
-        <div class="barba-container">
-            <div class="words">
-    <section>
-        <div class="full-column-full">
 
-            <h1>The Writings of a Mad Man</h1>
-            
-              <div class="text">
-                  <a href="/words/blog/2017/04/12/Under-Development.html"><h2>Under Development</h2></a>
-                  <p class="meta">12 Apr 2017</p>
-                  <p>This is under development</p>
+            <div class="barba-container" data-namespace="words">
+    <div class="words">
+        <section>
+            <div class="full-column-full">
+
+                <h1>The Writings of a Mad Man</h1> 
+                <div class="text">
+                    <a href="/words/blog/2017/04/12/Under-Development.html"><h2>Under Development</h2></a>
+                    <p class="meta">12 Apr 2017</p>
+                    <p>This is under development</p>
 
 
-              </div>
+                </div>
 
-            
-        </div>
+                
+            </div>
 
-    </section>
+        </section>
+    </div>
 </div>
 
-        </div>
+
     </div>
 
     <!-- jQuery library -->
@@ -84,7 +85,11 @@
 <!-- Loading Bar -->
 <script src="/js/pace.min.js"></script>
 
+<!-- PJAX for page animations -->
 <script src="/js/barba.min.js"></script>
+
+<!-- Work page filter -->
+<script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
 
 <!-- Animation replacement for animate() -->
 <script src="/js/velocity.min.js"></script>
@@ -92,6 +97,8 @@
 
 <!-- Main javascript file -->
 <script src="/js/main.js"></script>
+
+
 
 <script>
     window.ga = window.ga || function() {

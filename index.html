@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -54,112 +54,52 @@
 
 
     <div id="barba-wrapper">
-        <div class="barba-container">
-            <section>
-    <div class="home-featured">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        <a href="/projects/project/2017/01/03/just-north-of-jam.html">
-          <div class="featured">
-            <div class="featured-image" style="background-image:url('/img/projects/just-north-of-jam/just-north-of-jam-mockup.jpg');"></div>
-            <div class="featured-info">
-              <div class="row">
-                <h3>Featured</h3>
-                <h2>Design</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-        
-      
-        
-      
-        
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-          <a href="/projects/project/2017/01/02/nick-fiori-headshots.html">
-            <div class="featured">
-              <div class="featured-image" style="background-image:url('/img/projects/nick-fiori-headshots/nick-fiori-headshot-1.jpg');"></div>
-              <div class="featured-info">
-                <div class="row">
-                  <h3>Featured</h3>
-                  <h2>Photography</h2>
-                </div>
-              </div>
-            </div>
-          </a>
-          
-        
-          
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-          <a href="/projects/project/2017/01/01/render-experiment-no-1.html">
-            <div class="featured">
-              <div class="featured-image" style="background-image:url('/img/projects/render-experiment-no-1/render-experiment-no-1-image-1.jpg');"></div>
-              <div class="featured-info">
-                <div class="row">
-                  <h3>Featured</h3>
-                  <h2>3D Render</h2>
-                </div>
-              </div>
-            </div>
-          </a>
-          
-        
-    </div>
-</section>
 
+            <div class="barba-container" data-namespace="home">
+    <section>
+        <div class="home-featured">
+                           
+            <a href="/projects/project/2017/01/03/just-north-of-jam.html">
+                <div class="featured">
+                    <div class="featured-image" style="background-image:url('/img/projects/just-north-of-jam/just-north-of-jam-mockup.jpg');"></div>
+                    <div class="featured-info">
+                        <div class="row">
+                            <h3>Featured</h3>
+                            <h2>Design</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+                                   
+            <a href="/projects/project/2017/01/02/nick-fiori-headshots.html">
+                <div class="featured">
+                    <div class="featured-image" style="background-image:url('/img/projects/nick-fiori-headshots/nick-fiori-headshot-1.jpg');"></div>
+                    <div class="featured-info">
+                        <div class="row">
+                            <h3>Featured</h3>
+                            <h2>Photography</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+                                   
+            <a href="/projects/project/2017/01/01/render-experiment-no-1.html">
+                <div class="featured">
+                    <div class="featured-image" style="background-image:url('/img/projects/render-experiment-no-1/render-experiment-no-1-image-1.jpg');"></div>
+                    <div class="featured-info">
+                        <div class="row">
+                            <h3>Featured</h3>
+                            <h2>3D Render</h2>
+                        </div>
+                    </div>
+                </div>
+            </a>
+             
         </div>
+    </section>
+</div>
+
+
     </div>
 
     <!-- jQuery library -->
@@ -168,7 +108,11 @@
 <!-- Loading Bar -->
 <script src="/js/pace.min.js"></script>
 
+<!-- PJAX for page animations -->
 <script src="/js/barba.min.js"></script>
+
+<!-- Work page filter -->
+<script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
 
 <!-- Animation replacement for animate() -->
 <script src="/js/velocity.min.js"></script>
@@ -176,6 +120,8 @@
 
 <!-- Main javascript file -->
 <script src="/js/main.js"></script>
+
+
 
 <script>
     window.ga = window.ga || function() {

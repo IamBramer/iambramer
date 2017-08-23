@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -54,35 +54,40 @@
 
 
     <div id="barba-wrapper">
-        <div class="barba-container">
-            <div class="projects">
+
+            <div class="barba-container" data-namespace="projects">
+<div class="projects">
 <section>
     <div class="full-column-full margin-bottom-large">
         <h1>Projects</h1>
-        <ul class="filter">
-          <li>
+        <ul class="filter-list">
+          <li class="filter" data-filter=".photography">
             <img class="icon" src="/img/icons/camera.svg" /> Photography
           </li>
-          <li>
+          <li class="filter" data-filter=".website">
             <img class="icon" src="/img/icons/website.svg" /> Website
           </li>
-          <li>
+          <li class="filter" data-filter=".digital">
             <img class="icon" src="/img/icons/computer.svg" /> Digital Design
           </li>
-          <li>
+          <li class="filter" data-filter=".print">
             <img class="icon" src="/img/icons/print.svg" /> Print Design
           </li>
-          <li>
+          <li class="filter" data-filter=".3d">
             <img class="icon" src="/img/icons/3d.svg" /> 3D
           </li>
+          <li class="filter active" data-filter="all">
+             All Projects
+          </li>
         </ul>
+        <div id="container">
         
         <a href="/projects/project/2017/01/10/max-r-website.html">
-            <div class="one-thirds-column-full" style="background-image:url('/img/projects/max-r-website/max-r-website-cover.jpg'); background-size: cover; background-position: center; padding:0;">
+            <div class="mix one-thirds-column-full website design digital " style="background-image:url('/img/projects/max-r-website/max-r-website-cover.jpg'); background-size: cover; background-position: center; padding:0;">
                 <div class="project">
                     <div class="info-box">
                         
-                        <img class="icon" src="/img/icons/computer.svg" />
+                        <img class="icon" src="/img/icons/website.svg" />
                         
                         <h2>Max-R Website</h2>
                     </div>
@@ -91,7 +96,7 @@
         </a>
         
         <a href="/projects/project/2017/01/09/zane-statz-packer-fence-mural.html">
-            <div class="one-thirds-column-full" style="background-image:url('/img/projects/zane-packer-fence/zane-packer-fence-1.jpg'); background-size: cover; background-position: center; padding:0;">
+            <div class="mix one-thirds-column-full photography " style="background-image:url('/img/projects/zane-packer-fence/zane-packer-fence-1.jpg'); background-size: cover; background-position: center; padding:0;">
                 <div class="project">
                     <div class="info-box">
                         
@@ -104,7 +109,7 @@
         </a>
         
         <a href="/projects/project/2017/01/08/2016-resume-design.html">
-            <div class="one-thirds-column-full" style="background-image:url('/img/projects/2016-resume-design/2016-resume-design-1.jpg'); background-size: cover; background-position: center; padding:0;">
+            <div class="mix one-thirds-column-full design print " style="background-image:url('/img/projects/2016-resume-design/2016-resume-design-1.jpg'); background-size: cover; background-position: center; padding:0;">
                 <div class="project">
                     <div class="info-box">
                         
@@ -117,7 +122,7 @@
         </a>
         
         <a href="/projects/project/2017/01/07/render-experiment-no-4.html">
-            <div class="one-thirds-column-full" style="background-image:url('/img/projects/render-experiment-no-4/render-experiment-no-4-image-1.jpg'); background-size: cover; background-position: center; padding:0;">
+            <div class="mix one-thirds-column-full 3d " style="background-image:url('/img/projects/render-experiment-no-4/render-experiment-no-4-image-1.jpg'); background-size: cover; background-position: center; padding:0;">
                 <div class="project">
                     <div class="info-box">
                         
@@ -130,7 +135,7 @@
         </a>
         
         <a href="/projects/project/2017/01/06/dodge-dart-brochure.html">
-            <div class="one-thirds-column-full" style="background-image:url('/img/projects/dodge-dart-brochure/dodge-dart-brochure-7.jpg'); background-size: cover; background-position: center; padding:0;">
+            <div class="mix one-thirds-column-full design print " style="background-image:url('/img/projects/dodge-dart-brochure/dodge-dart-brochure-7.jpg'); background-size: cover; background-position: center; padding:0;">
                 <div class="project">
                     <div class="info-box">
                         
@@ -143,7 +148,7 @@
         </a>
         
         <a href="/projects/project/2017/01/05/render-experiment-no-3.html">
-            <div class="one-thirds-column-full" style="background-image:url('/img/projects/render-experiment-no-3/render-experiment-no-3-image-1.jpg'); background-size: cover; background-position: center; padding:0;">
+            <div class="mix one-thirds-column-full 3d " style="background-image:url('/img/projects/render-experiment-no-3/render-experiment-no-3-image-1.jpg'); background-size: cover; background-position: center; padding:0;">
                 <div class="project">
                     <div class="info-box">
                         
@@ -156,7 +161,7 @@
         </a>
         
         <a href="/projects/project/2017/01/04/render-experiment-no-2.html">
-            <div class="one-thirds-column-full" style="background-image:url('/img/projects/render-experiment-no-2/render-experiment-no-2-image-1.jpg'); background-size: cover; background-position: center; padding:0;">
+            <div class="mix one-thirds-column-full 3d " style="background-image:url('/img/projects/render-experiment-no-2/render-experiment-no-2-image-1.jpg'); background-size: cover; background-position: center; padding:0;">
                 <div class="project">
                     <div class="info-box">
                         
@@ -169,7 +174,7 @@
         </a>
         
         <a href="/projects/project/2017/01/03/just-north-of-jam.html">
-            <div class="one-thirds-column-full" style="background-image:url('/img/projects/just-north-of-jam/just-north-of-jam-mockup.jpg'); background-size: cover; background-position: center; padding:0;">
+            <div class="mix one-thirds-column-full design print featured " style="background-image:url('/img/projects/just-north-of-jam/just-north-of-jam-mockup.jpg'); background-size: cover; background-position: center; padding:0;">
                 <div class="project">
                     <div class="info-box">
                         
@@ -182,7 +187,7 @@
         </a>
         
         <a href="/projects/project/2017/01/02/nick-fiori-headshots.html">
-            <div class="one-thirds-column-full" style="background-image:url('/img/projects/nick-fiori-headshots/nick-fiori-headshot-1.jpg'); background-size: cover; background-position: center; padding:0;">
+            <div class="mix one-thirds-column-full photography featured " style="background-image:url('/img/projects/nick-fiori-headshots/nick-fiori-headshot-1.jpg'); background-size: cover; background-position: center; padding:0;">
                 <div class="project">
                     <div class="info-box">
                         
@@ -195,7 +200,7 @@
         </a>
         
         <a href="/projects/project/2017/01/01/render-experiment-no-1.html">
-            <div class="one-thirds-column-full" style="background-image:url('/img/projects/render-experiment-no-1/render-experiment-no-1-image-1.jpg'); background-size: cover; background-position: center; padding:0;">
+            <div class="mix one-thirds-column-full 3d featured " style="background-image:url('/img/projects/render-experiment-no-1/render-experiment-no-1-image-1.jpg'); background-size: cover; background-position: center; padding:0;">
                 <div class="project">
                     <div class="info-box">
                         
@@ -207,11 +212,13 @@
             </div>
         </a>
         
+      </div>
     </div>
 </section>
 </div>
+</div>
 
-        </div>
+
     </div>
 
     <!-- jQuery library -->
@@ -220,7 +227,11 @@
 <!-- Loading Bar -->
 <script src="/js/pace.min.js"></script>
 
+<!-- PJAX for page animations -->
 <script src="/js/barba.min.js"></script>
+
+<!-- Work page filter -->
+<script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
 
 <!-- Animation replacement for animate() -->
 <script src="/js/velocity.min.js"></script>
@@ -228,6 +239,8 @@
 
 <!-- Main javascript file -->
 <script src="/js/main.js"></script>
+
+
 
 <script>
     window.ga = window.ga || function() {
