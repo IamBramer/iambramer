@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="utf-8">
@@ -21,12 +21,17 @@
         } catch (e) {}
     </script>
     <link async href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-
+    <style>
+      .no-js img.lazyload {
+      	display: none;
+      }
+  </style>
 </head>
 
 <body>
 
     <nav class="navigation">
+  <div class="nav-wrap">
   <div class="logo">
     <span><a href="/"><strong>I</strong>am<strong>Bramer</strong></a></span>
   </div>
@@ -50,83 +55,78 @@
         <a href="/contact/">Contact</a>
       </li>
     </ul>
+
+  </div>
 </nav>
 
 
     <div id="barba-wrapper">
 
             <div class="barba-container" data-namespace="about">
-    <div class="about margin-bottom-large">
+  <div class="about">
+    <div class="page-wrap">
+      <div class="about-info fade-me">
+        <div class="about-wrap">
+          <h4 class="fade-me">About</h4>
+          <h1 class="fade-me">IamBramer is the identity of <span class="purple">Tyler Bramer</span>, a Graphic Designer, Photographer, Web Developer & 3D Artist from Green Bay, Wisconsin.</h1>
+          <p class="fade-me">
+            Some of his work can be found on <a href="https://www.behance.net/IamBramer" target="_blank" rel="noopener">Behance</a>, his incoherent ramblings can be found on <a href="https://twitter.com/IamBramer" target="_blank" rel="noopener">Twitter</a>            or more organized thoughts on this <a href="/words">Blog</a>, and you connect with him professionaly on <a href="https://www.linkedin.com/in/tylerbramer/" target="_blank" rel="noopener">Linkedin</a>.
+          </p>
+        </div>
+      </div>
 
-        <section>
-            <div class="full-column-full">
-                <div class="about-info">
-                    <div class="half-column">
-                        <h4>About</h4>
-                        <h1>IamBramer is the identity of <span class="purple">Tyler Bramer</span>, a Graphic Designer, Photographer, Web Developer & 3D Artist from Green Bay, Wisconsin.</h1>
-                        <p>
-                            Some of his work can be found on <a href="https://www.behance.net/IamBramer" target="_blank">Behance</a>, his incoherent ramblings can be found on <a href="https://twitter.com/IamBramer" target="_blank">Twitter</a> or more
-                            organized thoughts on this <a href="/words">Blog</a>, and you connect with him professionaly on <a href="https://www.linkedin.com/in/tylerbramer/" target="_blank">Linkedin</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="full-column-full">
-                <div class="about-info-2">
-                    <div class="half-column">
-                        <h4>Understand</h4>
-                        <h1>I believe <span class="white">passion</span> is everything. It doesn't matter what its for, just pursue it. <span class="white">Creativity</span> is my passion, and I will forever be chasing after it.</h1>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="full-column-full">
-                <div class="about-info-3">
-                    <div class="half-column">
-                        <h4>This site is proudly built with:</h4>
-                        <ul class="proud">
-                            <li>
-                                <a href="https://github.com/home" target="_blank">
+
+
+      <div class="about-info-2 fade-me">
+        <div class="about-wrap">
+          <h4 class="fade-me">Understand</h4>
+          <h1 class="fade-me">I believe <span class="white">passion</span> is everything. It doesn't matter what its for, just pursue it. <span class="white">Creativity</span> is my passion, and I will forever be chasing after it.</h1>
+        </div>
+      </div>
+
+
+      <div class="about-info-3 fade-me">
+        <div class="about-wrap">
+          <h4 class="fade-me">This site is proudly built with:</h4>
+          <ul class="proud">
+            <li class="fade-me">
+              <a href="https://github.com/home" target="_blank" rel="noopener">
                                     <img src="/img/about/github.svg" />
                                 </a>
-                            </li>
-                            <li>
-                                <a href="http://gulpjs.com/" target="_blank">
+            </li>
+            <li class="fade-me">
+              <a href="http://gulpjs.com/" target="_blank" rel="noopener">
                                     <img src="/img/about/gulp.svg" />
                                 </a>
-                            </li>
-                            <li>
-                                <a href="https://jekyllrb.com/" target="_blank">
+            </li>
+            <li class="fade-me">
+              <a href="https://jekyllrb.com/" target="_blank" rel="noopener">
                                     <img src="/img/about/jekyll.svg" /></a>
-                            </li>
-                            <li>
-                                <a href="https://atom.io/" target="_blank">
+            </li>
+            <li class="fade-me">
+              <a href="https://atom.io/" target="_blank" rel="noopener">
                                     <img src="/img/about/atom.svg" />
                                 </a>
-                            </li>
-                            <li>
-                                <a href="http://neat.bourbon.io/" target="_blank">
+            </li>
+            <li class="fade-me">
+              <a href="http://neat.bourbon.io/" target="_blank" rel="noopener">
                                     <img src="/img/about/neat.svg" />
                                 </a>
-                            </li>
-                        </ul>
-                        <h4>And hosted with:</h4>
-                        <ul class="proud">
-                            <li>
-                                <a href="https://pages.github.com/" target="_blank">
+            </li>
+          </ul>
+          <h4 class="fade-me">And hosted with:</h4>
+          <ul class="proud">
+            <li class="fade-me">
+              <a href="https://pages.github.com/" target="_blank" rel="noopener">
                                     <img src="/img/about/github-pages.svg" />
                                 </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </li>
+          </ul>
+        </div>
+      </div>
 
     </div>
+  </div>
 </div>
 
 
@@ -135,23 +135,36 @@
     <!-- jQuery library -->
 <script src="/js/jquery-3.2.0.min.js"></script>
 
+<!-- jQuery library -->
+<script src="/js/modernizr.min.js"></script>
+
 <!-- Loading Bar -->
 <script src="/js/pace.min.js"></script>
 
 <!-- PJAX for page animations -->
 <script src="/js/barba.min.js"></script>
 
-<!-- Work page filter -->
-<script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<!-- Lazysizes function for loading ajax images -->
+<script src="/js/lazysizes.min.js"></script>
 
 <!-- Animation replacement for animate() -->
 <script src="/js/velocity.min.js"></script>
 <script src="/js/velocity-ui.min.js"></script>
 
+<!-- Tilt function for images -->
+<script src="/js/tilt.jquery.min.js"></script>
+
+<!-- Parallax function for project pages -->
+<script src="/js/parallax.js"></script>
+
+<!-- Scroll reveal Animation -->
+<script src="/js/scrollreveal.min.js"></script>
+
+<!-- Pollyfill for object-fit -->
+<script src="/js/picturefill.min.js"></script>
+
 <!-- Main javascript file -->
 <script src="/js/main.js"></script>
-
-
 
 <script>
     window.ga = window.ga || function() {

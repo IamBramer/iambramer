@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="utf-8">
@@ -21,12 +21,17 @@
         } catch (e) {}
     </script>
     <link async href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-
+    <style>
+      .no-js img.lazyload {
+      	display: none;
+      }
+  </style>
 </head>
 
 <body>
 
     <nav class="navigation">
+  <div class="nav-wrap">
   <div class="logo">
     <span><a href="/"><strong>I</strong>am<strong>Bramer</strong></a></span>
   </div>
@@ -50,173 +55,407 @@
         <a href="/contact/">Contact</a>
       </li>
     </ul>
+
+  </div>
 </nav>
 
 
     <div id="barba-wrapper">
 
             <div class="barba-container" data-namespace="projects">
-<div class="projects">
-<section>
-    <div class="full-column-full margin-bottom-large">
-        <h1>Projects</h1>
-        <ul class="filter-list">
-          <li class="filter" data-filter=".photography">
-            <img class="icon" src="/img/icons/camera.svg" /> Photography
-          </li>
-          <li class="filter" data-filter=".website">
-            <img class="icon" src="/img/icons/website.svg" /> Website
-          </li>
-          <li class="filter" data-filter=".digital">
-            <img class="icon" src="/img/icons/computer.svg" /> Digital Design
-          </li>
-          <li class="filter" data-filter=".print">
-            <img class="icon" src="/img/icons/print.svg" /> Print Design
-          </li>
-          <li class="filter" data-filter=".3d">
-            <img class="icon" src="/img/icons/3d.svg" /> 3D
-          </li>
-          <li class="filter active" data-filter="all">
-             All Projects
-          </li>
-        </ul>
-        <div id="container">
+
+  <div class="page-wrap">
+    <h1>Projects</h1>
+    <ul class="filter-list">
+      <a href="/photography/">
+        <li class="filter" data-filter=".photography">
+          <img class="icon" src="/img/icons/camera.svg" /> Photography
+        </li>
+      </a>
+      <a href="/website/">
+        <li class="filter" data-filter=".website">
+          <img class="icon" src="/img/icons/website.svg" /> Website
+        </li>
+      </a>
+      <a href="/digital/">
+        <li class="filter" data-filter=".digital">
+          <img class="icon" src="/img/icons/computer.svg" /> Digital Design
+        </li>
+      </a>
+      <a href="/print/">
+        <li class="filter" data-filter=".print">
+          <img class="icon" src="/img/icons/print.svg" /> Print Design
+        </li>
+      </a>
+      <a href="/3d/">
+        <li class="filter" data-filter=".3d">
+          <img class="icon" src="/img/icons/3d.svg" /> 3D
+        </li>
+      </a>
+      <a href="/projects/">
+        <li class="filter active" data-filter="all">
+          All Projects
+        </li>
+      </a>
+    </ul>
+    <div id="container">
+      <div class="grid-2">
+
         
-        <a href="/projects/project/2017/01/10/max-r-website.html">
-            <div class="mix one-thirds-column-full website design digital " style="background-image:url('/img/projects/max-r-website/max-r-website-cover.jpg'); background-size: cover; background-position: center; padding:0;">
-                <div class="project">
-                    <div class="info-box">
-                        
-                        <img class="icon" src="/img/icons/website.svg" />
-                        
-                        <h2>Max-R Website</h2>
-                    </div>
+        <div class="grid-2_half mix website design digital ">
+          <a href="/projects/project/2017/01/10/max-r-website.html">
+            <div class="project-card fade-me">
+              <!-- Ratio box sets height of image container -->
+              <div class="ratio-box">
+
+                <!-- Project Icon -->
+                <div class="project-type">
+                  
+                  <img class="icon" src="/img/icons/website.svg" /> 
                 </div>
+                <!-- Lazy Load of CDN image -->
+                <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1511397985/max-r-website-cover_dmzkqn.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511397985/max-r-website-cover_dmzkqn.jpg 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511397985/max-r-website-cover_dmzkqn.jpg 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511397985/max-r-website-cover_dmzkqn.jpg 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511397985/max-r-website-cover_dmzkqn.jpg 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/v1511397985/max-r-website-cover_dmzkqn.jpg"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511397985/max-r-website-cover_dmzkqn.jpg 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511397985/max-r-website-cover_dmzkqn.jpg 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511397985/max-r-website-cover_dmzkqn.jpg 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511397985/max-r-website-cover_dmzkqn.jpg 800w">
+                </noscript>
+              </div>
+              <div class="shadow-image">
+                <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1511397985/max-r-website-cover_dmzkqn.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511397985/max-r-website-cover_dmzkqn.jpg 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511397985/max-r-website-cover_dmzkqn.jpg 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511397985/max-r-website-cover_dmzkqn.jpg 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511397985/max-r-website-cover_dmzkqn.jpg 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/v1511397985/max-r-website-cover_dmzkqn.jpg"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511397985/max-r-website-cover_dmzkqn.jpg 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511397985/max-r-website-cover_dmzkqn.jpg 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511397985/max-r-website-cover_dmzkqn.jpg 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511397985/max-r-website-cover_dmzkqn.jpg 800w">
+                </noscript>
+              </div>
+
+              <div class="project-info">
+
+                <h2><span>Max-R Website</span></h2>
+              </div>
             </div>
-        </a>
+          </a>
+        </div>
         
-        <a href="/projects/project/2017/01/09/zane-statz-packer-fence-mural.html">
-            <div class="mix one-thirds-column-full photography " style="background-image:url('/img/projects/zane-packer-fence/zane-packer-fence-1.jpg'); background-size: cover; background-position: center; padding:0;">
-                <div class="project">
-                    <div class="info-box">
-                        
-                        <img class="icon" src="/img/icons/camera.svg" />
-                        
-                        <h2>Zane Statz - Packer Fence Mural</h2>
-                    </div>
+        <div class="grid-2_half mix photography ">
+          <a href="/projects/project/2017/01/09/zane-statz-packer-fence-mural.html">
+            <div class="project-card fade-me">
+              <!-- Ratio box sets height of image container -->
+              <div class="ratio-box">
+
+                <!-- Project Icon -->
+                <div class="project-type">
+                  
+                  <img class="icon" src="/img/icons/camera.svg" /> 
                 </div>
+                <!-- Lazy Load of CDN image -->
+                <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1511398664/zane-packer-fence-cover_dxca3k.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511398664/zane-packer-fence-cover_dxca3k.jpg 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511398664/zane-packer-fence-cover_dxca3k.jpg 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511398664/zane-packer-fence-cover_dxca3k.jpg 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511398664/zane-packer-fence-cover_dxca3k.jpg 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/v1511398664/zane-packer-fence-cover_dxca3k.jpg"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511398664/zane-packer-fence-cover_dxca3k.jpg 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511398664/zane-packer-fence-cover_dxca3k.jpg 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511398664/zane-packer-fence-cover_dxca3k.jpg 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511398664/zane-packer-fence-cover_dxca3k.jpg 800w">
+                </noscript>
+              </div>
+              <div class="shadow-image">
+                <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1511398664/zane-packer-fence-cover_dxca3k.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511398664/zane-packer-fence-cover_dxca3k.jpg 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511398664/zane-packer-fence-cover_dxca3k.jpg 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511398664/zane-packer-fence-cover_dxca3k.jpg 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511398664/zane-packer-fence-cover_dxca3k.jpg 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/v1511398664/zane-packer-fence-cover_dxca3k.jpg"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511398664/zane-packer-fence-cover_dxca3k.jpg 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511398664/zane-packer-fence-cover_dxca3k.jpg 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511398664/zane-packer-fence-cover_dxca3k.jpg 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511398664/zane-packer-fence-cover_dxca3k.jpg 800w">
+                </noscript>
+              </div>
+
+              <div class="project-info">
+
+                <h2><span>Zane Statz - Packer Fence Mural</span></h2>
+              </div>
             </div>
-        </a>
+          </a>
+        </div>
         
-        <a href="/projects/project/2017/01/08/2016-resume-design.html">
-            <div class="mix one-thirds-column-full design print " style="background-image:url('/img/projects/2016-resume-design/2016-resume-design-1.jpg'); background-size: cover; background-position: center; padding:0;">
-                <div class="project">
-                    <div class="info-box">
-                        
-                        <img class="icon" src="/img/icons/print.svg" />
-                        
-                        <h2>2016 Resume Design</h2>
-                    </div>
+        <div class="grid-2_half mix design print ">
+          <a href="/projects/project/2017/01/08/2016-resume-design.html">
+            <div class="project-card fade-me">
+              <!-- Ratio box sets height of image container -->
+              <div class="ratio-box">
+
+                <!-- Project Icon -->
+                <div class="project-type">
+                  
+                  <img class="icon" src="/img/icons/print.svg" /> 
                 </div>
+                <!-- Lazy Load of CDN image -->
+                <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1511402963/2016-resume-design-cover_oybrgg.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511402963/2016-resume-design-cover_oybrgg.jpg 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511402963/2016-resume-design-cover_oybrgg.jpg 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511402963/2016-resume-design-cover_oybrgg.jpg 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511402963/2016-resume-design-cover_oybrgg.jpg 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/v1511402963/2016-resume-design-cover_oybrgg.jpg"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511402963/2016-resume-design-cover_oybrgg.jpg 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511402963/2016-resume-design-cover_oybrgg.jpg 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511402963/2016-resume-design-cover_oybrgg.jpg 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511402963/2016-resume-design-cover_oybrgg.jpg 800w">
+                </noscript>
+              </div>
+              <div class="shadow-image">
+                <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1511402963/2016-resume-design-cover_oybrgg.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511402963/2016-resume-design-cover_oybrgg.jpg 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511402963/2016-resume-design-cover_oybrgg.jpg 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511402963/2016-resume-design-cover_oybrgg.jpg 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511402963/2016-resume-design-cover_oybrgg.jpg 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/v1511402963/2016-resume-design-cover_oybrgg.jpg"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511402963/2016-resume-design-cover_oybrgg.jpg 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511402963/2016-resume-design-cover_oybrgg.jpg 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511402963/2016-resume-design-cover_oybrgg.jpg 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511402963/2016-resume-design-cover_oybrgg.jpg 800w">
+                </noscript>
+              </div>
+
+              <div class="project-info">
+
+                <h2><span>2016 Resume Design</span></h2>
+              </div>
             </div>
-        </a>
+          </a>
+        </div>
         
-        <a href="/projects/project/2017/01/07/render-experiment-no-4.html">
-            <div class="mix one-thirds-column-full 3d " style="background-image:url('/img/projects/render-experiment-no-4/render-experiment-no-4-image-1.jpg'); background-size: cover; background-position: center; padding:0;">
-                <div class="project">
-                    <div class="info-box">
-                        
-                        <img class="icon" src="/img/icons/3d.svg" />
-                        
-                        <h2>Render Experiment No.4</h2>
-                    </div>
+        <div class="grid-2_half mix design print ">
+          <a href="/projects/project/2017/01/06/dodge-dart-brochure.html">
+            <div class="project-card fade-me">
+              <!-- Ratio box sets height of image container -->
+              <div class="ratio-box">
+
+                <!-- Project Icon -->
+                <div class="project-type">
+                  
+                  <img class="icon" src="/img/icons/print.svg" /> 
                 </div>
+                <!-- Lazy Load of CDN image -->
+                <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 800w">
+                </noscript>
+              </div>
+              <div class="shadow-image">
+                <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403198/dodge-dart-brochure-cover_zx7qy2.jpg 800w">
+                </noscript>
+              </div>
+
+              <div class="project-info">
+
+                <h2><span>Dodge Dart Brochure</span></h2>
+              </div>
             </div>
-        </a>
+          </a>
+        </div>
         
-        <a href="/projects/project/2017/01/06/dodge-dart-brochure.html">
-            <div class="mix one-thirds-column-full design print " style="background-image:url('/img/projects/dodge-dart-brochure/dodge-dart-brochure-7.jpg'); background-size: cover; background-position: center; padding:0;">
-                <div class="project">
-                    <div class="info-box">
-                        
-                        <img class="icon" src="/img/icons/print.svg" />
-                        
-                        <h2>Dodge Dart Brochure</h2>
-                    </div>
+        <div class="grid-2_half mix design print featured ">
+          <a href="/projects/project/2017/01/03/just-north-of-jam.html">
+            <div class="project-card fade-me">
+              <!-- Ratio box sets height of image container -->
+              <div class="ratio-box">
+
+                <!-- Project Icon -->
+                <div class="project-type">
+                  
+                  <img class="icon" src="/img/icons/print.svg" /> 
                 </div>
+                <!-- Lazy Load of CDN image -->
+                <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1511403573/just-north-of-jam-cover_jp9btw.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403573/just-north-of-jam-cover_jp9btw.jpg 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403573/just-north-of-jam-cover_jp9btw.jpg 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403573/just-north-of-jam-cover_jp9btw.jpg 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403573/just-north-of-jam-cover_jp9btw.jpg 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/v1511403573/just-north-of-jam-cover_jp9btw.jpg"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403573/just-north-of-jam-cover_jp9btw.jpg 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403573/just-north-of-jam-cover_jp9btw.jpg 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403573/just-north-of-jam-cover_jp9btw.jpg 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403573/just-north-of-jam-cover_jp9btw.jpg 800w">
+                </noscript>
+              </div>
+              <div class="shadow-image">
+                <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1511403573/just-north-of-jam-cover_jp9btw.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403573/just-north-of-jam-cover_jp9btw.jpg 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403573/just-north-of-jam-cover_jp9btw.jpg 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403573/just-north-of-jam-cover_jp9btw.jpg 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403573/just-north-of-jam-cover_jp9btw.jpg 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/v1511403573/just-north-of-jam-cover_jp9btw.jpg"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403573/just-north-of-jam-cover_jp9btw.jpg 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403573/just-north-of-jam-cover_jp9btw.jpg 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403573/just-north-of-jam-cover_jp9btw.jpg 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403573/just-north-of-jam-cover_jp9btw.jpg 800w">
+                </noscript>
+              </div>
+
+              <div class="project-info">
+
+                <h2><span>Just North of Jam</span></h2>
+              </div>
             </div>
-        </a>
+          </a>
+        </div>
         
-        <a href="/projects/project/2017/01/05/render-experiment-no-3.html">
-            <div class="mix one-thirds-column-full 3d " style="background-image:url('/img/projects/render-experiment-no-3/render-experiment-no-3-image-1.jpg'); background-size: cover; background-position: center; padding:0;">
-                <div class="project">
-                    <div class="info-box">
-                        
-                        <img class="icon" src="/img/icons/3d.svg" />
-                        
-                        <h2>Render Experiment No.3</h2>
-                    </div>
+        <div class="grid-2_half mix photography featured ">
+          <a href="/projects/project/2017/01/02/nick-fiori-headshots.html">
+            <div class="project-card fade-me">
+              <!-- Ratio box sets height of image container -->
+              <div class="ratio-box">
+
+                <!-- Project Icon -->
+                <div class="project-type">
+                  
+                  <img class="icon" src="/img/icons/camera.svg" /> 
                 </div>
+                <!-- Lazy Load of CDN image -->
+                <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 800w">
+                </noscript>
+              </div>
+              <div class="shadow-image">
+                <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403646/nick-fiori-headshot-cover_ycjuml.jpg 800w">
+                </noscript>
+              </div>
+
+              <div class="project-info">
+
+                <h2><span>Nick Fiori Headshots</span></h2>
+              </div>
             </div>
-        </a>
+          </a>
+        </div>
         
-        <a href="/projects/project/2017/01/04/render-experiment-no-2.html">
-            <div class="mix one-thirds-column-full 3d " style="background-image:url('/img/projects/render-experiment-no-2/render-experiment-no-2-image-1.jpg'); background-size: cover; background-position: center; padding:0;">
-                <div class="project">
-                    <div class="info-box">
-                        
-                        <img class="icon" src="/img/icons/3d.svg" />
-                        
-                        <h2>Render Experiment No.2</h2>
-                    </div>
+        <div class="grid-2_half mix 3d featured ">
+          <a href="/projects/project/2017/01/01/render-collection-no-1.html">
+            <div class="project-card fade-me">
+              <!-- Ratio box sets height of image container -->
+              <div class="ratio-box">
+
+                <!-- Project Icon -->
+                <div class="project-type">
+                  
+                  <img class="icon" src="/img/icons/3d.svg" /> 
                 </div>
+                <!-- Lazy Load of CDN image -->
+                <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1511403709/project-1-cover_bentz2.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403709/project-1-cover_bentz2.jpg 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403709/project-1-cover_bentz2.jpg 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403709/project-1-cover_bentz2.jpg 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403709/project-1-cover_bentz2.jpg 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/v1511403709/project-1-cover_bentz2.jpg"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403709/project-1-cover_bentz2.jpg 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403709/project-1-cover_bentz2.jpg 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403709/project-1-cover_bentz2.jpg 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403709/project-1-cover_bentz2.jpg 800w">
+                </noscript>
+              </div>
+              <div class="shadow-image">
+                <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1511403709/project-1-cover_bentz2.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403709/project-1-cover_bentz2.jpg 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403709/project-1-cover_bentz2.jpg 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403709/project-1-cover_bentz2.jpg 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403709/project-1-cover_bentz2.jpg 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/v1511403709/project-1-cover_bentz2.jpg"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/v1511403709/project-1-cover_bentz2.jpg 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/v1511403709/project-1-cover_bentz2.jpg 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/v1511403709/project-1-cover_bentz2.jpg 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/v1511403709/project-1-cover_bentz2.jpg 800w">
+                </noscript>
+              </div>
+
+              <div class="project-info">
+
+                <h2><span>Render Collection No.1</span></h2>
+              </div>
             </div>
-        </a>
+          </a>
+        </div>
         
-        <a href="/projects/project/2017/01/03/just-north-of-jam.html">
-            <div class="mix one-thirds-column-full design print featured " style="background-image:url('/img/projects/just-north-of-jam/just-north-of-jam-mockup.jpg'); background-size: cover; background-position: center; padding:0;">
-                <div class="project">
-                    <div class="info-box">
-                        
-                        <img class="icon" src="/img/icons/print.svg" />
-                        
-                        <h2>Just North of Jam</h2>
-                    </div>
-                </div>
-            </div>
-        </a>
-        
-        <a href="/projects/project/2017/01/02/nick-fiori-headshots.html">
-            <div class="mix one-thirds-column-full photography featured " style="background-image:url('/img/projects/nick-fiori-headshots/nick-fiori-headshot-1.jpg'); background-size: cover; background-position: center; padding:0;">
-                <div class="project">
-                    <div class="info-box">
-                        
-                        <img class="icon" src="/img/icons/camera.svg" />
-                        
-                        <h2>Nick Fiori Headshots</h2>
-                    </div>
-                </div>
-            </div>
-        </a>
-        
-        <a href="/projects/project/2017/01/01/render-experiment-no-1.html">
-            <div class="mix one-thirds-column-full 3d featured " style="background-image:url('/img/projects/render-experiment-no-1/render-experiment-no-1-image-1.jpg'); background-size: cover; background-position: center; padding:0;">
-                <div class="project">
-                    <div class="info-box">
-                        
-                        <img class="icon" src="/img/icons/3d.svg" />
-                        
-                        <h2>Render Experiment No.1</h2>
-                    </div>
-                </div>
-            </div>
-        </a>
-        
+
       </div>
     </div>
-</section>
-</div>
-</div>
+  </div>
 
 
     </div>
@@ -224,23 +463,36 @@
     <!-- jQuery library -->
 <script src="/js/jquery-3.2.0.min.js"></script>
 
+<!-- jQuery library -->
+<script src="/js/modernizr.min.js"></script>
+
 <!-- Loading Bar -->
 <script src="/js/pace.min.js"></script>
 
 <!-- PJAX for page animations -->
 <script src="/js/barba.min.js"></script>
 
-<!-- Work page filter -->
-<script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<!-- Lazysizes function for loading ajax images -->
+<script src="/js/lazysizes.min.js"></script>
 
 <!-- Animation replacement for animate() -->
 <script src="/js/velocity.min.js"></script>
 <script src="/js/velocity-ui.min.js"></script>
 
+<!-- Tilt function for images -->
+<script src="/js/tilt.jquery.min.js"></script>
+
+<!-- Parallax function for project pages -->
+<script src="/js/parallax.js"></script>
+
+<!-- Scroll reveal Animation -->
+<script src="/js/scrollreveal.min.js"></script>
+
+<!-- Pollyfill for object-fit -->
+<script src="/js/picturefill.min.js"></script>
+
 <!-- Main javascript file -->
 <script src="/js/main.js"></script>
-
-
 
 <script>
     window.ga = window.ga || function() {

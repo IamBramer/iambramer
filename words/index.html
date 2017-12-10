@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="utf-8">
@@ -21,12 +21,17 @@
         } catch (e) {}
     </script>
     <link async href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-
+    <style>
+      .no-js img.lazyload {
+      	display: none;
+      }
+  </style>
 </head>
 
 <body>
 
     <nav class="navigation">
+  <div class="nav-wrap">
   <div class="logo">
     <span><a href="/"><strong>I</strong>am<strong>Bramer</strong></a></span>
   </div>
@@ -50,15 +55,18 @@
         <a href="/contact/">Contact</a>
       </li>
     </ul>
+
+  </div>
 </nav>
 
 
     <div id="barba-wrapper">
 
             <div class="barba-container" data-namespace="words">
+  <div class="page-wrap">
+
     <div class="words">
-        <section>
-            <div class="full-column-full">
+
 
                 <h1>The Writings of a Mad Man</h1> 
                 <div class="text">
@@ -70,10 +78,10 @@
                 </div>
 
                 
-            </div>
 
-        </section>
     </div>
+
+  </div>
 </div>
 
 
@@ -82,23 +90,36 @@
     <!-- jQuery library -->
 <script src="/js/jquery-3.2.0.min.js"></script>
 
+<!-- jQuery library -->
+<script src="/js/modernizr.min.js"></script>
+
 <!-- Loading Bar -->
 <script src="/js/pace.min.js"></script>
 
 <!-- PJAX for page animations -->
 <script src="/js/barba.min.js"></script>
 
-<!-- Work page filter -->
-<script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<!-- Lazysizes function for loading ajax images -->
+<script src="/js/lazysizes.min.js"></script>
 
 <!-- Animation replacement for animate() -->
 <script src="/js/velocity.min.js"></script>
 <script src="/js/velocity-ui.min.js"></script>
 
+<!-- Tilt function for images -->
+<script src="/js/tilt.jquery.min.js"></script>
+
+<!-- Parallax function for project pages -->
+<script src="/js/parallax.js"></script>
+
+<!-- Scroll reveal Animation -->
+<script src="/js/scrollreveal.min.js"></script>
+
+<!-- Pollyfill for object-fit -->
+<script src="/js/picturefill.min.js"></script>
+
 <!-- Main javascript file -->
 <script src="/js/main.js"></script>
-
-
 
 <script>
     window.ga = window.ga || function() {
