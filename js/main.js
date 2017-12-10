@@ -217,6 +217,7 @@ $(function() {
         var scrollTop = $window.scrollTop();
         nav.toggleClass('is-hidden', scrollTop > prev);
         prev = scrollTop;
+        $('#menu').removeClass('open');
       });
     })();
 
