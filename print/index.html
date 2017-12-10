@@ -1,0 +1,92 @@
+---
+layout: default
+title: Projects
+---
+<div class="barba-container" data-namespace="projects">
+
+  <div class="page-wrap">
+    <h1>Projects</h1>
+    <ul class="filter-list">
+      <a href="/photography/"><li class="filter" data-filter=".photography">
+        <img class="icon" src="/img/icons/camera.svg" /> Photography
+      </li></a>
+      <a href="/website/"><li class="filter" data-filter=".website">
+        <img class="icon" src="/img/icons/website.svg" /> Website
+      </li></a>
+      <a href="/digital/"><li class="filter" data-filter=".digital">
+        <img class="icon" src="/img/icons/computer.svg" /> Digital Design
+      </li></a>
+      <a href="/print/"><li class="filter active" data-filter=".print">
+        <img class="icon" src="/img/icons/print.svg" /> Print Design
+      </li></a>
+      <a href="/3d/"><li class="filter" data-filter=".3d">
+        <img class="icon" src="/img/icons/3d.svg" /> 3D
+      </li></a>
+      <a href="/projects/"><li class="filter" data-filter="all">
+        All Projects
+      </li></a>
+    </ul>
+<div id="container">
+  <div class="grid-2">
+
+    {% for post in site.categories.projects %}
+    {% if post.tags contains 'Print' %}
+    <div class="grid-2_half mix {% for tag in post.tags %}{{ tag | downcase | replace: " ", "- " }} {% endfor %}">
+      <a href="{{ post.url }}">
+        <div class="project-card fade-me">
+          <!-- Ratio box sets height of image container -->
+          <div class="ratio-box">
+
+            <!-- Project Icon -->
+            <div class="project-type">
+              {% if post.tags contains 'Photography' %}
+              <img class="icon" src="/img/icons/camera.svg" /> {% elsif post.tags contains 'Website' %}
+              <img class="icon" src="/img/icons/website.svg" /> {% elsif post.tags contains 'Digital' %}
+              <img class="icon" src="/img/icons/computer.svg" /> {% elsif post.tags contains 'Print' %}
+              <img class="icon" src="/img/icons/print.svg" /> {% elsif post.tags contains '3D' %}
+              <img class="icon" src="/img/icons/3d.svg" /> {% endif %}
+            </div>
+            <!-- Lazy Load of CDN image -->
+            <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/{{ post.cover-image }}" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/{{ post.cover-image }} 1900w,
+            https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/{{ post.cover-image }} 1400w,
+            https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/{{ post.cover-image }} 1000w,
+            https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/{{ post.cover-image }} 800w">
+            <!-- Fallback for non-javascript version -->
+            <noscript>
+              <img
+              src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/{{ post.cover-image }}"
+              srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/{{ post.cover-image }} 1900w,
+              https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/{{ post.cover-image }} 1400w,
+              https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/{{ post.cover-image }} 1000w,
+              https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/{{ post.cover-image }} 800w">
+            </noscript>
+          </div>
+          <div class="shadow-image">
+            <img class="lazyload" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/{{ post.cover-image }}" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/{{ post.cover-image }} 1900w,
+            https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/{{ post.cover-image }} 1400w,
+            https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/{{ post.cover-image }} 1000w,
+            https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/{{ post.cover-image }} 800w">
+            <!-- Fallback for non-javascript version -->
+            <noscript>
+              <img
+              src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/{{ post.cover-image }}"
+              srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_860/{{ post.cover-image }} 1900w,
+              https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_550/{{ post.cover-image }} 1400w,
+              https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_350/{{ post.cover-image }} 1000w,
+              https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_680/{{ post.cover-image }} 800w">
+            </noscript>
+          </div>
+
+          <div class="project-info">
+
+            <h2><span>{{ post.title }}</span></h2>
+          </div>
+        </div>
+      </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+
+</div>

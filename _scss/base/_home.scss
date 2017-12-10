@@ -1,79 +1,39 @@
-.home-featured {
-    @include grid-column(1, $neat-grid-full);
-    padding: 0 $column-padding-small;
-    margin-bottom: $column-padding-small;
-    @include grid-media($neat-small-full) {
-        padding: 0 $column-padding-regular;
-        margin-bottom: $column-padding-regular;
-    }
+.feature-title {
+  display: inline-block;
+  position:absolute;
+  z-index: 2;
+  color: #fff;
+  padding: 5px 15px;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  margin-right: 1em;
+  background: #fff;
+  color: #111;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
 
-    .one-thirds-column-full {
-        overflow: hidden;
-    }
+  h2 {
+    display: inline-block;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transform: translateY(100%);
+    transition: all .4s ease-in-out;
+    transition-delay: .1s;
+  }
+}
 
-    .featured {
-        height: calc(100vh - (#{$nav-height}*2));
-        position: relative;
-        padding: 0;
-        overflow: hidden;
-        @include grid-column(1, $neat-grid-full);
-        @include grid-media($neat-medium-full) {
-             @include grid-column(6);
-        }
-        @include grid-media($neat-large-full) {
-             @include grid-column(4);
-        }
+//Show featured info on homepage
+.zoom:hover .feature-title {
+  transform: translateY(0px);
+  opacity: 1;
 
-        .featured-image {
-            height: 100%;
-            width: 100%;
-            background-size: cover;
-            background-position: center;
-            transform: scale(1);
-            transition: transform 10s;
-        }
-
-        .featured-info {
-            background: #fff;
-            height: 8rem;
-            position: absolute;
-            width: calc(100% - 50px);
-            margin-left: 25px;
-            display: block;
-            bottom: $column-padding-small;
-            display: flex;
-            align-items: center;
-            align-content: center;
-            justify-content: center;
-            @include grid-media($neat-small-full) {
-                bottom: $column-padding-regular;
-                margin-left: 50px;
-                width: calc(100% - 100px);
-            }
-
-            h3 {
-                margin: 0;
-                font-size: 1em;
-                text-align: center;
-                font-family: "freight-text-pro",serif;
-                font-style: normal;
-                text-transform: uppercase;
-                letter-spacing: 0.1em;
-            }
-
-            h2 {
-                margin: 0;
-                text-align: center;
-                font-weight: bold;
-                font-size: 3em;
-            }
-        }
-
-        &:hover {
-            .featured-image {
-                transform: scale(1.2);
-                transition: transform 10s;
-            }
-        }
-    }
+  h2 {
+    transform: translateY(0px);
+  }
 }

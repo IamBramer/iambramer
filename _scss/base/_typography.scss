@@ -57,14 +57,13 @@ h6 {
 }
 
 p {
-    margin: 0 0 $p-spacing;
+    letter-spacing: .025em;
 }
 
 p,
 span,
 figcaption,
  {
-    font-family: "freight-text-pro", serif;
     font-weight: 400;
 
     @include font-size($p-font-sizes);
@@ -74,25 +73,27 @@ ul li,
 ol li,
 dt,
 dd, {
-  font-family: "freight-text-pro", serif;
 
   @include font-size($p-font-sizes);
 }
 
-p span {
-    font-size: 1em;
-}
+
 
 p a {
     padding: 0.2em 0;
 
-    background-image: linear-gradient(currentColor,currentColor);
+    background-image: linear-gradient(#000,#000);
     background-repeat: no-repeat;
     background-position: center bottom .3em;
     background-origin: padding-box;
     background-size: 100% 1.5px;
     text-shadow: 3px 0 #fff, 2px 0 #fff, 1px 0 #fff, -1px 0 #fff, -2px 0 #fff, -3px 0 #fff;
-    transition: background $base-duration $base-timing;
+    transition: all $base-duration $base-timing;
+}
+p a:hover{
+  color: #6544f4;
+  background-image: linear-gradient(#6544f4,#6544f4);
+  transition: all $base-duration $base-timing;
 }
 
 em {
@@ -100,7 +101,7 @@ em {
 }
 
 strong {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 a {

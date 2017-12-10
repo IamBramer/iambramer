@@ -3,45 +3,97 @@ layout: default
 title: IamBramer
 ---
 <div class="barba-container" data-namespace="home">
-    <section>
-        <div class="home-featured">
-            {% for post in site.categories.projects %} {% if post.tags contains 'Design' and post.tags contains 'Featured' %}
-            <a href="{{ post.url }}">
-                <div class="featured">
-                    <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
-                    <div class="featured-info">
-                        <div class="row">
-                            <h3>Featured</h3>
-                            <h2>Design</h2>
-                        </div>
-                    </div>
-                </div>
+    <div class="page-wrap">
+        <div class="grid-1">
+          <div class="grid-1_main">
+            {% assign featuredPosts = site.categories.projects | where: 'tags', 'Featured' %}
+            {% for post in featuredPosts limit:1 %}
+            <a href="{{ post.url }}" class="cover zoom">
+              <div class="project-type">
+                {% if post.tags contains 'Photography' %}
+                <img class="icon" src="/img/icons/camera.svg" /> {% elsif post.tags contains 'Website' %}
+                <img class="icon" src="/img/icons/website.svg" /> {% elsif post.tags contains 'Digital' %}
+                <img class="icon" src="/img/icons/computer.svg" /> {% elsif post.tags contains 'Print' %}
+                <img class="icon" src="/img/icons/print.svg" /> {% elsif post.tags contains '3D' %}
+                <img class="icon" src="/img/icons/3d.svg" /> {% endif %}
+              </div>
+              <div class="feature-title"><h2>{{ post.title }}</h2></div>
+              <img class="lazyload cover" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/{{ post.cover-image }}" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/{{ post.cover-image }} 1900w,
+              https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_900/{{ post.cover-image }} 1400w,
+              https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_650/{{ post.cover-image }} 1000w,
+              https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/{{ post.cover-image }} 800w">
+              <!-- Fallback for non-javascript version -->
+              <noscript>
+                <img
+                src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/{{ post.cover-image }}"
+                srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/{{ post.cover-image }} 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_900/{{ post.cover-image }} 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_650/{{ post.cover-image }} 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/{{ post.cover-image }} 800w">
+              </noscript>
             </a>
-            {% endif %} {% endfor %} {% for post in site.categories.projects %} {% if post.tags contains 'Photography' and post.tags contains 'Featured' %}
-            <a href="{{ post.url }}">
-                <div class="featured">
-                    <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
-                    <div class="featured-info">
-                        <div class="row">
-                            <h3>Featured</h3>
-                            <h2>Photography</h2>
-                        </div>
-                    </div>
+            {% endfor %}
+          </div>
+          <div class="grid-1-side">
+            <div class="grid-1_second">
+              {% assign featuredPosts = site.categories.projects | where: 'tags', 'Featured' %}
+              {% for post in featuredPosts limit:1 offset:1 %}
+              <a href="{{ post.url }}" class="cover zoom">
+                <div class="project-type">
+                  {% if post.tags contains 'Photography' %}
+                  <img class="icon" src="/img/icons/camera.svg" /> {% elsif post.tags contains 'Website' %}
+                  <img class="icon" src="/img/icons/website.svg" /> {% elsif post.tags contains 'Digital' %}
+                  <img class="icon" src="/img/icons/computer.svg" /> {% elsif post.tags contains 'Print' %}
+                  <img class="icon" src="/img/icons/print.svg" /> {% elsif post.tags contains '3D' %}
+                  <img class="icon" src="/img/icons/3d.svg" /> {% endif %}
                 </div>
-            </a>
-            {% endif %} {% endfor %} {% for post in site.categories.projects %} {% if post.tags contains '3D' and post.tags contains 'Featured' %}
-            <a href="{{ post.url }}">
-                <div class="featured">
-                    <div class="featured-image" style="background-image:url('/img/projects/{{ post.cover-image }}');"></div>
-                    <div class="featured-info">
-                        <div class="row">
-                            <h3>Featured</h3>
-                            <h2>3D Render</h2>
-                        </div>
-                    </div>
+                <div class="feature-title"><h2>{{ post.title }}</h2></div>
+                <img class="lazyload cover" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/{{ post.cover-image }}" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/{{ post.cover-image }} 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_900/{{ post.cover-image }} 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_650/{{ post.cover-image }} 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/{{ post.cover-image }} 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/{{ post.cover-image }}"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/{{ post.cover-image }} 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_900/{{ post.cover-image }} 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_650/{{ post.cover-image }} 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/{{ post.cover-image }} 800w">
+                </noscript>
+              </a>
+              {% endfor %}
+            </div>
+            <div class="grid-1_third">
+              {% assign featuredPosts = site.categories.projects | where: 'tags', 'Featured' %}
+              {% for post in featuredPosts limit:1 offset:2 %}
+              <a href="{{ post.url }}" class="cover zoom">
+                <div class="project-type">
+                  {% if post.tags contains 'Photography' %}
+                  <img class="icon" src="/img/icons/camera.svg" /> {% elsif post.tags contains 'Website' %}
+                  <img class="icon" src="/img/icons/website.svg" /> {% elsif post.tags contains 'Digital' %}
+                  <img class="icon" src="/img/icons/computer.svg" /> {% elsif post.tags contains 'Print' %}
+                  <img class="icon" src="/img/icons/print.svg" /> {% elsif post.tags contains '3D' %}
+                  <img class="icon" src="/img/icons/3d.svg" /> {% endif %}
                 </div>
-            </a>
-            {% endif %} {% endfor %}
+                <div class="feature-title"><h2>{{ post.title }}</h2></div>
+                <img class="lazyload cover" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/{{ post.cover-image }}" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/{{ post.cover-image }} 1900w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_900/{{ post.cover-image }} 1400w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_650/{{ post.cover-image }} 1000w,
+                https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/{{ post.cover-image }} 800w">
+                <!-- Fallback for non-javascript version -->
+                <noscript>
+                  <img
+                  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/{{ post.cover-image }}"
+                  srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/{{ post.cover-image }} 1900w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_900/{{ post.cover-image }} 1400w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_650/{{ post.cover-image }} 1000w,
+                  https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/{{ post.cover-image }} 800w">
+                </noscript>
+              </a>
+              {% endfor %}
+            </div>
         </div>
-    </section>
+      </div>
+    </div>
 </div>

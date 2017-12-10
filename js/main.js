@@ -1,24 +1,116 @@
 $(function() {
 
+      //ScrollReveal function for animating scroll elements
+      window.sr = ScrollReveal();
+      sr.reveal(".fade-me",
+        {
+          scale: 1,
+          distance: "200px",
+          duration: 1000,
+          easing: "ease-in-out",
+          delay: 0,
+          viewFactor: 0.01
+        },
+        100
+      );
+
+      var Home = Barba.BaseView.extend({
+          namespace: 'home',
+          onEnter: function() {
+            $('.fade-me').css('visibility','hidden');
+
+
+              // The new Container is ready and attached to the DOM.
+          },
+          onEnterCompleted: function() {
+              // The Transition has just finished.
+
+          },
+          onLeave: function() {
+
+            // $('#container').mixItUp('destroy');
+              // A new Transition toward a new page has just started.
+          },
+          onLeaveCompleted: function() {
+              // The Container has just been removed from the DOM.
+          }
+      });
+
     var Projects = Barba.BaseView.extend({
         namespace: 'projects',
         onEnter: function() {
-            $('#container').mixItUp({
-                animation: {
-                    duration: 1000,
-                    effects: 'fade translateY(10%)',
-                    easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
-                    nudge: false,
-                    animateResizeContainer: false
-                }
+          $('.fade-me').css('visibility','hidden');
+
+            //Tilt functionality for images
+            $(".ratio-box").tilt({
+              maxTilt: 2,
+              transition: true,
+              glare: true,
+              maxGlare: 0.3,
+              speed: 400,
+              scale: 1.05
             });
+
             // The new Container is ready and attached to the DOM.
         },
         onEnterCompleted: function() {
             // The Transition has just finished.
+            sr.sync();
+
         },
         onLeave: function() {
-          $('#container').mixItUp('destroy');
+
+          // $('#container').mixItUp('destroy');
+            // A new Transition toward a new page has just started.
+        },
+        onLeaveCompleted: function() {
+            // The Container has just been removed from the DOM.
+        }
+    });
+
+    var Project = Barba.BaseView.extend({
+        namespace: 'project',
+        onEnter: function() {
+          $('.fade-me').css('visibility','hidden');
+
+
+
+            // The new Container is ready and attached to the DOM.
+        },
+        onEnterCompleted: function() {
+            // The Transition has just finished.
+            sr.sync();
+            var scene = document.getElementById('scene');
+            var parallaxInstance = new Parallax(scene, {
+              relativeInput: true
+            });
+
+        },
+        onLeave: function() {
+
+          // $('#container').mixItUp('destroy');
+            // A new Transition toward a new page has just started.
+        },
+        onLeaveCompleted: function() {
+            // The Container has just been removed from the DOM.
+        }
+    });
+
+    var About = Barba.BaseView.extend({
+        namespace: 'about',
+        onEnter: function() {
+          $('.fade-me').css('visibility','hidden');
+
+
+            // The new Container is ready and attached to the DOM.
+        },
+        onEnterCompleted: function() {
+            // The Transition has just finished.
+            sr.sync();
+        },
+        onLeave: function() {
+
+          // $('#container').mixItUp('destroy');
             // A new Transition toward a new page has just started.
         },
         onLeaveCompleted: function() {
@@ -27,7 +119,10 @@ $(function() {
     });
 
     // Don't forget to init the view!
+    Home.init();
     Projects.init();
+    Project.init();
+    About.init();
 
     Barba.Pjax.start();
 
@@ -61,9 +156,10 @@ $(function() {
              * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
              * Please note, newContainer is available just after newContainerLoading is resolved!
              */
-            document.body.scrollTop = 0;
+            window.scrollTo(0, 0);
             var _this = this;
             var $el = $(this.newContainer);
+
 
             $(this.oldContainer).hide();
 
@@ -111,6 +207,17 @@ $(function() {
         $('#menu').removeClass('open');
     });
 
+    //Hide nav on scroll down show on scroll up
+    (function navigationScroll() {
+      var prev = 0;
+      var $window = $(window);
+      var nav = $('.navigation');
 
+      $window.on('scroll', function(){
+        var scrollTop = $window.scrollTop();
+        nav.toggleClass('is-hidden', scrollTop > prev);
+        prev = scrollTop;
+      });
+    })();
 
 });

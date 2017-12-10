@@ -24,292 +24,271 @@ Examples formatting
 /*---------------------------------
 Grids
 ----------------------------------*/
-$neat-grid: ( columns: 1, gutter: $grid-gutter / 2, );
-$neat-small: ( columns: 2, gutter: $grid-gutter, media: 600px, color: rgba(#00d4ff, 0.25), direction: ltr, );
-$neat-medium: ( columns: 6, gutter: $grid-gutter, media: 900px, color: rgba(#00d4ff, 0.25), direction: ltr, );
-$neat-large: ( columns: 12, gutter: $grid-gutter, media: 1200px, color: rgba(#00d4ff, 0.25), direction: ltr, );
-$neat-larger: ( columns: 12, gutter: $grid-gutter, media: 1800px, color: rgba(#00d4ff, 0.25), direction: ltr, );
-$neat-super: ( columns: 12, gutter: $grid-gutter, media: 2400px, color: rgba(#00d4ff, 0.25), direction: ltr, );
-$neat-grid-full: ( columns: 1, gutter: 0px, );
-$neat-small-full: ( columns: 2, gutter: 0px, media: 600px, color: rgba(#00d4ff, 0.25), direction: ltr, );
-$neat-medium-full: ( columns: 6, gutter: 0px, media: 900px, color: rgba(#00d4ff, 0.25), direction: ltr, );
-$neat-large-full: ( columns: 12, gutter: 0px, media: 1200px, color: rgba(#00d4ff, 0.25), direction: ltr, );
-$neat-larger-full: ( columns: 12, gutter: 0px, media: 1800px, color: rgba(#00d4ff, 0.25), direction: ltr, );
-$neat-super-full: ( columns: 12, gutter: 0px, media: 2400px, color: rgba(#00d4ff, 0.25), direction: ltr, );
 
-section {
-    @include grid-container;
-    @include grid-media($neat-small) {
-         @include grid-container($neat-small);
 
+//Grid Setup for home page -- Flexbox
+.grid-1 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: $nav-height;
+  font-family: "object-fit: cover; object-position: center;";
+
+  @media screen and (min-width: $medium) {
+    flex-direction: row;
+    min-height: 400px;
+    height: calc(100vh - 10em);
+
+    .grid-1-side {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
     }
-    @include grid-media($neat-medium) {
-         @include grid-container($neat-medium);
-    }
-    @include grid-media($neat-large) {
-         @include grid-container($neat-large);
-    }
-    @include grid-media($neat-larger) {
-         @include grid-container($neat-larger);
-    }
-    @include grid-media($neat-super) {
-         @include grid-container($neat-super);
-    }
+  }
 }
 
-.full-edge {
-    @include grid-collapse;
+.grid-1_main {
+  position: relative;
+  background: #ccc;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  overflow: hidden;
+  font-family: "object-fit: cover; object-position: center;";
+
+  @media screen and (min-width: $medium) {
+    flex: 2;
+    height: auto;
+  }
+
+  .feature-description {
+    top: 1em;
+    left: 1em;
+  }
 }
-/*---------------------------------
-Standard Columns
-----------------------------------*/
-.full-column {
-    @include grid-column(1);
-    @include grid-media($neat-small) {
-         @include grid-column(2);
-    }
+.grid-1_second, .grid-1_third {
+  position: relative;
+  background: #eee;
+  display: flex;
+  flex: 1;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  overflow: hidden;
+
+  @media screen and (min-width: $medium) {
+    min-height: auto;
+    flex: 1;
+    height: 50%;
+  }
+
+  .feature-description {
+    top: 1em;
+    left: 1em;
+  }
 }
-
-.half-column {
-    @include grid-column(1);
-
-    @include grid-media($neat-small) {
-         @include grid-column(2);
-
-    }
-    @include grid-media($neat-medium) {
-         @include grid-column(3);
-    }
-    @include grid-media($neat-large) {
-         @include grid-column(6);
-    }
-}
-
-.one-thirds-column {
-    @include grid-column(1);
-    padding: $column-padding-small;
-    @include grid-media($neat-small) {
-         @include grid-column(2);
-        padding: $column-padding-regular;
-    }
-    @include grid-media($neat-medium) {
-         @include grid-column(2);
-    }
-    @include grid-media($neat-large) {
-         @include grid-column(4);
-    }
-}
-
-.fourth-column {
-    @include grid-column(1);
-    padding: $column-padding-small;
-    @include grid-media($neat-small) {
-         @include grid-column(1);
-        padding: $column-padding-regular;
-    }
-    @include grid-media($neat-medium) {
-         @include grid-column(3);
-    }
-    @include grid-media($neat-large) {
-         @include grid-column(3);
-    }
+.grid-1_third {
+  background: #ddd;
 }
 
-.sixth-column {
-    @include grid-column(1);
-    padding: $column-padding-small;
-    @include grid-media($neat-small) {
-         @include grid-column(1);
-        padding: $column-padding-regular;
+//Grid Setup for home page -- CSS Grid
+@supports (display: grid) {
+  .grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main"
+      "second"
+      "third";
+    width: 100%;
+
+    @media screen and (min-width: $medium) {
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas:
+        "main second"
+        "main third";
+      height: calc(100vh - 10em);
     }
-    @include grid-media($neat-medium) {
-         @include grid-column(2);
+  }
+  .grid-1-side {
+    display: grid;
+
+    @media screen and (min-width: $medium) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      grid-template-rows: 1fr 1fr;
     }
-    @include grid-media($neat-large) {
-         @include grid-column(2);
+  }
+  .grid-1_main {
+    grid-area: main;
+    background: #ccc;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: $medium) {
+      height: auto;
     }
+  }
+  .grid-1_second {
+    background: #eee;
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: $medium) {
+      height: auto;
+    }
+  }
+  .grid-1_third {
+    background: #ddd;
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: $medium) {
+      height: auto;
+    }
+  }
 }
 
-.twelfth-column {
-    @include grid-column(1);
-    padding: $column-padding-small;
-    @include grid-media($neat-small) {
-         @include grid-column(1);
-        padding: $column-padding-regular;
+
+//Grid Setup for two column half width grid -- Flexbox
+.grid-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: $max-width;
+  margin:0 auto;
+
+  & > * {
+    margin-bottom: 2em;
+  }
+
+  @media screen and (min-width: $medium) {
+    display: flex;
+    flex-direction: row;
+    & > * {
+      margin-right: 80px;
     }
-    @include grid-media($neat-medium) {
-         @include grid-column(2);
+    & > :nth-child(even) {
+      margin-right: 0px;
     }
-    @include grid-media($neat-large) {
-         @include grid-column(1);
-    }
+  }
+  a {
+    width: 100%;
+  }
+}
+.grid-2_half {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: $medium) {
+    width: calc(50% - 40px);
+  }
 }
 
-.two-thirds-column {
-    @include grid-column(1);
+.grid-2_full {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 
-    @include grid-media($neat-small) {
-         @include grid-column(2);
-    }
+  @media screen and (min-width: $medium) {
+    flex: 0 0 100%;
+  }
 
-    @include grid-media($neat-large) {
-         @include grid-column(8);
-    }
-}
-/*---------------------------------
-Full Grids
----------------------------------*/
-.full-column-full {
-    @include grid-column(1, $neat-grid-full);
-    padding: 0 $column-padding-small;
-    @include grid-media($neat-small-full) {
-        padding: 0 $column-padding-regular;
-    }
+  p {
+    max-width: 1100px;
+  }
 }
 
-.half-column-full {
-    @include grid-column(1, $neat-grid-full);
+//Grid Setup for two column half width grid -- CSS Grid
+@supports (display: grid) {
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 4vw;
+    grid-row-gap: 2vw;
+    align-items: start;
+    max-width: $max-width;
+    margin:0 auto;
 
-    @include grid-media($neat-small-full) {
-         @include grid-column(2);
-
+    @media screen and (min-width: $medium) {
+      & > * {
+      margin-right: 0px;
     }
-    @include grid-media($neat-medium-full) {
-         @include grid-column(3);
+      grid-template-columns: 1fr 1fr;
     }
-    @include grid-media($neat-large-full) {
-         @include grid-column(6);
+  }
+  .grid-2_half {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-2_full {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: $medium) {
+      grid-column-end: span 2;
     }
+  }
+}
+.barba-container {
+  margin-bottom: $nav-height;
 }
 
-.one-thirds-column-full {
-    @include grid-column(1, $neat-grid-full);
-    padding: 0 $column-padding-small / 2;
-    @include grid-media($neat-small-full) {
-        padding: 0 $column-padding-regular / 2;
-    }
-    @include grid-media($neat-medium-full) {
-         @include grid-column(2);
-    }
-    @include grid-media($neat-large-full) {
-         @include grid-column(4);
-    }
+//Sets max page width
+.page-wrap, .nav-wrap {
+  position: relative;
+  width: 100%;
+  margin:0 auto;
+  padding:0 $page-padding-small;
+  max-width: $max-width;
+  @media screen and (min-width: $small) {
+    padding:0 $page-padding-medium;
+  }
+  @media screen and (min-width: $medium) {
+    padding:0 $page-padding-large;
+  }
 }
 
-.fourth-column-full {
-    @include grid-column(1, $neat-grid-full);
-    padding: $column-padding-small;
-    @include grid-media($neat-small-full) {
-         @include grid-column(1);
-        padding: $column-padding-regular;
-    }
-    @include grid-media($neat-medium-full) {
-         @include grid-column(3);
-    }
-    @include grid-media($neat-large-full) {
-         @include grid-column(3);
-    }
+.padding-small {
+  padding: 0 $page-padding-small;
 }
 
-.sixth-column-full {
-    @include grid-column(1, $neat-grid-full);
-    padding: $column-padding-small;
-    @include grid-media($neat-small-full) {
-         @include grid-column(1);
-        padding: $column-padding-regular;
-    }
-    @include grid-media($neat-medium-full) {
-         @include grid-column(2);
-    }
-    @include grid-media($neat-large-full) {
-         @include grid-column(2);
-    }
+.margins {
+  margin: $page-padding-small 0;
+
+  @media screen and (min-width: $medium) {
+    margin: $page-padding-medium 0;
+  }
+  @media screen and (min-width: $large) {
+    margin: $page-padding-large 0;
+  }
 }
-
-.twelfth-column-full {
-    @include grid-column(1, $neat-grid-full);
-    padding: $column-padding-small;
-    @include grid-media($neat-small-full) {
-         @include grid-column(1);
-        padding: 2rem;
-    }
-    @include grid-media($neat-medium-full) {
-         @include grid-column(2);
-    }
-    @include grid-media($neat-large-full) {
-         @include grid-column(1);
-    }
+//Don't blur images when there is no JavaScript and don't show lazyload images
+.no-js img {
+  filter: blur(0px);
 }
-
-.two-thirds-column-full {
-    @include grid-column(1, $neat-grid-full);
-    @include grid-media($neat-small-full) {
-         @include grid-column(2);
-    }
-    @include grid-media($neat-medium-full) {
-         @include grid-column(4);
-    }
-    @include grid-media($neat-large-full) {
-         @include grid-column(8);
-    }
-}
-/*---------------------------------
-Centered Columns
-----------------------------------*/
-.five-sixth-column {
-    @include grid-column(1);
-
-    @include grid-media($neat-small) {
-         @include grid-column(2);
-
-    }
-    @include grid-media($neat-medium) {
-         @include grid-column(5);
-        @include grid-push(.5);
-    }
-}
-
-.two-thirds-column-centered {
-    @include grid-media($neat-large) {
-         @include grid-push(2);
-    }
-}
-
-.half-column-centered {
-    @include grid-media($neat-small) {
-         @include grid-column(2);
-    }
-    @include grid-media($neat-medium) {
-         @include grid-column(3);
-        @include grid-push(1.5);
-    }
-    @include grid-media($neat-large) {
-         @include grid-push(3);
-    }
-}
-
-.one-thirds-column-centered {
-    @include grid-media($neat-medium) {
-         @include grid-push(2);
-    }
-}
-
-.margin-bottom {
-    margin-bottom: 1rem;
-
-    @include grid-media($neat-small) {
-         margin-bottom: 2rem;
-    }
-}
-
-.margin-bottom-large {
-    margin-bottom: $grid-gutter/2;
-
-    @include grid-media($neat-small) {
-         margin-bottom: $grid-gutter;
-    }
-}
-
-.no-padding {
-    padding: 0;
+.no-js img.lazyload {
+  display: none;
 }

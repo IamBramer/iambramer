@@ -2,51 +2,79 @@
 layout: default
 ---
 <div class="barba-container" data-namespace="project">
-    <div class="">
-        <section>
-            <div class="full-column cover-image-wrap">
-                <div class="cover-image" style="background-image: url('/img/projects/{{ page.cover-image }}');"></div>
-            </div>
-        </section>
+  <div class="project">
 
+    <div class="page-wrap">
 
-        {% if page.next_in_category != nil %}
+      <div class="grid-3_full project-cover">
+
+        <div class="project-type">
+          {% if page.tags contains 'Photography' %}
+          <img class="icon" src="/img/icons/camera.svg" /> {% elsif page.tags contains 'Website' %}
+          <img class="icon" src="/img/icons/website.svg" /> {% elsif page.tags contains 'Digital' %}
+          <img class="icon" src="/img/icons/computer.svg" /> {% elsif page.tags contains 'Print' %}
+          <img class="icon" src="/img/icons/print.svg" /> {% elsif page.tags contains '3D' %}
+          <img class="icon" src="/img/icons/3d.svg" /> {% endif %}
+        </div>
+        <div id="scene" data-hover-only="true">
+          <div class="project-title box-shadow" data-depth="0.3">
+            <h2>{{ page.title }}</h2>
+          </div>
+
+          <img class="lazyload cover" data-depth=".1" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/{{ page.cover-image }}" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1900/{{ page.cover-image }} 1900w,
+          https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1400/{{ page.cover-image }} 1400w,
+          https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1000/{{ page.cover-image }} 1000w,
+          https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/{{ page.cover-image }} 800w">
+
+          <noscript>
+          <img
+            src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/{{ page.cover-image }}"
+            srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1900/{{ page.cover-image }} 1900w,
+            https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1400/{{ page.cover-image }} 1400w,
+            https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_100/{{ page.cover-image }} 1000w,
+            https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/{{ page.cover-image }} 800w">
+        </noscript>
+        </div>
+      </div>
+
+      <div class="grid-2 margins">
+        <div class="grid-2_full ">
+          <p>{{ page.description }}</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        {{ page.content }}
+
+      </div>
+      <div class="next-previous">
+        {% if page.previous_in_category != nil %}
         <div class="prev">
-            <a href="{{page.next_in_category.url}}" class="next-link">Next</a>
+          <a href="{{page.previous_in_category.url}}" class="previous-link">
+            <span>Previous Project</span>
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="#fff" d="M4,10V14H13L9.5,17.5L11.92,19.92L19.84,12L11.92,4.08L9.5,6.5L13,10H4Z" />
+            </svg>
+          </a>
         </div>
-        {% endif %} {% if page.previous_in_category != nil %}
+        {% endif %} {% if page.next_in_category != nil %}
+
         <div class="next">
-            <a href="{{page.previous_in_category.url}}" class="previous-link">Prev</a>
+          <a href="{{page.next_in_category.url}}" class="next-link">
+
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="#fff" d="M4,10V14H13L9.5,17.5L11.92,19.92L19.84,12L11.92,4.08L9.5,6.5L13,10H4Z" />
+          </svg>
+          <span>Next Project</span>
+        </a>
         </div>
+
         {% endif %}
-
-        <section>
-            <div class="margin-bottom-large project-container" style="background-color: #{{ page.project-color }};">
-                <div class="project-container-title">
-                    <h1 style="color: #{{ page.header-color }};">{{ page.title }}</h1>
-                </div>
-                <div class="project-info">
-                    <section>
-                        <div class="project-container-info" style="color: #{{ page.body-color }}">
-                            <p>
-                                {{ page.description }}
-                            </p>
-                        </div>
-                        <div class="project-container-info" style="color: #{{ page.body-color }}">
-                            <p>
-                                {{ page.description-two }}
-                            </p>
-                        </div>
-                    </section>
-                    <section>
-                        <div class="project-content" style="color: #{{ page.body-color }}">
-                            {{ content }}
-                        </div>
-                    </section>
-
-                </div>
-            </div>
-        </section>
-
+      </div>
+      <div class="grid-2 ">
+        <div class="grid-2_full">
+          <a class="back-to-projects" href="/projects/"><h2><span>Back to Projects</span></h2></a>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
