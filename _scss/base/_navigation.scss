@@ -54,7 +54,7 @@
       overflow: hidden;
       top: $nav-height;
       transform: translateY(-120%);
-      transition: transform 1s;
+      transition: transform .5s ease-in-out;
       z-index:-1;
 
       &.open {
