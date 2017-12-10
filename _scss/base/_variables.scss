@@ -81,8 +81,19 @@ $h6-font-sizes: (
   larger : (1em, 1.45),
   super  : 1em
 );
-
-// Typography
+$font-stack-helvetica: (
+  "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  sans-serif,
+);
+$font-stack-inconsolata: (
+  "Inconsolata",
+  "Consolas",
+  "monaco",
+  monospace,
+);
+// // Typography
 $base-font-family: $font-stack-helvetica;
 $heading-font-family: $base-font-family;
 
