@@ -10,24 +10,25 @@ layout: default
 
         <div class="project-type">
           {% if page.tags contains 'Photography' %}
-          <img class="icon" src="/img/icons/camera.svg" /> {% elsif page.tags contains 'Website' %}
-          <img class="icon" src="/img/icons/website.svg" /> {% elsif page.tags contains 'Digital' %}
-          <img class="icon" src="/img/icons/computer.svg" /> {% elsif page.tags contains 'Print' %}
-          <img class="icon" src="/img/icons/print.svg" /> {% elsif page.tags contains '3D' %}
-          <img class="icon" src="/img/icons/3d.svg" /> {% endif %}
+          <img class="icon" alt="Photography" src="/img/icons/camera.svg" /> {% elsif page.tags contains 'Website' %}
+          <img class="icon" alt="Website" src="/img/icons/website.svg" /> {% elsif page.tags contains 'Digital' %}
+          <img class="icon" alt="Digital" src="/img/icons/computer.svg" /> {% elsif page.tags contains 'Print' %}
+          <img class="icon" alt="Print" src="/img/icons/print.svg" /> {% elsif page.tags contains '3D' %}
+          <img class="icon" alt="3D" src="/img/icons/3d.svg" /> {% endif %}
         </div>
         <div id="scene" data-hover-only="true">
           <div class="project-title box-shadow" data-depth="0.3">
             <h2>{{ page.title }}</h2>
           </div>
 
-          <img class="lazyload cover" data-depth=".1" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/{{ page.cover-image }}" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1900/{{ page.cover-image }} 1900w,
+          <img class="lazyload cover" data-depth=".1" alt="{{ page.title }}"
+          src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/{{ page.cover-image }}" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1900/{{ page.cover-image }} 1900w,
           https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1400/{{ page.cover-image }} 1400w,
           https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1000/{{ page.cover-image }} 1000w,
           https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/{{ page.cover-image }} 800w">
 
           <noscript>
-          <img
+          <img alt="{{ page.title }}"
             src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/{{ page.cover-image }}"
             srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1900/{{ page.cover-image }} 1900w,
             https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1400/{{ page.cover-image }} 1400w,

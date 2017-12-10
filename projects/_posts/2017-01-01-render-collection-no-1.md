@@ -13,9 +13,8 @@ tags:
 ---
 
 <div class="grid-2_full fade-me">
-  <iframe src="https://player.vimeo.com/video/213015198" width="640" height="640" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <iframe title="Spiked Ball Animation" src="https://player.vimeo.com/video/213015198" width="640" height="640" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
-
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Rendering of Spiked Ball" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512890995/render-experiment-no-1-image-1_myhcts.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512890995/render-experiment-no-1-image-1_myhcts.jpg 1900w,
@@ -48,7 +47,7 @@ tags:
 </div>
 
 <div class="grid-2_full fade-me">
-  <iframe src="https://player.vimeo.com/video/213010448" width="1000" height="423" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <iframe title="Rock with Purple Goo Animation" src="https://player.vimeo.com/video/213010448" width="1000" height="423" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
 <div class="grid-2_full fade-me">

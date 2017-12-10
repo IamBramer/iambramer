@@ -16,8 +16,8 @@ ul.filter-list {
     &.active {
       border-bottom: 1px solid;
     }
-
-    &:hover {
+    
+    &:hover a {
       color: #6544f4;
     }
     //Icon images

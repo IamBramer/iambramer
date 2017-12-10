@@ -32,7 +32,7 @@
     width:100%;
     display: flex;
     align-items: center;
-    padding:4rem 0;
+    padding: 4rem 0;
     z-index: 2;
     overflow: hidden;
 
@@ -40,7 +40,7 @@
 
       margin-bottom: .5em;
       text-transform: uppercase;
-      color: $medium-gray;
+      color: #525252;
       letter-spacing: .05em;
     }
     h1 {
@@ -50,7 +50,7 @@
     }
 
     p {
-      color: darken($medium-gray, 20%);
+      color: #525252;
       a {
         font-weight: bold;
       }
