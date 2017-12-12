@@ -30,7 +30,13 @@
     }
 }
 
-
+::selection {
+  background: $purple;
+  color: #fff;
+}
+p a::selection {
+  text-shadow: 3px 0 $purple, 2px 0 $purple, 1px 0 $purple, -1px 0 $purple, -2px 0 $purple, -3px 0 $purple;
+}
 
 body {
     color: $base-font-color;
@@ -98,8 +104,8 @@ p a {
     transition: all $base-duration $base-timing;
 }
 p a:hover{
-  color: #6544f4;
-  background-image: linear-gradient(#6544f4,#6544f4);
+  color: $purple;
+  background-image: linear-gradient($purple,$purple);
   transition: all $base-duration $base-timing;
 }
 
