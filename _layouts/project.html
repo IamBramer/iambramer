@@ -50,7 +50,7 @@ description: "{% if page.description %}{{ page.description }}{% else %}{{ site.m
       </div>
       <div class="next-previous">
         {% if page.previous_in_category != nil %}
-        <div class="prev">
+        <div class="prev fade-me">
           <a href="{{page.previous_in_category.url}}" class="previous-link">
             <span>Previous Project</span>
             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -60,7 +60,7 @@ description: "{% if page.description %}{{ page.description }}{% else %}{{ site.m
         </div>
         {% endif %} {% if page.next_in_category != nil %}
 
-        <div class="next">
+        <div class="next fade-me">
           <a href="{{page.next_in_category.url}}" class="next-link">
 
           <svg style="width:24px;height:24px" viewBox="0 0 24 24">
