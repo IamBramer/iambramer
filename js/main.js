@@ -212,19 +212,21 @@ $(function() {
       var prev = 0;
       var $window = $(window);
       var nav = $('.navigation');
-      if($(window).scrollTop() === 0) {
+      if($(window).scrollTop() <= 80) {
          nav.removeClass('is-hidden');
       }
 
-      $window.on('scroll', function(){
+      window.addEventListener('scroll', function() {
         var scrollTop = $window.scrollTop();
         nav.toggleClass('is-hidden', scrollTop > prev);
         prev = scrollTop;
         $('#menu').removeClass('open');
-        if($(window).scrollTop() === 0) {
+        if($(window).scrollTop() <= 80) {
            nav.removeClass('is-hidden');
         }
       });
+
+
     })();
 
 });

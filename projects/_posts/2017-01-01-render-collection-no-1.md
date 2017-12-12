@@ -6,7 +6,7 @@ cover-image: v1511403709/project-1-cover_bentz2.jpg
 project-color: 1e143e
 header-color: ffffff
 body-color: d1ade7
-description: "This is the first collection of experimental 3d renders that I have done. They were made using programs like Cinema 4D, Blender, After Effects, etc. I really enjoying working with 3D visuals and exploring concepts from photorealism to abstract to stuff that just looks awesome."
+description: "This is the first collection of experimental 3d renders that I have done. They were made using programs like Cinema 4D, Blender, After Effects, etc. I really enjoy working with 3D visuals and exploring concepts from photorealism to abstract to stuff that just looks awesome."
 tags:
 - 3D
 - Featured

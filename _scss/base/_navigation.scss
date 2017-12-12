@@ -101,6 +101,9 @@
             @media screen and (min-width: $medium) {
               right: $page-padding-large;
             }
+            @media screen and (min-width: $super) {
+              right: $page-padding-super;
+            }
 
         li {
           width: auto;

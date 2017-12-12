@@ -16,7 +16,7 @@ ul.filter-list {
     &.active {
       border-bottom: 1px solid;
     }
-    
+
     &:hover a {
       color: #6544f4;
     }
@@ -138,6 +138,10 @@ Individual Project Page
   justify-content: center;
   align-items: center;
   transform-style: preserve-3d;
+
+  @media screen and (min-width: $super) {
+    max-height: 1800px;
+  }
 }
 
 #scene {
