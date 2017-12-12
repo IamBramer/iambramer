@@ -29,7 +29,11 @@ ul.filter-list {
     }
 
     &.active {
-      border-bottom: 1px solid;
+      border-left: 2px solid;
+        @media screen and (min-width: $medium) {
+          border-left: 0;
+          border-bottom: 2px solid;
+        }
     }
 
     &:hover a {
