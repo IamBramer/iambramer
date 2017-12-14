@@ -22,6 +22,7 @@
       position: relative;
       height: $nav-height;
       background: #fff;
+
       z-index:101;
         span {
             position: absolute;
@@ -31,6 +32,11 @@
 
 
             a {
+                position: relative;
+                display: flex;
+                align-items: center;
+                height: $nav-height;
+
                 font-size:1.2em;
                 font-weight: 300;
                 font-family: "nimbus-sans",sans-serif;
@@ -40,6 +46,13 @@
                 }
                 &:hover {
 
+                }
+                svg {
+                  width: 140px;
+                  padding-bottom: .2em;
+                  @media screen and (min-width: $medium) {
+                    width: 160px;
+                  }
                 }
             }
         }

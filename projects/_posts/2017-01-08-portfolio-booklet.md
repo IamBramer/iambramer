@@ -3,9 +3,6 @@ layout: project
 title:  "Portfolio Booklet"
 category: Project
 cover-image: v1512946831/portfolio-booklet-cover_ghhml9.jpg
-project-color: 'fbfbfb'
-header-color: 1e1e1e
-body-color: '999999'
 description: "A 36 page portfolio book I designed for my own work."
 tags:
 - Print

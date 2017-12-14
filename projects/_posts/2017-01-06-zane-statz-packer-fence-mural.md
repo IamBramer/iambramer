@@ -3,9 +3,6 @@ layout: project
 title:  "Zane Statz - Packer Fence Mural"
 category: Project
 cover-image: v1511398664/zane-packer-fence-cover_dxca3k.jpg
-project-color: '203731'
-header-color: 'ffb612'
-body-color: 'ffffff'
 description: "I had the pleasure of working side by side with Zane Statz as a designer for a year. During the Packer season, he and his talented partner Spencer Young grab some bottles (a lot of bottles) of spraypaint, facemasks, and some worn out clothes and set to work covering an entire fence with a unique piece of art. So when the time came, I grabbed my camera, jumped in the car, and drove out to document a small part of what these guys do. The fence is directly across the street from Lambeau Field, and every year Zane and Spencer come up with a new unique design to cover the fence with. Fans can't help but take photos in front of it. Be sure to check out <a target='_blank' href='http://zasdesigns.com/' rel='noopener'>Zane's work</a>."
 tags:
 - Photography

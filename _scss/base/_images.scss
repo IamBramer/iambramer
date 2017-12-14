@@ -97,22 +97,14 @@ img.lazyload, img.lazyloading {
     width: 100%;
     left: 0em;
     top: 1.5em;
-    overflow: visible;
+    overflow: hidden;
     z-index: -1;
     filter: blur($small-blur);
     opacity: .8;
     transform-style: preserve-3d;
     transition: all .5s ease-out;
-
-
   }
 
-  //Target Safari to fix weird clipping
-  @media screen and (-webkit-min-device-pixel-ratio:0) {
-    ::i-block-chrome,.shadow-image {
-      transform: translateZ(-100px);
-    }
-  }
 
 //Blur and move image shadow on hover
 .project-card:hover {

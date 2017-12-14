@@ -36,6 +36,7 @@ Grids
   overflow: hidden;
   margin-bottom: $nav-height;
   font-family: "object-fit: cover; object-position: center;";
+  z-index: 1;
 
   @media screen and (min-width: $medium) {
     flex-direction: row;
@@ -177,6 +178,7 @@ Grids
   width: 100%;
   max-width: $max-width;
   margin:0 auto;
+  z-index: 1;
 
   @media screen and (min-width: $super) {
     max-width: 100%;
@@ -205,6 +207,7 @@ Grids
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 
   @media screen and (min-width: $medium) {
     width: calc(50% - 40px);

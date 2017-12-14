@@ -83,7 +83,7 @@ ul.filter-list {
   width: 50px;
   height: 50px;
   background: #fff;
-  z-index: 2;
+  z-index: 5;
   left: 20px;
   bottom: 20px;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -295,7 +295,7 @@ Individual Project Page
     text-align: left;
     right: 0;
     transform: translateX(calc(100% - (24px + 3em)));
-    transition: all 0.7s ease-in-out;
+    transition: transform 0.7s ease-in-out;
 
     span {
       margin-right: 0;
@@ -314,7 +314,7 @@ Individual Project Page
   @media screen and (min-width: $medium) {
     left: -1px;
     transform: translateX(calc(-100% + (24px + 3em)));
-    transition: all 0.7s ease-in-out;
+    transition: transform 0.7s ease-in-out;
 
     span {
       margin-right: 1.3em;

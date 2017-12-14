@@ -51,6 +51,10 @@ $(function() {
               scale: 1.05
             });
 
+            if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+              $(".shadow-image").css('transform','translateZ(-100px)');
+            }
+
             // The new Container is ready and attached to the DOM.
         },
         onEnterCompleted: function() {
@@ -228,5 +232,7 @@ $(function() {
 
 
     })();
+
+
 
 });

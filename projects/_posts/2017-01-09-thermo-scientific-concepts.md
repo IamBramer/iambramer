@@ -3,9 +3,6 @@ layout: project
 title:  "Thermo Scientific Concepts"
 category: Project
 cover-image: v1512949210/thermo-scientific-concepts-cover_m6hpgr.jpg
-project-color: 'fbfbfb'
-header-color: 1e1e1e
-body-color: '999999'
 description: "Thermo Scientific needed concepts for their branding of a new product (and their existing products) and these are some of the concepts that I worked on."
 tags:
 - Print

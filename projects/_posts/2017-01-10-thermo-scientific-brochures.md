@@ -3,9 +3,6 @@ layout: project
 title:  "Thermo Scientific Brochures"
 category: Project
 cover-image: v1512952180/thermo-scientific-brochure-cover_vgams9.jpg
-project-color: 'fbfbfb'
-header-color: 1e1e1e
-body-color: '999999'
 description: "After our team designed new branding for Thermo Scientific, we needed to design 3 brochures in a short time frame. These brochures consisted of a mix of photography, 3D renders, illustrations, and type. Since there was a short time frame I designed a system to use so I could rotate out backgrounds, desk renderings, product images, portraits, and graphics with ease. The structure between the brochures follows a similar format of layering: background rendering - glass wall for headline - white background for text/graphics - desk rendering - product/portrait photography. You can view the actual brochures if you'd like: <a target='_blank' rel='noopener' href='/img/projects/thermo-scientific-brochures/TFS-Dionex-Product-Portfolio-Brochure.pdf'>Product Portfolio Brochure</a>, <a target='_blank' rel='noopener' href='/img/projects/thermo-scientific-brochures/TFS-Dionex-ICS-5000-HPIC-Brochure.pdf'>Dionex ICS-5000 HPIC Brochure</a>, and <a target='_blank' rel='noopener' href='/img/projects/thermo-scientific-brochures/TFS-Dionex Aquion-IC-System-Brochure.pdf'>Dionex Aquion IC Brochure</a>."
 tags:
 - Print
