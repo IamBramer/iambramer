@@ -9,7 +9,7 @@ tags:
 ---
 <div class="grid-2_half fade-me">
   <img class="lazyload" alt="Dodge Dart Brochure 1"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512892970/dodge-dart-brochure-1_ggvydm.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512892970/dodge-dart-brochure-1_ggvydm.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892970/dodge-dart-brochure-1_ggvydm.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512892970/dodge-dart-brochure-1_ggvydm.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512892970/dodge-dart-brochure-1_ggvydm.jpg 1000w,
@@ -25,7 +25,7 @@ tags:
 </div>
 <div class="grid-2_half fade-me">
   <img class="lazyload" alt="Dodge Dart Brochure 2"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512892971/dodge-dart-brochure-2_l609dh.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512892971/dodge-dart-brochure-2_l609dh.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892971/dodge-dart-brochure-2_l609dh.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512892971/dodge-dart-brochure-2_l609dh.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512892971/dodge-dart-brochure-2_l609dh.jpg 1000w,
@@ -43,7 +43,7 @@ tags:
 
 <div class="grid-2_half fade-me">
   <img class="lazyload" alt="Dodge Dart Brochure 3"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512892971/dodge-dart-brochure-3_bv227y.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512892971/dodge-dart-brochure-3_bv227y.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892971/dodge-dart-brochure-3_bv227y.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512892971/dodge-dart-brochure-3_bv227y.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512892971/dodge-dart-brochure-3_bv227y.jpg 1000w,
@@ -59,7 +59,7 @@ tags:
 </div>
 <div class="grid-2_half fade-me">
   <img class="lazyload" alt="Dodge Dart Brochure 4"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512892971/dodge-dart-brochure-4_qeia2f.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512892971/dodge-dart-brochure-4_qeia2f.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892971/dodge-dart-brochure-4_qeia2f.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512892971/dodge-dart-brochure-4_qeia2f.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512892971/dodge-dart-brochure-4_qeia2f.jpg 1000w,
@@ -77,7 +77,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Dodge Dart Brochure 5"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512892970/dodge-dart-brochure-7_chfiee.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512892970/dodge-dart-brochure-7_chfiee.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892970/dodge-dart-brochure-7_chfiee.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512892970/dodge-dart-brochure-7_chfiee.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512892970/dodge-dart-brochure-7_chfiee.jpg 1000w,
@@ -95,7 +95,7 @@ tags:
 
 <div class="grid-2_half fade-me">
   <img class="lazyload" alt="Dodge Dart Brochure 6"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512892970/dodge-dart-brochure-5_whn6cv.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512892970/dodge-dart-brochure-5_whn6cv.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892970/dodge-dart-brochure-5_whn6cv.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512892970/dodge-dart-brochure-5_whn6cv.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512892970/dodge-dart-brochure-5_whn6cv.jpg 1000w,
@@ -111,7 +111,7 @@ tags:
 </div>
 <div class="grid-2_half fade-me">
   <img class="lazyload" alt="Dodge Dart Brochure 7"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512892970/dodge-dart-brochure-6_yh1ga2.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512892970/dodge-dart-brochure-6_yh1ga2.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892970/dodge-dart-brochure-6_yh1ga2.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512892970/dodge-dart-brochure-6_yh1ga2.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512892970/dodge-dart-brochure-6_yh1ga2.jpg 1000w,
@@ -129,7 +129,7 @@ tags:
 
 <div class="grid-2_half fade-me">
   <img class="lazyload" alt="Dodge Dart Brochure 8"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512892970/dodge-dart-brochure-8_uj5oc4.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512892970/dodge-dart-brochure-8_uj5oc4.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892970/dodge-dart-brochure-8_uj5oc4.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512892970/dodge-dart-brochure-8_uj5oc4.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512892970/dodge-dart-brochure-8_uj5oc4.jpg 1000w,
@@ -145,7 +145,7 @@ tags:
 </div>
 <div class="grid-2_half fade-me">
   <img class="lazyload" alt="Dodge Dart Brochure 9"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512892970/dodge-dart-brochure-9_zhjv6l.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512892970/dodge-dart-brochure-9_zhjv6l.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892970/dodge-dart-brochure-9_zhjv6l.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512892970/dodge-dart-brochure-9_zhjv6l.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512892970/dodge-dart-brochure-9_zhjv6l.jpg 1000w,

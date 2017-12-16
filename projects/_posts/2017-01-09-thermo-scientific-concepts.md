@@ -15,7 +15,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Branding"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512949216/thermo-scientific-real-problems-artboard_bclwt3.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512949216/thermo-scientific-real-problems-artboard_bclwt3.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512949216/thermo-scientific-real-problems-artboard_bclwt3.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512949216/thermo-scientific-real-problems-artboard_bclwt3.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512949216/thermo-scientific-real-problems-artboard_bclwt3.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512949216/thermo-scientific-real-problems-artboard_bclwt3.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512949216/thermo-scientific-real-problems-artboard_bclwt3.jpg 400w">
@@ -32,7 +32,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Magazine Ads"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512949210/thermo-scientific-concepts-cover_m6hpgr.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512949210/thermo-scientific-concepts-cover_m6hpgr.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512949210/thermo-scientific-concepts-cover_m6hpgr.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512949210/thermo-scientific-concepts-cover_m6hpgr.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512949210/thermo-scientific-concepts-cover_m6hpgr.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512949210/thermo-scientific-concepts-cover_m6hpgr.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512949210/thermo-scientific-concepts-cover_m6hpgr.jpg 400w">
@@ -49,7 +49,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Billboard"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512949216/thermo-scientific-real-problems-billboard_ngte66.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512949216/thermo-scientific-real-problems-billboard_ngte66.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512949216/thermo-scientific-real-problems-billboard_ngte66.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512949216/thermo-scientific-real-problems-billboard_ngte66.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512949216/thermo-scientific-real-problems-billboard_ngte66.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512949216/thermo-scientific-real-problems-billboard_ngte66.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512949216/thermo-scientific-real-problems-billboard_ngte66.jpg 400w">
@@ -71,7 +71,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Best Friend Magazine"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512949209/thermo-scientific-bf-magazine_nyo196.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512949209/thermo-scientific-bf-magazine_nyo196.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512949209/thermo-scientific-bf-magazine_nyo196.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512949209/thermo-scientific-bf-magazine_nyo196.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512949209/thermo-scientific-bf-magazine_nyo196.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512949209/thermo-scientific-bf-magazine_nyo196.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512949209/thermo-scientific-bf-magazine_nyo196.jpg 400w">
@@ -88,7 +88,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Best Friend Bus Ad"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512949216/thermo-scientific-bf-bus-ad_ijviqf.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512949216/thermo-scientific-bf-bus-ad_ijviqf.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512949216/thermo-scientific-bf-bus-ad_ijviqf.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512949216/thermo-scientific-bf-bus-ad_ijviqf.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512949216/thermo-scientific-bf-bus-ad_ijviqf.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512949216/thermo-scientific-bf-bus-ad_ijviqf.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512949216/thermo-scientific-bf-bus-ad_ijviqf.jpg 400w">

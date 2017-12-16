@@ -10,7 +10,7 @@ tags:
 ---
 <div class="grid-2_half fade-me">
   <img class="lazyload" alt="Max-R Website Desktop"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512894472/max-r-website-desktop_z5pnoy.png"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512894472/max-r-website-desktop_z5pnoy.png"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512894472/max-r-website-desktop_z5pnoy.png 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512894472/max-r-website-desktop_z5pnoy.png 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512894472/max-r-website-desktop_z5pnoy.png 1000w,
@@ -27,7 +27,7 @@ tags:
 
 <div class="grid-2_half fade-me">
   <img class="lazyload" alt="Max-R Website Mobile"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512894472/max-r-website-mobile_ccqspy.png"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512894472/max-r-website-mobile_ccqspy.png"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512894472/max-r-website-mobile_ccqspy.png 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512894472/max-r-website-mobile_ccqspy.png 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512894472/max-r-website-mobile_ccqspy.png 1000w,
@@ -49,7 +49,7 @@ tags:
 
 <div class="grid-2_full box-shadow-light fade-me">
   <img class="lazyload" alt="Max-R Website Homepage"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512894472/max-r-website-homepage_tcsiy7.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512894472/max-r-website-homepage_tcsiy7.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512894472/max-r-website-homepage_tcsiy7.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512894472/max-r-website-homepage_tcsiy7.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512894472/max-r-website-homepage_tcsiy7.jpg 1000w,
@@ -71,7 +71,7 @@ tags:
 
 <div class="grid-2_half box-shadow-light fade-me">
   <img class="lazyload" alt="Max-R Website Filter"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512894471/max-r-website-filter-2_v5yxkg.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512894471/max-r-website-filter-2_v5yxkg.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512894471/max-r-website-filter-2_v5yxkg.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512894471/max-r-website-filter-2_v5yxkg.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512894471/max-r-website-filter-2_v5yxkg.jpg 1000w,
@@ -88,7 +88,7 @@ tags:
 
 <div class="grid-2_half box-shadow-light fade-me">
   <img class="lazyload" alt="Max-R Website Filter"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512894472/max-r-website-filter-3_yfnhn3.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512894472/max-r-website-filter-3_yfnhn3.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512894472/max-r-website-filter-3_yfnhn3.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512894472/max-r-website-filter-3_yfnhn3.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512894472/max-r-website-filter-3_yfnhn3.jpg 1000w,
@@ -110,7 +110,7 @@ tags:
 
 <div class="grid-2_full box-shadow-light fade-me">
   <img class="lazyload" alt="Max-R Website Product Page"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512894472/max-r-website-individual-product_vo0doo.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512894472/max-r-website-individual-product_vo0doo.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512894472/max-r-website-individual-product_vo0doo.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512894472/max-r-website-individual-product_vo0doo.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512894472/max-r-website-individual-product_vo0doo.jpg 1000w,
@@ -132,7 +132,7 @@ tags:
 
 <div class="grid-2_full box-shadow-light fade-me">
   <img class="lazyload" alt="Max-R Website Story Page"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512894473/max-r-website-our-story_mqj4hp.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512894473/max-r-website-our-story_mqj4hp.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512894473/max-r-website-our-story_mqj4hp.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512894473/max-r-website-our-story_mqj4hp.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512894473/max-r-website-our-story_mqj4hp.jpg 1000w,

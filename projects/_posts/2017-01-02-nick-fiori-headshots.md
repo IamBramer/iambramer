@@ -10,7 +10,7 @@ tags:
 ---
 
 <div class="grid-2_full fade-me">
-  <img class="lazyload" alt="Nick Fiori in Red Shirt with Glasses" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512892144/nick-fiori-headshot-2_nvfba6.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892144/nick-fiori-headshot-2_nvfba6.jpg 1900w,
+  <img class="lazyload" alt="Nick Fiori in Red Shirt with Glasses" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512892144/nick-fiori-headshot-2_nvfba6.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892144/nick-fiori-headshot-2_nvfba6.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512892144/nick-fiori-headshot-2_nvfba6.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512892144/nick-fiori-headshot-2_nvfba6.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512892144/nick-fiori-headshot-2_nvfba6.jpg 400w">
@@ -25,7 +25,7 @@ tags:
 </div>
 
 <div class="grid-2_full fade-me">
-  <img class="lazyload" alt="Nick Fiori in Blue Shirt with Glasses" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512892145/nick-fiori-headshot-4_xqcpuf.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892145/nick-fiori-headshot-4_xqcpuf.jpg 1900w,
+  <img class="lazyload" alt="Nick Fiori in Blue Shirt with Glasses" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512892145/nick-fiori-headshot-4_xqcpuf.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892145/nick-fiori-headshot-4_xqcpuf.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512892145/nick-fiori-headshot-4_xqcpuf.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512892145/nick-fiori-headshot-4_xqcpuf.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512892145/nick-fiori-headshot-4_xqcpuf.jpg 400w">
@@ -40,7 +40,7 @@ tags:
 </div>
 
 <div class="grid-2_full fade-me">
-  <img class="lazyload" alt="Nick Fiori in White Shirt and Vest with Glasses" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512892145/nick-fiori-headshot-3_kiwcax.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892145/nick-fiori-headshot-3_kiwcax.jpg 1900w,
+  <img class="lazyload" alt="Nick Fiori in White Shirt and Vest with Glasses" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512892145/nick-fiori-headshot-3_kiwcax.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892145/nick-fiori-headshot-3_kiwcax.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512892145/nick-fiori-headshot-3_kiwcax.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512892145/nick-fiori-headshot-3_kiwcax.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512892145/nick-fiori-headshot-3_kiwcax.jpg 400w">
@@ -55,7 +55,7 @@ tags:
 </div>
 
 <div class="grid-2_full fade-me">
-  <img class="lazyload" alt="Nick Fiori in White Shirt and Vest" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512892144/nick-fiori-headshot-1_wvkzza.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892144/nick-fiori-headshot-1_wvkzza.jpg 1900w,
+  <img class="lazyload" alt="Nick Fiori in White Shirt and Vest" src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512892144/nick-fiori-headshot-1_wvkzza.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512892144/nick-fiori-headshot-1_wvkzza.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512892144/nick-fiori-headshot-1_wvkzza.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512892144/nick-fiori-headshot-1_wvkzza.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512892144/nick-fiori-headshot-1_wvkzza.jpg 400w">

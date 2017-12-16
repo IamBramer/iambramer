@@ -10,7 +10,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Brochure First Spread"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512952161/thermo-scientific-brochure-2_llbzya.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952161/thermo-scientific-brochure-2_llbzya.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512952161/thermo-scientific-brochure-2_llbzya.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952161/thermo-scientific-brochure-2_llbzya.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512952161/thermo-scientific-brochure-2_llbzya.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512952161/thermo-scientific-brochure-2_llbzya.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512952161/thermo-scientific-brochure-2_llbzya.jpg 400w">
@@ -27,7 +27,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Brochure Second Spread"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512952160/thermo-scientific-brochure-3_ywvkmz.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952160/thermo-scientific-brochure-3_ywvkmz.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512952160/thermo-scientific-brochure-3_ywvkmz.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952160/thermo-scientific-brochure-3_ywvkmz.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512952160/thermo-scientific-brochure-3_ywvkmz.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512952160/thermo-scientific-brochure-3_ywvkmz.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512952160/thermo-scientific-brochure-3_ywvkmz.jpg 400w">
@@ -44,7 +44,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Brochure Third Spread"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512952188/thermo-scientific-brochure-4_c19gdn.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952188/thermo-scientific-brochure-4_c19gdn.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512952188/thermo-scientific-brochure-4_c19gdn.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952188/thermo-scientific-brochure-4_c19gdn.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512952188/thermo-scientific-brochure-4_c19gdn.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512952188/thermo-scientific-brochure-4_c19gdn.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512952188/thermo-scientific-brochure-4_c19gdn.jpg 400w">
@@ -61,7 +61,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Brochure Fourth Spread"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512952174/thermo-scientific-brochure-5_anvoiu.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952174/thermo-scientific-brochure-5_anvoiu.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512952174/thermo-scientific-brochure-5_anvoiu.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952174/thermo-scientific-brochure-5_anvoiu.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512952174/thermo-scientific-brochure-5_anvoiu.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512952174/thermo-scientific-brochure-5_anvoiu.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512952174/thermo-scientific-brochure-5_anvoiu.jpg 400w">
@@ -78,7 +78,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Brochure Fifth Spread"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512952174/thermo-scientific-brochure-6_enehyt.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952174/thermo-scientific-brochure-6_enehyt.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512952174/thermo-scientific-brochure-6_enehyt.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952174/thermo-scientific-brochure-6_enehyt.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512952174/thermo-scientific-brochure-6_enehyt.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512952174/thermo-scientific-brochure-6_enehyt.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512952174/thermo-scientific-brochure-6_enehyt.jpg 400w">
@@ -95,7 +95,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Brochure Sixth Spread"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512952176/thermo-scientific-brochure-7_ggnqqu.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952176/thermo-scientific-brochure-7_ggnqqu.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512952176/thermo-scientific-brochure-7_ggnqqu.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952176/thermo-scientific-brochure-7_ggnqqu.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512952176/thermo-scientific-brochure-7_ggnqqu.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512952176/thermo-scientific-brochure-7_ggnqqu.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512952176/thermo-scientific-brochure-7_ggnqqu.jpg 400w">
@@ -112,7 +112,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Brochure Seventh Spread"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512952174/thermo-scientific-brochure-8_m3cfeq.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952174/thermo-scientific-brochure-8_m3cfeq.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512952174/thermo-scientific-brochure-8_m3cfeq.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952174/thermo-scientific-brochure-8_m3cfeq.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512952174/thermo-scientific-brochure-8_m3cfeq.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512952174/thermo-scientific-brochure-8_m3cfeq.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512952174/thermo-scientific-brochure-8_m3cfeq.jpg 400w">
@@ -129,7 +129,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Brochure Eighth Spread"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512952189/thermo-scientific-brochure-9_g3nnbo.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952189/thermo-scientific-brochure-9_g3nnbo.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512952189/thermo-scientific-brochure-9_g3nnbo.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952189/thermo-scientific-brochure-9_g3nnbo.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512952189/thermo-scientific-brochure-9_g3nnbo.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512952189/thermo-scientific-brochure-9_g3nnbo.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512952189/thermo-scientific-brochure-9_g3nnbo.jpg 400w">
@@ -146,7 +146,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Brochure Ninth Spread"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512952186/thermo-scientific-brochure-10_r2cqhb.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952186/thermo-scientific-brochure-10_r2cqhb.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512952186/thermo-scientific-brochure-10_r2cqhb.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952186/thermo-scientific-brochure-10_r2cqhb.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512952186/thermo-scientific-brochure-10_r2cqhb.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512952186/thermo-scientific-brochure-10_r2cqhb.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512952186/thermo-scientific-brochure-10_r2cqhb.jpg 400w">
@@ -163,7 +163,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Brochure Tenth Spread"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512952190/thermo-scientific-brochure-11_tstohn.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952190/thermo-scientific-brochure-11_tstohn.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512952190/thermo-scientific-brochure-11_tstohn.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952190/thermo-scientific-brochure-11_tstohn.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512952190/thermo-scientific-brochure-11_tstohn.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512952190/thermo-scientific-brochure-11_tstohn.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512952190/thermo-scientific-brochure-11_tstohn.jpg 400w">
@@ -180,7 +180,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Thermo Scientific Brochure Tenth Spread"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512952190/thermo-scientific-brochure-12_pnjccu.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952190/thermo-scientific-brochure-12_pnjccu.jpg 1900w,
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512952190/thermo-scientific-brochure-12_pnjccu.jpg" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512952190/thermo-scientific-brochure-12_pnjccu.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512952190/thermo-scientific-brochure-12_pnjccu.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512952190/thermo-scientific-brochure-12_pnjccu.jpg 1000w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_400/v1512952190/thermo-scientific-brochure-12_pnjccu.jpg 400w">

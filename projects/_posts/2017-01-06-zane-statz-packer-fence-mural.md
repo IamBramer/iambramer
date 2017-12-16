@@ -9,7 +9,7 @@ tags:
 ---
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Zane Statz Black & White"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512893979/zane-packer-fence-3_vmqfau.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512893979/zane-packer-fence-3_vmqfau.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512893979/zane-packer-fence-3_vmqfau.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512893979/zane-packer-fence-3_vmqfau.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512893979/zane-packer-fence-3_vmqfau.jpg 1000w,
@@ -26,7 +26,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Zane Statz Spraypainting"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512893979/zane-packer-fence-2_sjopux.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512893979/zane-packer-fence-2_sjopux.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512893979/zane-packer-fence-2_sjopux.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512893979/zane-packer-fence-2_sjopux.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512893979/zane-packer-fence-2_sjopux.jpg 1000w,
@@ -43,7 +43,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Zane Statz in Front of Yellow Fence"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512893979/zane-packer-fence-1_nrkeff.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512893979/zane-packer-fence-1_nrkeff.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512893979/zane-packer-fence-1_nrkeff.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512893979/zane-packer-fence-1_nrkeff.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512893979/zane-packer-fence-1_nrkeff.jpg 1000w,
@@ -60,7 +60,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <img class="lazyload" alt="Packer Fence"
-  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_10,w_100/v1512893980/zane-packer-fence-4_ja5sry.jpg"
+  src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/v1512893980/zane-packer-fence-4_ja5sry.jpg"
   data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1600/v1512893980/zane-packer-fence-4_ja5sry.jpg 1900w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1200/v1512893980/zane-packer-fence-4_ja5sry.jpg 1400w,
   https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/v1512893980/zane-packer-fence-4_ja5sry.jpg 1000w,
