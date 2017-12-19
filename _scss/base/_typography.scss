@@ -216,12 +216,12 @@ code {
 
     background-color: $code-color;
 
-    font-family: $font-stack-inconsolata;
+    font-family: monospace;
     font-size: 0.8em;
 
     p,
     span {
-        font-family: $font-stack-inconsolata;
+        font-family: monospace;
     }
 }
 
