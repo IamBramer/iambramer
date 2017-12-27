@@ -44,7 +44,7 @@ ul.filter-list {
       position: relative;
       display: inline-block;
       height: 1em;
-      width: 1em;
+
       top: 0.2em;
     }
   }
@@ -92,7 +92,6 @@ ul.filter-list {
   img.icon {
     position: relative;
     flex: 1;
-    width: 30px;
     height: 30px;
     filter: blur(0);
   }
