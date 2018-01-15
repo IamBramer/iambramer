@@ -11,7 +11,7 @@ var deploy      = require("gulp-gh-pages");
 var changed     = require('gulp-changed');
 var imageResize = require('gulp-image-resize');
 
-var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
+//var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
@@ -19,11 +19,11 @@ var messages = {
 /**
  * Build the Jekyll Site
  */
-gulp.task('jekyll-build', function (done) {
-    browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
-        .on('close', done);
-});
+ gulp.task('jekyll-build', function (done){
+     //var jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
+     return cp.spawn('jekyll.bat', ['build'], {stdio: 'inherit'})
+         .on('close', done);
+ });
 
 /**
  * Rebuild Jekyll & do page reload
