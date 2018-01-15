@@ -1,0 +1,210 @@
+.nav-wrap {
+  position: relative;
+  height: $nav-height;
+  background: $nav-background-color;
+  transform: all .7s ease-in-out;
+}
+.is-hidden {
+  transform:translateY(-100%);
+}
+.navigation {
+    height: $nav-height;
+    position: fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background: $nav-background-color;
+    letter-spacing: -.07em;
+    z-index:101;
+    transition: all .3s ease-in-out;
+
+    .logo {
+      position: relative;
+      height: $nav-height;
+      background: #fff;
+
+      z-index:101;
+        span {
+            position: absolute;
+            height: $nav-height;
+            display: flex;
+            align-items: center;
+
+
+            a {
+                position: relative;
+                display: flex;
+                align-items: center;
+                height: $nav-height;
+
+                font-size:1.2em;
+                font-weight: 300;
+                font-family: "nimbus-sans",sans-serif;
+                color: #000;
+                @media screen and (min-width: $small) {
+                  font-size: 1em;
+                }
+                &:hover {
+
+                }
+                svg {
+                  width: 140px;
+                  padding-bottom: .2em;
+                  @media screen and (min-width: $medium) {
+                    width: 160px;
+                  }
+                }
+            }
+        }
+    }
+
+    ul {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      background: #000;
+      overflow: hidden;
+      top: $nav-height;
+      transform: translateY(-120%);
+      transition: transform .5s ease-in-out;
+      z-index:-1;
+
+      &.open {
+        transform: translateY(0);
+      }
+
+      li {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        margin-left: 1.5rem;
+        border-top: 1px solid #151515;
+
+        a {
+            line-height: $nav-height;
+            font-size: 1.2em;
+            font-family: "nimbus-sans",sans-serif;
+            font-weight: 600;
+            color: #fff;
+            width:100%;
+            @media screen and (min-width: $small) {
+              font-size: 1em;
+            }
+        }
+      }
+      @media screen and (min-width: $small) {
+        height: $nav-height;
+        width: auto;
+        position: absolute;
+        left: auto;
+        right: 0;
+        top: 0;
+        display: none;
+        transform: translateY(0);
+        z-index:101;
+        background: #fff;
+            right: $page-padding-small;
+            display: flex;
+            align-items: center;
+            @media screen and (min-width: $small) {
+              right: $page-padding-medium;
+            }
+            @media screen and (min-width: $medium) {
+              right: $page-padding-large;
+            }
+            @media screen and (min-width: $super) {
+              right: $page-padding-super;
+            }
+
+        li {
+          width: auto;
+            margin-left: 2rem;
+            border:none;
+            a {
+              width:auto;
+              color: #000;
+            }
+        }
+    }
+  }
+}
+
+.nav-trigger {
+        position: absolute;
+        right: 1rem;
+        top: 0;
+        display: flex;
+        height: 100%;
+        cursor: pointer;
+        align-items: center;
+        user-select: none;
+        z-index: 101;
+
+        h2 {
+            position: relative;
+            display: inline-block;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            font-size: 1.2em;
+            margin-right:.5em;
+            @media screen and (min-width: $small) {
+              font-size: 1em;
+            }
+        }
+
+        em,
+        em::after,
+        em::before {
+            position: relative;
+            display: inline-block;
+            width: 22px;
+            height: 2px;
+            background-color: $dark-gray;
+            backface-visibility: hidden;
+        }
+
+        em {
+            margin: 6px 0 5px 0.2em;
+            transition: background-color 0.2s;
+        }
+
+        em::after,
+        em::before {
+            position: absolute;
+            left: 0;
+            content: '';
+            transition: transform 0.2s;
+        }
+
+        em::before {
+            transform: translateY(-6px);
+        }
+
+        em::after {
+            transform: translateY(6px);
+        }
+
+        @media screen and (min-width: $small) {
+            display: none;
+        }
+    }
+
+    &.nav-open .nav-trigger {
+        em {
+            /* transform menu icon into a 'X' icon */
+            background-color: rgba($nav-background-color, 0);
+        }
+
+        em::before {
+            /* rotate top line */
+            transform: rotate(-45deg);
+        }
+
+        em::after {
+            /* rotate bottom line */
+            transform: rotate(45deg);
+        }
+    }

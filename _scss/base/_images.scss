@@ -1,0 +1,138 @@
+iframe {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  background: #eee;
+}
+//Set container to cover
+.cover {
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "object-fit: cover; object-position: center;";
+}
+//Make child images zoom on parent hover
+.zoom img {
+  transition: all .7s ease-in-out;
+}
+
+.zoom:hover img {
+  transform: scale(1.2);
+}
+.zoom:hover img.icon {
+  transform: scale(1);
+}
+
+//Sets class for items to animate by scrolling
+.fade-me {
+  visibility: visible;
+}
+
+img.lazyload, img.lazyloading {
+  opacity: 1;
+  filter: blur(15px);
+  overflow: hidden;
+}
+// Sets empty box for where image loads into
+.ratio-box {
+  display: block;
+  width: 100%;
+  padding-bottom: 56.20%;
+  background: #eee;
+  position: relative;
+  transition: box-shadow 1s ease-in-out;
+  transform-style: preserve-3d;
+
+  //Blurs image before high quality image loaded
+  img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    filter: blur(15px);
+  }
+
+  //Shows high quality image with no blur
+  img.lazyloaded {
+    opacity: 1;
+    filter: blur(0);
+    overflow: hidden;
+    font-family: "object-fit: cover; object-position: center;";
+  }
+
+  span {
+    position:absolute;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      opacity: .2;
+    }
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 3px 50px rgba(0, 0, 0, 0.5), 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+.box-shadow-light {
+  box-shadow: 0 3px 50px rgba(0, 0, 0, 0.3);
+}
+
+//Blurred image as drop shadow
+.shadow-image {
+    position: absolute;
+    width: 100%;
+    left: 0em;
+    top: 1.5em;
+    overflow: hidden;
+    z-index: -1;
+    filter: blur($small-blur);
+    opacity: .8;
+    transform-style: preserve-3d;
+    transition: all .5s ease-out;
+  }
+
+
+//Blur and move image shadow on hover
+.project-card:hover {
+  .shadow-image {
+    left: 0em;
+    top: 2em;
+    filter: blur($big-blur);
+    transition: all .2s ease-out;
+  }
+}
+
+//IE don't use image shadow use box shadow
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     .shadow-image {
+       display: none;
+     }
+     .project-card .ratio-box:hover {
+       box-shadow: 0 3px 50px rgba(0, 0, 0, 0.5), 0 3px 10px rgba(0, 0, 0, 0.5);
+     }
+}
+
+//Edge don't use image shadow use box shadow
+@supports (-ms-accelerator:true) or (-ms-ime-align:auto) or (-ms-accelerator:auto) {
+  /* IE Edge 12+ CSS styles go here */
+  .shadow-image {
+    display: none;
+  }
+  .project-card .ratio-box:hover {
+    box-shadow: 0 3px 50px rgba(0, 0, 0, 0.5), 0 3px 10px rgba(0, 0, 0, 0.5);
+  }
+}

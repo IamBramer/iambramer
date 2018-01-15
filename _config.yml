@@ -1,0 +1,8 @@
+name: IamBramer
+markdown: redcarpet
+highlighter: rouge # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+url: https://iambramer.com
+description: View the works and read the words of Tyler Bramer, a passionate creative person who is always seeking to push his limits.
+plugins:
+  - jekyll-sitemap

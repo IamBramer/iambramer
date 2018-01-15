@@ -1,0 +1,82 @@
+---
+layout: default
+description: "{% if page.description %}{{ page.description }}{% else %}{{ site.meta-description }}{% endif %}"
+---
+<div class="barba-container" data-namespace="project">
+  <div class="project">
+
+    <div class="page-wrap">
+
+      <div class="grid-3_full project-cover">
+
+        <div class="project-type">
+          {% if page.tags contains 'Photography' %}
+          <img class="icon" alt="Photography" src="/img/icons/camera.svg" /> {% elsif page.tags contains 'Website' %}
+          <img class="icon" alt="Website" src="/img/icons/website.svg" /> {% elsif page.tags contains 'Digital' %}
+          <img class="icon" alt="Digital" src="/img/icons/computer.svg" /> {% elsif page.tags contains 'Print' %}
+          <img class="icon" alt="Print" src="/img/icons/print.svg" /> {% elsif page.tags contains '3D' %}
+          <img class="icon" alt="3D" src="/img/icons/3d.svg" /> {% endif %}
+        </div>
+        <div id="scene" data-hover-only="true">
+          <div class="project-title box-shadow" data-depth="0.3">
+            <h2>{{ page.title }}</h2>
+          </div>
+
+          <img class="lazyload cover" data-depth=".1" alt="{{ page.title }}"
+          src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_80,w_100/{{ page.cover-image }}" data-srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1900/{{ page.cover-image }} 1900w,
+          https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1400/{{ page.cover-image }} 1400w,
+          https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1000/{{ page.cover-image }} 1000w,
+          https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/{{ page.cover-image }} 800w">
+
+          <noscript>
+          <img alt="{{ page.title }}"
+            src="https://res.cloudinary.com/iambramer/image/upload/e_blur:600,dpr_auto,f_auto,q_auto/{{ page.cover-image }}"
+            srcset="https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1900/{{ page.cover-image }} 1900w,
+            https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_1400/{{ page.cover-image }} 1400w,
+            https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_100/{{ page.cover-image }} 1000w,
+            https://res.cloudinary.com/iambramer/image/upload/dpr_auto,f_auto,q_auto,w_800/{{ page.cover-image }} 800w">
+        </noscript>
+        </div>
+      </div>
+
+      <div class="grid-2 margins">
+        <div class="grid-2_full ">
+          <p>{{ page.description }}</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        {{ page.content }}
+
+      </div>
+      <div class="next-previous">
+        {% if page.previous_in_category != nil %}
+        <div class="prev fade-me">
+          <a href="{{page.previous_in_category.url}}" class="previous-link">
+            <span>Previous Project</span>
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="#fff" d="M4,10V14H13L9.5,17.5L11.92,19.92L19.84,12L11.92,4.08L9.5,6.5L13,10H4Z" />
+            </svg>
+          </a>
+        </div>
+        {% endif %} {% if page.next_in_category != nil %}
+
+        <div class="next fade-me">
+          <a href="{{page.next_in_category.url}}" class="next-link">
+
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="#fff" d="M4,10V14H13L9.5,17.5L11.92,19.92L19.84,12L11.92,4.08L9.5,6.5L13,10H4Z" />
+          </svg>
+          <span>Next Project</span>
+        </a>
+        </div>
+
+        {% endif %}
+      </div>
+      <div class="grid-2">
+        <div class="grid-2_full fade-me">
+          <a class="back-to-projects" href="/projects/"><h2><span>Back to Projects</span></h2></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.feature-title {
+  display: inline-block;
+  position:absolute;
+  z-index: 2;
+  color: #fff;
+  padding: 5px 15px;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  margin-right: 1em;
+  background: #fff;
+  color: #111;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all .5s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+
+  h2 {
+    display: inline-block;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transform: translateY(100%);
+    transition: all .4s ease-in-out;
+    transition-delay: .1s;
+  }
+}
+
+//Show featured info on homepage
+.zoom:hover .feature-title {
+  transform: translateY(0px);
+  opacity: 1;
+
+  h2 {
+    transform: translateY(0px);
+  }
+}
