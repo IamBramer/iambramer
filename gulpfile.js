@@ -21,8 +21,7 @@ var messages = {
  */
  gulp.task('jekyll-build', function (done){
      //var jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
-     return cp.spawn('jekyll.bat', ['build'], {stdio: 'inherit'})
-         .on('close', done);
+     return cp.exec('jekyll', ['build'], {stdio: 'inherit'}).on('close', done);
  });
 
 /**
