@@ -113,6 +113,7 @@ gulp.task('default', ['browser-sync', 'watch']);
 gulp.task('min', ['compress', 'images']);
 
 gulp.task("deploy", function () {
-    return gulp.src("./_site/**/*")
-        .pipe(deploy());
+    return gulp.src(["./_site/**/*.*","./_site/.*"])
+        .pipe(deploy([
+        ]));
 });
