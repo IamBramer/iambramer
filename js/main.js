@@ -1,16 +1,29 @@
+
+
+var consoleStyles = [
+  'background: linear-gradient(to bottom right, #68bb52, #1d9999)',
+  'color: #fff',
+  'display: block',
+  'line-height: 30px',
+  'text-align: center',
+  'font-weight: bold',
+  'padding: 10px 40px'
+].join(';');
+
+console.log('%c IamBramer', consoleStyles);
+
 if ('serviceWorker' in navigator){
-  console.log('Client: Registering service worker.');
+  console.log('Building you a personal IamBramer service worker.');
   navigator.serviceWorker.register('/sw.js', {
     scope: '/'
   })
   .then(function (registration) {
-    console.log('Client' + registration);
   })
   .catch(function(e) {
-    console.error('Client' + e);
+    console.error('Error: ' + e);
   });
 } else {
-  console.log('Client: Service worker is not supported in this browser.');
+  console.log('Your browser does not allow awesome service workers to be made.');
 }
 
 $(function() {
@@ -245,9 +258,6 @@ $(function() {
         }
       });
 
-
     })();
-
-
 
 });
