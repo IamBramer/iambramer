@@ -1,3 +1,18 @@
+if ('serviceWorker' in navigator){
+  console.log('Client: Registering service worker.');
+  navigator.serviceWorker.register('/sw.js', {
+    scope: '/'
+  })
+  .then(function (registration) {
+    console.log('Client' + registration);
+  })
+  .catch(function(e) {
+    console.error('Client' + e);
+  });
+} else {
+  console.log('Client: Service worker is not supported in this browser.');
+}
+
 $(function() {
 
       //ScrollReveal function for animating scroll elements
