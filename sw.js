@@ -1,7 +1,7 @@
 var version = 'v1::';
 
 self.addEventListener('install', function(event){
-  console.log('Worker: Install event in progress');
+
   event.waitUntil(
     /* The caches built-in is a promise-based API that helps you cache responses,
        as well as finding and deleting them. */
@@ -21,19 +21,18 @@ self.addEventListener('install', function(event){
         ]);
     })
     .then(function() {
-      console.log('Worker: Install completed')
+
     })
   )
 });
 
 self.addEventListener('fetch', function(event) {
-  console.log('Worker: Fetch event in progress.');
+
   /* We should only cache GET requests, and deal with the rest of method in the
      client-side, by handling failed POST,PUT,PATCH,etc. requests.*/
      if(event.request.method !== 'GET') {
        /* If we don't block the event as shown below, then the request will go to
        the network as usual.*/
-       console.log('Worker: Fetch event ignored.', event.request.method, event.request.url);
        return;
      }
      /* Similar to event.waitUntil in that it blocks the fetch event on a promise.
@@ -59,7 +58,7 @@ self.addEventListener('fetch', function(event) {
            .catch(unableToResolve);
            /* We return the cached response immediately if there is one, and fall
           back to waiting on the network as usual.*/
-          console.log('Worker: Fetch event', cached ? '(cached)' : '(network)', event.request.url);
+
           return cached || networked;
 
           function fetchedFromNetwork(response) {
@@ -67,7 +66,7 @@ self.addEventListener('fetch', function(event) {
              This is the response that will be stored on the ServiceWorker cache.*/
              var cacheCopy = response.clone();
 
-             console.log('Worker: Fetch response from network.', event.request.url);
+
 
              caches
               // We open a cache to store the response for this request.
@@ -79,7 +78,7 @@ self.addEventListener('fetch', function(event) {
                  cache.put(event.request, cacheCopy);
               })
               .then(function() {
-                console.log('Worker: Fetch response stored in cache', event.request.url);
+
               });
           // Return the response so that the promise is settled in fulfillment.
           return response;
@@ -115,7 +114,7 @@ self.addEventListener('fetch', function(event) {
 self.addEventListener('activate', function(event){
   /* Just like with the install event, event.waitUntil blocks activate on a promise.
      Activation will fail unless the promise is fulfilled.*/
-  console.log('Worker: Activate event in progress');
+
 
   event.waitUntil(
     caches
@@ -138,7 +137,7 @@ self.addEventListener('activate', function(event){
      );
    })
    .then(function() {
-     console.log('Worker: Activate complete.');
+     console.log('IamBramer service worker standing by.');
    })
  );
 });
