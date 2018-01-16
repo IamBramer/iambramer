@@ -14,10 +14,9 @@ self.addEventListener('install', function(event){
       /* After the cache is opened, we can fill it with the offline fundamentals.
          The method below will add all resources we've indicated to the cache,
          after making HTTP requests for each of them.*/
-      return cache.addAll(
-        [
+      return cache.addAll([
           '/',
-          '/css/main.jcss',
+          '/css/main.css',
           '/js/main.js'
         ]);
     })
