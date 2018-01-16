@@ -12,8 +12,10 @@ var consoleStyles = [
 
 console.log('%c IamBramer', consoleStyles);
 
+
+
 if ('serviceWorker' in navigator){
-  console.log('Building you a personal IamBramer service worker.');
+  console.log('IamBramer service worker running.');
   navigator.serviceWorker.register('/sw.js', {
     scope: '/'
   })
