@@ -11,19 +11,19 @@ tags:
 ---
 
 <div class="grid-2_full fade-me">
-  <video class="website-video box-shadow-light" autoplay loop>
+  <video class="website-video box-shadow-light" playsinline autoplay loop>
     <source src="https://res.cloudinary.com/iambramer/video/upload/f_auto,q_auto:best/v1524609387/home_kyatcx.mp4" type="video/mp4">
   </video>
 </div>
 
 <div class="grid-2_full fade-me">
-  <video class="website-video box-shadow-light" autoplay loop>
+  <video class="website-video box-shadow-light" playsinline autoplay loop>
     <source src="https://res.cloudinary.com/iambramer/video/upload/f_auto,q_auto:best/v1524609384/culture_ctqmfh.mp4" type="video/mp4">
   </video>
 </div>
 
 <div class="grid-2_full fade-me">
-  <video class="website-video box-shadow-light" autoplay loop>
+  <video class="website-video box-shadow-light" playsinline autoplay loop>
     <source src="https://res.cloudinary.com/iambramer/video/upload/f_auto,q_auto:best/v1524609381/blog_meqffl.mp4" type="video/mp4">
   </video>
 </div>
