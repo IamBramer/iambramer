@@ -6,6 +6,7 @@ cover-image: v1513551619/ge-discovery-art-concepts-cover_dqwpgr.jpg
 description: "With the release of a new product line, GE needed branding for the physical machines and for the software that powered them."
 tags:
 - Print
+- Featured
 ---
 
 <div class="grid-2_full fade-me">

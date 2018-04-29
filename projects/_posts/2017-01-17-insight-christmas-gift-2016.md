@@ -7,6 +7,7 @@ description: "Every year Insight sends out a card or a gift to their clients as 
 tags:
 - Print
 - Photography
+- Featured
 ---
 
 <div class="grid-2_full fade-me">

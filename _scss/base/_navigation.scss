@@ -192,7 +192,7 @@
         }
     }
 
-    &.nav-open .nav-trigger {
+    .nav-open .nav-trigger {
         em {
             /* transform menu icon into a 'X' icon */
             background-color: rgba($nav-background-color, 0);
