@@ -10,8 +10,6 @@ tags:
 - Featured
 ---
 
-
-
 <div class="grid-2_full fade-me">
   <video class="website-video box-shadow-light" autoplay loop>
     <source src="https://res.cloudinary.com/iambramer/video/upload/f_auto,q_auto:best/v1524609387/home_kyatcx.mp4" type="video/mp4">
