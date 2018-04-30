@@ -27,7 +27,7 @@ tags:
 
 <div class="grid-2_full fade-me">
   <h2 class="full-width">Concept 1: The Biomarker</h2>
-  <p>The first concept I came up with was using a simple circle as a representation of a biomarker. I then utilized the circle through repetition and placement to give a visual representation of the how the technology worked. The idea for the logo was to have an 'infinite solutions' method where it could be represented by a dynamic layering of circles, once again representing the technology honing in on anomalies using biomarkers.</p>
+  <p>The first concept I came up with was using a simple circle as a representation of a biomarker. I then utilized the circle through repetition and placement to give a visual representation of how the technology worked. The idea for the logo was to have an 'infinite solutions' method where it could be represented by a dynamic layering of circles, once again representing the technology honing in on anomalies using biomarkers.</p>
 </div>
 
 <div class="grid-2_full fade-me">
