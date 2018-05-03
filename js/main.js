@@ -1,4 +1,12 @@
+var blogImages;
 
+blogImages = document.getElementsByTagName('img');
+
+for(var i = 0; i < blogImages.length; i++) {
+    blogImages[i].onclick = function(){
+      this.classList.toggle('magnify')
+    };
+};
 
 var consoleStyles = [
   'background: linear-gradient(to bottom right, #68bb52, #1d9999)',
