@@ -7,18 +7,13 @@ description: 'The organized thoughts of a mad man.'
   <div class="page-wrap">
 
     <div class="words">
+        <h1>The Writings of a Mad Man</h1> {% for post in site.categories.words %}
+
+            <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+            <p class="meta">{{ post.date | date_to_string }}</p>
 
 
-                <h1>The Writings of a Mad Man</h1> {% for post in site.categories.words %}
-                <div class="text">
-                    <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-                    <p class="meta">{{ post.date | date_to_string }}</p>
-                    {{ post.excerpt }}
-
-                </div>
-
-                {% endfor %}
-
+        {% endfor %}
     </div>
 
   </div>

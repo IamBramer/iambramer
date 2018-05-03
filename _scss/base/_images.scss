@@ -136,3 +136,34 @@ img.lazyload, img.lazyloading {
     box-shadow: 0 3px 50px rgba(0, 0, 0, 0.5), 0 3px 10px rgba(0, 0, 0, 0.5);
   }
 }
+p.blogImage{
+  max-width:100%;
+
+   img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $blog-width;
+    width: auto;
+    transition: all .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+   img:hover {
+    cursor: zoom-in;
+  }
+
+   img.magnify {
+    position: relative;
+    display: block;
+    margin-right: auto;
+    max-width: 1400px;
+  }
+
+   img.magnify:hover {
+    cursor: zoom-out;
+  }
+}
+.border-gray {
+  border: 3px solid #eee;
+}

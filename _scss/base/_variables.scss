@@ -6,6 +6,7 @@ $larger: 1800px;
 $super: 2400px;
 
 $max-width: 1800px;
+$blog-width: 960px;
 
 $breakpoints: (
   small : $small,
@@ -30,9 +31,9 @@ $p-font-sizes: (
   null   : (1em, 1.5),
   small  : (1.2em, 1.6),
   medium : (1.2em, 1.7),
-  large  : 1.4em,
-  larger : (1.5em, 1.8),
-  super  : 1.6em
+  large  : 1.3em,
+  larger : (1.3em, 1.6),
+  super  : 1.4em
 );
 $span-font-sizes: (
   null   : (1em, 1.5),

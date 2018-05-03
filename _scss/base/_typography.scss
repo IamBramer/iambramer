@@ -198,8 +198,10 @@ h6 {
 pre {
     overflow: auto;
 
-    max-width: 100%;
+    max-width: $blog-width;
     margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1em;
 
     white-space: pre;
@@ -302,4 +304,50 @@ blockquote {
         color: #fff;
       }
     }
+}
+
+.words h1,h2,h3,h4,h5, {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $blog-width;
+}
+
+.words h1 {
+  margin-bottom: 1em;
+}
+.words .post h1 {
+  margin-bottom: 0;
+}
+.words hr {
+  width: 100%;
+  max-width: $blog-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+.words h2 {
+  margin-bottom: 0;
+}
+
+.words p {
+  letter-spacing: normal;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.2em;
+}
+
+.words p strong {
+  letter-spacing: normal;
+}
+
+.words p a {
+  transition-duration: 0s;
+}
+
+.words ul{
+  padding-left:2em;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: $blog-width;
+  list-style-type: disc;
+  display: block;
 }
