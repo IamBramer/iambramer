@@ -1,4 +1,4 @@
-var version = 'v1::';
+var version = 'v1:1:';
 
 self.addEventListener('install', function(event){
 
