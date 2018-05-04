@@ -20,21 +20,24 @@ var consoleStyles = [
 
 console.log('%c IamBramer', consoleStyles);
 
+navigator.serviceWorker.getRegistrations().then(function(registrations) {
+ for(let registration of registrations) {
+  registration.unregister()
+} })
 
-
-if ('serviceWorker' in navigator){
-  console.log('IamBramer service worker running.');
-  navigator.serviceWorker.register('/sw.js', {
-    scope: '/'
-  })
-  .then(function (registration) {
-  })
-  .catch(function(e) {
-    console.error('Error: ' + e);
-  });
-} else {
-  console.log('Your browser does not allow awesome service workers to be made.');
-}
+// if ('serviceWorker' in navigator){
+//   console.log('IamBramer service worker running.');
+//   navigator.serviceWorker.register('/sw.js', {
+//     scope: '/'
+//   })
+//   .then(function (registration) {
+//   })
+//   .catch(function(e) {
+//     console.error('Error: ' + e);
+//   });
+// } else {
+//   console.log('Your browser does not allow awesome service workers to be made.');
+// }
 
 $(function() {
 
