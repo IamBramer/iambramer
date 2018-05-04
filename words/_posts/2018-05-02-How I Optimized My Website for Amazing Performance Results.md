@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How I Optimized My Website for Amazing Performance Results"
-date: '2017-04-12'
+date: '2018-05-02'
 categories: blog
 ---
 
