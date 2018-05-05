@@ -1,13 +1,13 @@
 {
-  "name": "browser-sync-jekyll",
-  "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "name": "iambramer",
+  "version": "1.0.0",
+  "description": "Development files for iambramer.com",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack"
   },
-  "author": "Shane Osbourne",
+  "author": "Tyler Bramer",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -28,11 +28,12 @@
     "jshint-loader": "^0.8.4",
     "node-sass": "^4.8.3",
     "pump": "^3.0.0",
+    "sw-precache": "^5.2.1",
     "webpack": "^4.6.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
+    "url": "https://github.com/IamBramer/iambramer.git"
   },
   "keywords": [
     "jekyll",
@@ -41,9 +42,9 @@
     "browsersync"
   ],
   "bugs": {
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
+    "url": "https://github.com/IamBramer/iambramer/issues"
   },
-  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync",
+  "homepage": "https://iambramer.com/",
   "dependencies": {
     "mkdirp": "^0.5.1"
   }

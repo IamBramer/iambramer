@@ -176,6 +176,12 @@ Individual Project Page
     min-height: 120%;
     margin-top: -10%;
     margin-left: -10%;
+    @media screen and (min-width: $large) {
+      margin-top: -12%;
+    }
+    @media screen and (min-width: $larger) {
+      margin-top: -15%;
+    }
   }
 }
 
