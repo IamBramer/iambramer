@@ -10,8 +10,6 @@ var imagemin    = require('gulp-imagemin');
 var deploy      = require("gulp-gh-pages");
 var changed     = require('gulp-changed');
 var imageResize = require('gulp-image-resize');
-var swPrecache  = require('sw-precache');
-var packageJson = require('./package.json');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -94,62 +92,6 @@ gulp.task('compress', function(cb){
         .pipe(gulp.dest('_site/img'));
  });
 
- /**
-  * Write Service Worker
-  */
-  function writeServiceWorkerFile(rootDir, handleFetch, callback) {
-    var config = {
-      cacheId: packageJson.name,
-      /*
-      dynamicUrlToDependencies: {
-        'dynamic/page1': [
-          path.join(rootDir, 'views', 'layout.jade'),
-          path.join(rootDir, 'views', 'page1.jade')
-        ],
-        'dynamic/page2': [
-          path.join(rootDir, 'views', 'layout.jade'),
-          path.join(rootDir, 'views', 'page2.jade')
-        ]
-      },
-      */
-      // If handleFetch is false (i.e. because this is called from generate-service-worker-dev), then
-      // the service worker will precache resources but won't actually serve them.
-      // This allows you to test precaching behavior without worry about the cache preventing your
-      // local changes from being picked up during the development cycle.
-      handleFetch: handleFetch,
-      runtimeCaching: [{
-        urlPattern: /projects/,
-        handler: 'networkFirst',
-        options: {
-            cache: {
-              maxEntries: 10,
-              name: 'projects-cache'
-            }
-        }
-      }, {
-        urlPattern: /words/,
-        handler: 'networkFirst',
-        options: {
-            cache: {
-              maxEntries: 10,
-              name: 'words-cache'
-            }
-        }
-      }],
-      staticFileGlobs: [
-        rootDir + '/css/**.css',
-        rootDir + '/**.html',
-        rootDir + '/img/**/**.*',
-        rootDir + '/js/**.js'
-      ],
-      stripPrefix: rootDir + '/',
-      // verbose defaults to false, but for the purposes of this demo, log more.
-      verbose: true
-    };
-
-    swPrecache.write('sw.js', config, callback);
-  }
-
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
@@ -163,16 +105,12 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['generate-service-worker','browser-sync', 'watch']);
+gulp.task('default', ['browser-sync', 'watch']);
 
 /**
  * Runs minification and image compression
  */
 gulp.task('min', ['compress', 'images']);
-
-gulp.task('generate-service-worker', function(callback) {
-  writeServiceWorkerFile('_site', true, callback);
-});
 
 gulp.task("deploy", function () {
     return gulp.src(["./_site/**/*.*","./_site/.*"])
