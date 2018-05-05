@@ -271,7 +271,10 @@ Grids
 
 }
 .barba-container {
-  margin-bottom: $nav-height;
+  @media screen and (min-width: $medium){
+    margin-bottom: $nav-height;
+  }
+
 }
 
 //Sets max page width

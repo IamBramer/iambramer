@@ -21,7 +21,7 @@ iframe {
 }
 //Make child images zoom on parent hover
 .zoom img {
-  transition: all .7s ease-in-out;
+  transition: transform .7s ease-in-out;
 }
 
 .zoom:hover img {
@@ -58,7 +58,7 @@ img.lazyload, img.lazyloading {
     height: auto;
     min-width: 100%;
     overflow: hidden;
-    transition: all 1s ease-in-out;
+
     filter: blur(15px);
   }
 
@@ -145,7 +145,7 @@ p.blogImage{
     margin-left: auto;
     margin-right: auto;
     max-width: $blog-width;
-    width: auto;
+    width: 100%;
     transition: all .3s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 

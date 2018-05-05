@@ -1,8 +1,9 @@
 .about {
   position: relative;
+  box-sizing: border-box;
   height: 100%;
   overflow: hidden;
-  margin-bottom: $nav-height;
+
 
   .about-wrap {
     position: relative;
@@ -25,9 +26,11 @@
     }
   }
 
+
   .about-info,
   .about-info-2,
-  .about-info-3 {
+  .about-info-3,
+  .contact-info {
     position: relative;
     min-height: calc(100vh - 100px);
     width:100%;
@@ -67,8 +70,26 @@
         bottom:0;
         right:-10%;
         z-index: 0;
+        max-height: 100%;
       }
 
+    }
+  }
+  .contact-info {
+    min-height: calc(100vh - #{$page-padding-small} - 75px);
+    margin:0;
+    padding: 0;
+    background-color:#000;
+
+    @media screen and (min-width: $small) {
+      min-height: calc(100vh - #{$page-padding-medium} - 75px);
+    }
+
+    @media screen and (min-width: $medium) {
+      min-height: calc(100vh - #{$page-padding-large} - 75px);
+    }
+    @media screen and (min-width: $large) {
+      min-height: calc(100vh - #{$page-padding-large} - 75px);
     }
   }
   .about-info {
