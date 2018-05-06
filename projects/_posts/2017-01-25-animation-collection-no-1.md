@@ -7,6 +7,7 @@ description: "This is the first collection of experimental animations that I hav
 tags:
 - 3D
 - Digital
+- Featured
 ---
 
 <div class="grid-2_full fade-me">
